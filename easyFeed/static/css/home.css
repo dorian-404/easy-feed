@@ -1,0 +1,197 @@
+@keyframes sectionFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section,nav
+{
+    animation: sectionFadeIn 1.2s ease-in-out forwards;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+.fueille-gauche
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: feuilleGaucheAnimation 1s ease-in-out forwards;
+}
+
+@keyframes feuilleDroiteAnimation 
+{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+.fueille-droite
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: feuilleDroiteAnimation 1s ease-in-out forwards;
+}
+
+@keyframes feuilleGaucheAnimation 
+{
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+nav
+{
+    width: 100%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 200px;
+}
+
+ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.projet, .equipe
+{
+    margin-right: 160px;
+}
+
+.contact
+{
+    margin-right: 0px;
+}
+
+#section-projet
+{
+    width: 100%;
+    height: 100vh;
+    animation-delay: 0s;
+    /* background-color: blueviolet; */
+    /* position: relative; */
+}
+
+.conteneur-message
+{
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
+}
+
+.message
+{
+    /* width: 50%;
+    margin: auto;
+    background-color: red; */
+    margin-left: 10%;
+    margin-top: 10%;
+    text-align: left; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* position: absolute; */
+    left: 0;
+}
+
+span
+{
+    font-size: 40pt;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.boutonConnexion
+{
+    background-color: #006450;
+    border: none;
+    color: white;
+    padding: 12px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.conteneur-photo
+{
+    /* background-color: orange; */
+    width: 50%;
+    margin-top: -100vh;
+    height: 100vh;
+    right: 0;   
+    position: absolute;
+}
+
+.photo
+{
+    margin-top: 39vh;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.boutonAnchor
+{
+    position: fixed;
+    bottom: 30%;
+    left: 5.5%;
+    background-color: rgba(64, 6, 92, 0.3);
+    border-radius: 50%;
+    height: 50px;   
+    width: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fleche-haut
+{
+    width: 20px;
+    height: 20px;
+    /* z-index: 100; */
+    opacity: 100%;
+    fill: #1ED760; /* Color the svg in black */;
+}
+
+
+/* Equipe */
+
+/* #section-equipe
+{
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    animation-delay: 0.5s;
+}
+
+
+#section-contact
+{
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    animation-delay: 1s;
+} */
