@@ -19,5 +19,6 @@ from django.urls import path
 import easyFeed.views as views
 urlpatterns = [
     path('', views.index, name="home"),
+    path('/login', views.home, name="login"),
     path('admin/', admin.site.urls),
 ]
