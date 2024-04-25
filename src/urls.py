@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import easyFeed.views as views
+
+
 urlpatterns = [
-    path('', views.index, name="home"),
-    path('/login', views.home, name="login"),
+    path('', views.home, name="home"),
+    path('login/', views.login, name="login"),
+    path('dashboard/', views.dashboard, name="dashboard"),
     path('admin/', admin.site.urls),
 ]

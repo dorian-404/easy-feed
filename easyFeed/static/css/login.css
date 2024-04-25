@@ -1,6 +1,12 @@
+h1 {
+    font-weight: 500;
+    font-size: 50px;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: Poppins;
 }
 
 .left {
@@ -28,6 +34,7 @@ body {
 
 .title {
     font-size: 60px;
+    font-weight: 700;
 }
 
 .green {
@@ -62,20 +69,24 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 
 label {
     display: block;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 
 input[type="text"] {
-    width: 100%;
+    width: 300px;
+    height: 45px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: #fafafa;
 }
 
 input[type="checkbox"] {
@@ -85,16 +96,29 @@ input[type="checkbox"] {
 button {
     width: 50%;
     padding: 10px;
-    background-color: green;
+    background-color: RGB(0, 100, 80);
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     margin: 0 auto;
     display: block;
-
+    font-family: Poppins;
 }
 
 button:hover {
-    background-color: darkgreen;
+    background-color: RGB(2, 142, 114);
+}
+
+.info-condition {
+     color: RGB(0, 100, 80);
+     text-decoration: underline;
+}
+
+.test {
+     display: flex;
+}
+
+.text-condition {
+     font-size: 10px;
 }

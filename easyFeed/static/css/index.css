@@ -1,5 +1,158 @@
-h1 {
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Poppins;
+}
+
+body {
+    background: #F1F0F6;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* SideBar */
+#sidebar {
+    position: fixed;
+    width: 300px;
+    top: 0;
+    left: 0;
+    background: #9FEFBC;
+    height: 100%;
+
+}
+
+#sidebar .title-home {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    font-weight: 700;
+    color: blue;
+}
+
+
+#sidebar .side-menu {
+    margin: 36px 0;
+    /*padding: 0 60px; */
+}
+
+#sidebar .side-menu a {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    transition: all .3s ease;
+    padding: 12px 16px 12px 60px;
     color: black;
-    background-color: yellow;
-    text-align: center;
+    border-left: 5px solid #9FEFBC;
+}
+
+#sidebar .side-menu a:hover {
+    border-left: 5px solid #006450;
+}
+
+#sidebar .side-menu a:active {
+    color: #008A31;
+    background: #F5F5DC; /* Ajout de la couleur de fond pour les liens actifs */
+}
+
+#sidebar .settings {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    padding-top: 350px;
+}
+
+#content {
+    position: relative;
+    width: calc(100% - 300px);
+    left: 300px;
+}
+
+p {
+   color: white;
+   margin-left: 100px;
+}
+
+/* NAV BAR */
+nav {
+    background: #006450;
+    height: 104px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+}
+
+nav .nav-link {
+    position: relative;
+    padding: 0 80px;
+}
+
+nav .nav-link .icon {
+     font-size: 18px;
+     color: black;
+}
+
+/*  MAIN CONTENT DASHBOARD */
+#content .dash-content {
+     padding-top: 50px;
+
+}
+
+.dash-content .title {
+      display: flex;
+      align-items: center;
+      margin: 5px 0 30px 0;
+}
+
+.dash-content .title .text {
+      font-size: 24px;
+      font-weight: 500;
+      margin-left: 40px;
+}
+
+.dash-content .boxes {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+}
+
+.dash-content .boxes .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      margin-left: 40px;
+      margin-right: 40px;
+      width: calc(100% / 3 - 15px);
+      height: 200px;
+      padding: 15px 20px;
+      background-color: #FFF;
+      box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
+}
+
+.box .text {
+      white-space: nowrap;
+      font-size: 18px;
+      font-weight: 500;
+}
+
+.dash-content .title .stats {
+      margin-top: 20px;
+}
+
+.dash-content .box .box-stats {
+      width: calc(100% / 3 - 15px);
+      height: 200px;
 }
