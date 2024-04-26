@@ -34,10 +34,21 @@ li {
     justify-content: center;
     align-items: center;
     height: 64px;
-    font-weight: 700;
+    font-weight: 800;
     color: blue;
 }
 
+#sidebar .slide-dropdown {
+    padding-left: 48px;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all .15s ease;
+
+}
+
+#sidebar .side-dropdown.show {
+    max-height: 1000px;
+}
 
 #sidebar .side-menu {
     margin: 36px 0;
@@ -56,6 +67,8 @@ li {
 
 #sidebar .side-menu a:hover {
     border-left: 5px solid #006450;
+    color: #008A31;
+    background: #F5F5DC;
 }
 
 #sidebar .side-menu a:active {
@@ -71,6 +84,7 @@ li {
     align-items: center;
     height: 64px;
     padding-top: 350px;
+    position: fixed;
 }
 
 #content {
@@ -106,7 +120,7 @@ nav .nav-link .icon {
 
 /*  MAIN CONTENT DASHBOARD */
 #content .dash-content {
-     padding-top: 50px;
+     padding-top: 20px;
 
 }
 
@@ -120,7 +134,9 @@ nav .nav-link .icon {
       font-size: 24px;
       font-weight: 500;
       margin-left: 40px;
+      text-align: left;
 }
+
 
 .dash-content .boxes {
       display: flex;
@@ -145,14 +161,32 @@ nav .nav-link .icon {
 .box .text {
       white-space: nowrap;
       font-size: 18px;
-      font-weight: 500;
+      font-weight: 700;
+      margin-right: 180px;
 }
 
 .dash-content .title .stats {
       margin-top: 20px;
 }
 
-.dash-content .box .box-stats {
-      width: calc(100% / 3 - 15px);
-      height: 200px;
+.dash-content .box-stats {
+      box-shadow: 4px 4px 16px rgba(0, 0, 0, .05);
+      width: 97em;
+      height: 22em;
+      background-color: #FFF;
+      border-radius: 12px;
+      margin-left: 40px;
+      margin-right: 40px;
+}
+
+.icon {
+       margin-right: 20px;
+       width: 30px;
+       height: 30px;
+}
+
+ .chevron {
+      width: 15px;
+      height: 10px;
+      margin-left: 50px;
 }
