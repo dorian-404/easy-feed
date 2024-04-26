@@ -4,58 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyFeed | Accueil</title>
-    <link rel="stylesheet" href="../../static/css/home.css">
+   <link rel="stylesheet" href="../../static/css/home.css">
+
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
     <header>
-        <img src="../../static/css/img/leaf-left.png" alt="leaf left" class="fueille-gauche">
-        <img src="../../static/css/img/leaf-right.png" alt="leaf right" class="fueille-droite">
+        <img src="../../static/img/leaf-left.png" alt="leaf left" class="fueille-gauche">
+        <img src="../../static/img/leaf-right.png" alt="leaf right" class="fueille-droite">
         <nav id="navbar">
             <ul class="flex justify-center items-center">
-            <li><a href="#" class="projet">Projet</a></li>
-            <li><a href="#" class="equipe">Equipe</a></li>
-            <li><a href="#" class="contact">Contact</a></li>
+            <li><a href="#" class="projet ongletHover">Projet</a></li>
+            <li><a href="#section-equipe" class="equipe ongletHover">Équipe</a></li>
+            <li><a href="#section-contact" class="contact ongletHover">Sources</a></li>
             </ul>
         </nav>
+        <div id="nav-placeholder"></div>
     </header>
 
     <section id="section-projet">
         <div class="conteneur-message">
             <div class="message">
-                <h1 style="text-align: left;"><span style="color:#053c1f">Easy</span><span style="color:#989627">Feed</span></h1>
+                <h1 class="titre" style="text-align: left;"><span class="color-easy">Easy</span> <span class="color-feed">Feed</span></h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus harum error accusantium tenetur pariatur unde, autem et similique voluptate dicta vitae! Praesentium, hic porro earum facere dolor nam accusamus ut soluta, atque repellendus perferendis? Quam id fuga rerum! Ducimus molestiae aut sit dolor amet sequi, obcaecati aliquam assumenda esse quas! Similique dolorem autem ab, eligendi quam voluptate doloribus explicabo laborum eos natus. 
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus harum error accusantium tenetur pariatur unde, autem et similique voluptate dicta vitae! Praesentium, hic porro earum facere dolor nam accusamus ut soluta, atque repellendus perferendis? Quam id fuga rerum! Ducimus molestiae aut sit dolor amet sequi, obcaecati aliquam assumenda esse quas! Similique dolorem autem ab, eligendi quam voluptate doloribus explicabo laborum eos natus.
                 </p>
                 <br>
-                <a href="/login" class="boutonConnexion">
-                    <button>Se connecter</button>
-                </a>
-
+                <div class="boutonConnexion">
+                    <a href="login.html">Se connecter</a>
+                </div>
             </div>
         </div>
 
         <figure class="conteneur-photo">
             <figure class="photo">
-                <img src="../../static/css/img/chiens-removebg-preview.png" alt="img-chiens">
+                <img src="../../static/img/photoAnimauxBigBig.png" alt="img-animaux">
             </figure>
         </figure>
 
-        <a href="#navbar" class="boutonAnchor">
-            <!-- <img class="fleche-haut" src="Start Project Parallax Scrolling Website/arrow-up-solid.svg" alt="arrow-up"> -->
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18" />
-              </svg>              
-        </a>
+
+
+
     </section>
 
     <section id="section-equipe">
 
+        <br/> <br/> <br/>
+
+        <div style="width: 100%; text-align: center; justify-content: center;">
+            <h1 class="titre-equipe"> Notre Equipe </h1>
+
+            <br/> <br/> <br>
+            <div style="display: flex; text-align: center; justify-content: center;">
+                <p style="text-align: justify; padding-left: auto; padding-right: auto; color: black;">
+                    Cette equipe est composée de 5 membres, repartis en 2 groupes : le groupe Back-end( 03 membres ) et le groupe Front-end( 02 membres )
+
+                    <br/> <br/>
+
+                    -Le groupe <span class="titre-role"> Back-end </span> est chargé de la gestion des données et de la sécurité de l'application.
+
+                    <br/> <br/>
+
+                    -Le groupe <span class="titre-role"> Front-end </span> est chargé de la partie visible de l'application, c'est à dire l'interface utilisateur.
+                </p>
+            </div>
+        </div>
+
+        <br/> <br/> <br/> <br />
+        <!-- Back-end team -->
+        <br /> <br />
+        <div class="flex gap-10 max-sm:flex-col justify-center items-center">
+            <div class="profile-card">
+                <img src="../../static/img/imgEquipe/dorian.svg" alt="">
+                <div class="profile-info">
+                    <p class="profile-name">Dorian Wontcheu</p>
+                    <p class="profile-work">Back-end</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <img src="../../static/img/imgEquipe/emmanuel2.svg" alt="">
+                <div class="profile-info">
+                    <p class="profile-name">Emmanuel Takam</p>
+                    <p class="profile-work">Back-end</p>
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <img src="../../static/img/imgEquipe/gracia.svg" alt="">
+                <div class="profile-info">
+                    <p class="profile-name">Ange Yemele</p>
+                    <p class="profile-work">Back-end</p>
+                </div>
+            </div>
+        </div>
+        <br/><br/><br/>
+
+        <!-- Front-end team -->
+        <br /> <br />
+        <div class="flex gap-10 max-sm:flex-col justify-center items-center">
+            <div class="profile-card">
+                <img src="../../static/img/imgEquipe/yannis.svg" alt="">
+                <div class="profile-info">
+                    <p class="profile-name">Yannis Nenzeko</p>
+                    <p class="profile-work">Front-end</p>
+                </div>
+            </div> <!-- Ajout de la balise de fermeture manquante -->
+            <div class="profile-card">
+                <img src="../../static/img/imgEquipe/ansoumane.svg" alt="">
+                <div class="profile-info">
+                    <p class="profile-name">Ansoumane Condé</p>
+                    <p class="profile-work">Front-end</p>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <section id="section-contact">
+    <!-- <section id="section-contact">
 
-    </section>
+    </section> -->
+
+    <script src="../../static/js/script.js"></script>
 
 </body>
 </html>
