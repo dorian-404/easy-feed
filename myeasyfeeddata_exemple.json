@@ -1,0 +1,1318 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-04-29T22:13:04.290Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "CAN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-04-29T22:13:40.497Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "CMR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-04-29T22:13:59.908Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "GIN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-04-29T22:14:40.542Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Poule",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-04-29T22:14:57.419Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Porc",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-04-29T22:15:12.775Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Poisson",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-04-29T22:17:01.681Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "SE001",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-04-29T22:18:11.382Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "SE002",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-04-29T22:18:42.319Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "SE002",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Sodium\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-04-29T22:19:07.006Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "SE001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Phosphore\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-04-29T22:19:50.321Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Ingredient object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-04-29T22:20:06.238Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Ingredient object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add formulation disponible",
+    "content_type": 7,
+    "codename": "add_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change formulation disponible",
+    "content_type": 7,
+    "codename": "change_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete formulation disponible",
+    "content_type": 7,
+    "codename": "delete_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view formulation disponible",
+    "content_type": 7,
+    "codename": "view_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add ingredient",
+    "content_type": 8,
+    "codename": "add_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change ingredient",
+    "content_type": 8,
+    "codename": "change_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete ingredient",
+    "content_type": 8,
+    "codename": "delete_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view ingredient",
+    "content_type": 8,
+    "codename": "view_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add liste ingredients",
+    "content_type": 9,
+    "codename": "add_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change liste ingredients",
+    "content_type": 9,
+    "codename": "change_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete liste ingredients",
+    "content_type": 9,
+    "codename": "delete_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view liste ingredients",
+    "content_type": 9,
+    "codename": "view_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add pays",
+    "content_type": 10,
+    "codename": "add_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change pays",
+    "content_type": 10,
+    "codename": "change_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete pays",
+    "content_type": 10,
+    "codename": "delete_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view pays",
+    "content_type": 10,
+    "codename": "view_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add phase developpement",
+    "content_type": 11,
+    "codename": "add_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change phase developpement",
+    "content_type": 11,
+    "codename": "change_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete phase developpement",
+    "content_type": 11,
+    "codename": "delete_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view phase developpement",
+    "content_type": 11,
+    "codename": "view_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add type utilisateur",
+    "content_type": 12,
+    "codename": "add_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change type utilisateur",
+    "content_type": 12,
+    "codename": "change_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete type utilisateur",
+    "content_type": 12,
+    "codename": "delete_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view type utilisateur",
+    "content_type": 12,
+    "codename": "view_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add vaccin",
+    "content_type": 13,
+    "codename": "add_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change vaccin",
+    "content_type": 13,
+    "codename": "change_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete vaccin",
+    "content_type": 13,
+    "codename": "delete_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view vaccin",
+    "content_type": 13,
+    "codename": "view_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add categorie ingredient",
+    "content_type": 14,
+    "codename": "add_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change categorie ingredient",
+    "content_type": 14,
+    "codename": "change_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete categorie ingredient",
+    "content_type": 14,
+    "codename": "delete_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view categorie ingredient",
+    "content_type": 14,
+    "codename": "view_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add phase actuelle",
+    "content_type": 15,
+    "codename": "add_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change phase actuelle",
+    "content_type": 15,
+    "codename": "change_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete phase actuelle",
+    "content_type": 15,
+    "codename": "delete_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view phase actuelle",
+    "content_type": 15,
+    "codename": "view_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add utilisateur",
+    "content_type": 16,
+    "codename": "add_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change utilisateur",
+    "content_type": 16,
+    "codename": "change_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete utilisateur",
+    "content_type": 16,
+    "codename": "delete_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view utilisateur",
+    "content_type": 16,
+    "codename": "view_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add recette",
+    "content_type": 17,
+    "codename": "add_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change recette",
+    "content_type": 17,
+    "codename": "change_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete recette",
+    "content_type": 17,
+    "codename": "delete_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view recette",
+    "content_type": 17,
+    "codename": "view_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add vague",
+    "content_type": 18,
+    "codename": "add_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change vague",
+    "content_type": 18,
+    "codename": "change_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete vague",
+    "content_type": 18,
+    "codename": "delete_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view vague",
+    "content_type": 18,
+    "codename": "view_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add vaccin administre",
+    "content_type": 19,
+    "codename": "add_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change vaccin administre",
+    "content_type": 19,
+    "codename": "change_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete vaccin administre",
+    "content_type": 19,
+    "codename": "delete_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view vaccin administre",
+    "content_type": 19,
+    "codename": "view_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add sortie",
+    "content_type": 20,
+    "codename": "add_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change sortie",
+    "content_type": 20,
+    "codename": "change_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete sortie",
+    "content_type": 20,
+    "codename": "delete_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view sortie",
+    "content_type": 20,
+    "codename": "view_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add perte",
+    "content_type": 21,
+    "codename": "add_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change perte",
+    "content_type": 21,
+    "codename": "change_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete perte",
+    "content_type": 21,
+    "codename": "delete_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view perte",
+    "content_type": 21,
+    "codename": "view_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add evolution masse",
+    "content_type": 22,
+    "codename": "add_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change evolution masse",
+    "content_type": 22,
+    "codename": "change_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete evolution masse",
+    "content_type": 22,
+    "codename": "delete_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view evolution masse",
+    "content_type": 22,
+    "codename": "view_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can add vague recette",
+    "content_type": 23,
+    "codename": "add_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can change vague recette",
+    "content_type": 23,
+    "codename": "change_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can delete vague recette",
+    "content_type": 23,
+    "codename": "delete_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 92,
+  "fields": {
+    "name": "Can view vague recette",
+    "content_type": 23,
+    "codename": "view_vaguerecette"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$AHYJF0ik5RcXOtT4u9AGLw$+w4QgdUDzX3xZAKyv7hd6KXBho0lBSJQkql8FS0Oq1A=",
+    "last_login": "2024-04-29T22:11:48.060Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "emmataks@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-04-29T22:10:49.015Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "formulationdisponible"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "ingredient"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "listeingredients"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "pays"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "phasedeveloppement"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "typeutilisateur"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vaccin"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "categorieingredient"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "phaseactuelle"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "utilisateur"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "recette"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vague"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vaccinadministre"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "sortie"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "perte"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "evolutionmasse"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 23,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vaguerecette"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "imkgwq6d2tisabcj3z17evpa1le4z69f",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGlleJ_5R0ucM1vqzOIBsKU4qxN1JpBRQjTTvzbyZx20tfut58XNiVwbs8tsFjM9cD5AeWO-Nx1bXZQ78UPhJO59ayq_b6f4dFOxlX1tHRgBlRaRsMAMIkBEDWEkmIWmrBpn0noGUcIg4WsBRaikSuICWfb7jtjfS:1s1ZDw:LUXYjyEBENv-D6uZzxa5n4mMHL0kUXj-8nUjsGeojbs",
+    "expire_date": "2024-05-13T22:11:48.079Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 1,
+  "fields": {
+    "codeIngredient": "SE001",
+    "nomIngredient": "Maïs",
+    "proteineBrute": 8.6,
+    "energieMetabolisable": 3320.0,
+    "matiereGrasse": 4.8,
+    "celluloseBrute": 12.0,
+    "calcium": 0.13,
+    "phosphore": 0.3,
+    "lysine": 0.1,
+    "methionine": 0.3,
+    "cysteineMethionine": 0.01,
+    "sodium": 0.12,
+    "prix": 300.0,
+    "created": "2024-04-29T22:17:01.675Z",
+    "updated": "2024-04-29T22:19:06.998Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 2,
+  "fields": {
+    "codeIngredient": "SE002",
+    "nomIngredient": "Brisures riz",
+    "proteineBrute": 7.8,
+    "energieMetabolisable": 3320.0,
+    "matiereGrasse": 18.0,
+    "celluloseBrute": 0.0,
+    "calcium": 0.9,
+    "phosphore": 1.0,
+    "lysine": 0.02,
+    "methionine": 0.03,
+    "cysteineMethionine": 0.04,
+    "sodium": 0.13,
+    "prix": 150.0,
+    "created": "2024-04-29T22:18:11.360Z",
+    "updated": "2024-04-29T22:18:42.281Z"
+  }
+},
+{
+  "model": "easyFeed.pays",
+  "pk": 1,
+  "fields": {
+    "codePays": "CAN",
+    "nomPays": "Canada",
+    "created": "2024-04-29T22:13:04.267Z",
+    "updated": "2024-04-29T22:13:04.267Z"
+  }
+},
+{
+  "model": "easyFeed.pays",
+  "pk": 2,
+  "fields": {
+    "codePays": "CMR",
+    "nomPays": "Cameroun",
+    "created": "2024-04-29T22:13:40.495Z",
+    "updated": "2024-04-29T22:13:40.496Z"
+  }
+},
+{
+  "model": "easyFeed.pays",
+  "pk": 3,
+  "fields": {
+    "codePays": "GIN",
+    "nomPays": "Guinée",
+    "created": "2024-04-29T22:13:59.852Z",
+    "updated": "2024-04-29T22:13:59.853Z"
+  }
+},
+{
+  "model": "easyFeed.formulationdisponible",
+  "pk": 1,
+  "fields": {
+    "codeAnimal": "PL",
+    "nomAnimal": "Poule",
+    "created": "2024-04-29T22:14:40.536Z",
+    "updated": "2024-04-29T22:14:40.536Z"
+  }
+},
+{
+  "model": "easyFeed.formulationdisponible",
+  "pk": 2,
+  "fields": {
+    "codeAnimal": "PR",
+    "nomAnimal": "Porc",
+    "created": "2024-04-29T22:14:57.416Z",
+    "updated": "2024-04-29T22:14:57.416Z"
+  }
+},
+{
+  "model": "easyFeed.formulationdisponible",
+  "pk": 3,
+  "fields": {
+    "codeAnimal": "PS",
+    "nomAnimal": "Poisson",
+    "created": "2024-04-29T22:15:12.771Z",
+    "updated": "2024-04-29T22:15:12.771Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 1,
+  "fields": {
+    "codeIngredient": 1,
+    "codePays": 2,
+    "created": "2024-04-29T22:19:50.316Z",
+    "updated": "2024-04-29T22:19:50.316Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 2,
+  "fields": {
+    "codeIngredient": 2,
+    "codePays": 2,
+    "created": "2024-04-29T22:20:06.218Z",
+    "updated": "2024-04-29T22:20:06.219Z"
+  }
+}
+]
