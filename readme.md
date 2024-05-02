@@ -22,8 +22,14 @@ EasyFeed est une application qui calcule vos formules d'alimentation pour vous. 
  Installer les dependances
  pip install -r requirements.txt
   
- Configurer la base de donnees (faclutatif pour le moment)
+ Creation du modele  
+ python manage.py makemigrations
+  
+ Configurer la base de donnees (Si tu veux envoyer vers la bd)
  python manage.py migrate
+ 
+ Creation du superuser
+ python manage.py createsuperuser
  
  Lancer le serveur 
  python manage.py runserver

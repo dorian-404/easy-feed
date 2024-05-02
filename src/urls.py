@@ -20,8 +20,8 @@ import easyFeed.views as views
 
 
 urlpatterns = [
-    path('', views.home, name="home"),
-    path('login/', views.login, name="login"),
-    path('dashboard/', views.dashboard, name="dashboard"),
+    path('', views.home_view, name="home"),
+    path('login/', views.login_view, name="login"),
+    path('dashboard/', views.dashboard_view, name="dashboard"),
     path('admin/', admin.site.urls),
 ]
