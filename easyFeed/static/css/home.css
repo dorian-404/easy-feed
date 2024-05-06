@@ -354,7 +354,7 @@ ul {
         z-index: 1000;
         position: fixed;
         top: 0;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     ul {
@@ -375,4 +375,3 @@ ul {
         margin-right: 70px;
     }
 }
-
