@@ -1,0 +1,180 @@
+@font-face {
+    font-family: 'sfpro-text';
+    src: url('../Font/sf-pro/SFPRODISPLAYREGULAR.OTF');
+    src: url('../Font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf');
+}
+
+:root {
+    /**** Background ****/
+    --bg-color:#FFF9F5;
+
+    /**** Text ****/
+    --pathway-font: "Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+    --sfpro-text-font: "sfpro-text", sans-serif;
+
+    --raleway-text-font: "Raleway", sans-serif;
+
+    --title-font: "Lilita One", sans-serif;
+
+    /**** Color ****/
+    --color-easy: #006450;
+    --color-feed: #dab651;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--sfpro-text-font);
+    background-color: var(--bg-color);
+}
+
+h1
+{
+    font-family: var(--title-font);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.color-easy {
+    font-family: var(--title-font);
+    font-size: 7vw;
+    font-weight: bold;
+    color: var(--color-easy);
+}
+
+.color-feed {
+    font-family: var(--title-font);
+    font-size: 7vw;
+    color: var(--color-feed);
+}
+
+h2{
+    font-family: var(--sfpro-text-font);
+    /* font-size: 20vw; */
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.div-connexion, div-abonnement, .div-toggle{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: var(--sfpro-text-font);
+}
+
+.div-form, .div-child {
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    place-items: center;
+    place-content: center;
+}
+
+
+.border-form
+{
+    padding: 50px;
+    border: 1px solid teal;
+    border-radius: 10px;
+}
+
+/* ----- design cadre abonnement ----- */
+
+.border-abonnement
+{
+    padding: 20px;
+    border: 3px solid #006450;
+    border-radius: 10px;
+    font-size: small;
+    width: 350px;
+    height: 526px;
+    margin-bottom: 20vh;
+}
+
+#Administrateur{
+    font-size: 17pt;
+    font-weight: bolder;
+    color: #006450;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.prix-abonnement{
+    font-size: 30pt;
+    font-weight: bolder;
+    color: #006450;
+
+}
+
+.type-abonnement{
+    font-size: 8pt;
+    font-weight: lighter;
+    color: #9CA3AF;
+}
+
+.list-bonus {
+    padding-left: 0;
+
+}
+
+.list-bonus li {
+    display: inline-block;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.list-bonus li::before {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke-width='1.5' stroke='currentColor'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z' /%3E%3C/svg%3E");
+    padding-right: 10px;
+    display: inline-block;
+    text-indent: 0;
+}
+
+/* ----- bouton toggle ----- */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    background-color: none;
+    border-radius: 20px;
+    border: 1px solid rgb(0, 100, 80, 0.5);
+    padding: 3px;
+}
+
+.toggle-button {
+    position: relative;
+    background-color: transparent;
+    border: none;
+    color: black;
+    padding: 3px 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+.toggle-button.active {
+    background-color: #006450;
+    color: beige;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+

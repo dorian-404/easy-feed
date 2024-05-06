@@ -1,133 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyFeed | Accueil</title>
-   <link rel="stylesheet" href="../../static/css/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EasyFeed | Accueil</title>
+  <link rel="stylesheet" href="../../static/css/home.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+    rel="stylesheet">
 
+  <!-- <script src="script.js"></script> -->
 
 </head>
+
 <body>
-    <header>
-        <img src="../../static/css/img/leaf-left.png" alt="leaf left" class="fueille-gauche">
-        <img src="../../static/css/img/leaf-right.png" alt="leaf right" class="fueille-droite">
-        <nav id="navbar">
-            <ul class="flex justify-center items-center">
-            <li><a href="#" class="projet ongletHover">Projet</a></li>
-            <li><a href="#section-equipe" class="equipe ongletHover">Équipe</a></li>
-            <li><a href="#section-contact" class="contact ongletHover">Sources</a></li>
+  <header>
+    <img src="../../static/css/img/leaf-left.png" alt="leaf left" class="fueille-gauche">
+    <img src="../../static/css/img/leaf-right.png" alt="leaf right" class="fueille-droite">
+    <nav id="navbar">
+      <ul class="flex justify-center items-center">
+        <li><a href="#" class="projet ongletHover">Projet</a></li>
+        <li><a href="#section-equipe" class="equipe ongletHover">Équipe</a></li>
+        <li><a href="#section-contact" class="contact ongletHover">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="nav-placeholder"></div>
+  </header>
+
+  <section id="section-projet">
+    <div class="conteneur-message">
+      <div class="message">
+        <h1 class="titre" style="text-align: left;"><span class="color-easy">Easy</span> <span
+            class="color-feed">Feed</span></h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus harum error accusantium tenetur pariatur
+          unde, autem et similique voluptate dicta vitae! Praesentium, hic porro earum facere dolor nam accusamus ut
+          soluta, atque repellendus perferendis? Quam id fuga rerum! Ducimus molestiae aut sit dolor amet sequi,
+          obcaecati aliquam assumenda esse quas! Similique dolorem autem ab, eligendi quam voluptate doloribus explicabo
+          laborum eos natus.
+        </p>
+        <br>
+        <div class="boutonConnexion">
+          <a href="/login/">Se connecter</a>
+        </div>
+      </div>
+    </div>
+
+    <figure class="conteneur-photo">
+      <figure class="photo">
+        <img src="../../static/css/img/photoAnimauxBigBig.png" alt="img-animaux">
+      </figure>
+    </figure>
+  </section>
+
+  <section id="section-equipe">
+    <br /> <br /> <br />
+
+    <div style="width: 100%; text-align: center; justify-content: center;">
+      <h1 class="titre-equipe"> Notre Equipe </h1>
+
+      <br /> <br /> <br>
+      <div style="display: flex; text-align: center; justify-content: center; position: relative; z-index: 1000;">
+        <p style="text-align: justify; padding-left: auto; padding-right: auto; color: black;">
+          Cette equipe est composée de 5 membres, repartis en 2 groupes : le groupe Back-end( 03 membres ) et le groupe
+          Front-end( 02 membres )
+
+          <br /> <br />
+
+          -Le groupe <span class="titre-role"> Back-end </span> est chargé de la gestion des données et de la sécurité
+          de l'application.
+
+          <br /> <br />
+
+          -Le groupe <span class="titre-role"> Front-end </span> est chargé de la partie visible de l'application, c'est
+          à dire l'interface utilisateur.
+        </p>
+      </div>
+    </div>
+
+    <br /> <br /> <br /> <br />
+    <!-- Back-end team -->
+    <br /> <br />
+    <div class="flex gap-10 max-sm:flex-col justify-center items-center">
+      <div class="profile-card">
+        <img src="../../static/css/img/imgEquipe/dorian.svg" width="300px" height="300px" alt="">
+        <ul class="side-social">
+          <a href="#">
+            <img src="../../static/css/img/icons/github.svg"  alt="github icon">
+          </a>
+          <a href="#">
+            <img src="../../static/css/img/icons/linkedin.svg" alt="linkedin icon">
+          </a>
+        </ul>
+        <div class="profile-info">
+          <p class="profile-name">Dorian Wontcheu</p>
+          <p class="profile-work">Back-end</p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <img src="../../static/css/img/imgEquipe/emmanuel2.svg" width="300px" height="300px" alt="">
+        <ul class="side-social">
+          <a href="#">
+            <img src="../../static/css/img/icons/github.svg" alt="github icon">
+          </a>
+          <a href="#">
+            <img src="../../static/css/img/icons/linkedin.svg" alt="linkedin icon">
+          </a>
+        </ul>
+        <div class="profile-info">
+          <p class="profile-name">Emmanuel Takam</p>
+          <p class="profile-work">Back-end</p>
+        </div>
+      </div>
+
+      <div class="profile-card">
+        <img src="../../static/css/img/imgEquipe/gracia2.svg" width="300px" height="300px" alt="">
+        <ul class="side-social">
+          <a href="#">
+            <img src="../../static/css/img/icons/github.svg" alt="github icon">
+          </a>
+          <a href="#">
+            <img src="../../static/css/img/icons/linkedin.svg" alt="linkedin icon">
+          </a>
+        </ul>
+        <div class="profile-info">
+          <p class="profile-name">Ange Yemele</p>
+          <p class="profile-work">Back-end</p>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <!-- Front-end team -->
+    <br /> <br />
+    <div class="flex gap-10 max-sm:flex-col justify-center items-center">
+      <div class="profile-card">
+        <img src="../../static/css/img/imgEquipe/yannis.svg" width="300px" height="300px" alt="">
+        <ul class="side-social">
+          <a href="#">
+            <img src="../../static/css/img/icons/github.svg" alt="github icon">
+          </a>
+          <a href="#">
+            <img src="../../static/css/img/icons/linkedin.svg" alt="linkedin icon">
+          </a>
+        </ul>
+        <div class="profile-info">
+          <p class="profile-name">Yannis Nenzeko</p>
+          <p class="profile-work">Front-end</p>
+        </div>
+      </div> <!-- Ajout de la balise de fermeture manquante -->
+      <div class="profile-card">
+        <img src="../../static/css/img/imgEquipe/ansoumane.svg" width="300px" height="300px" alt="">
+        <ul class="side-social">
+          <a href="#">
+            <img src="../../static/css/img/icons/github.svg" alt="github icon">
+          </a>
+          <a href="#">
+            <img src="../../static/css/img/icons/linkedin.svg" alt="linkedin icon">
+          </a>
+        </ul>
+        <div class="profile-info">
+          <p class="profile-name">Ansoumane Condé</p>
+          <p class="profile-work">Front-end</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-contact">
+    <br /> <br /> <br />
+    <div class="div-contact">
+      <div class="div-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86048.13913411547!2d-65.71059260715093!3d47.62604674611236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c98941b3ad5d61d%3A0x505c13c653ce030!2sBathurst%2C%20NB!5e0!3m2!1sfr!2sca!4v1714531106466!5m2!1sfr!2sca"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="div-form">
+        <div class="conteneur-form">
+          <form action="https://formspree.io/f/mwkgyoyv" method="post" class="max-w-md mx-auto">
+            <div class="mb-5">
+              <label for="email" class="block mb-2 text-sm font-medium text-white">Email</label>
+              <input type="email" name="email" id="email"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder=" " required />
+            </div>
+            <div class="mb-5">
+              <label for="nom" class="block mb-2 text-sm font-medium text-white">Nom</label>
+              <input type="text" name="nom" id="nom"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder=" " required />
+            </div>
+            <div class="mb-5">
+              <label for="prenom" class="block mb-2 text-sm font-medium text-white">Prénom</label>
+              <input type="text" name="prenom" id="prenom"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder=" " required />
+            </div>
+
+            <div class="grid md:grid-cols-2 md:gap-6">
+              <div class="mb-5">
+                <label for="numero_telephone" class="block mb-2 text-sm font-medium text-white">Numéro de téléphone
+                  (5063195577)</label>
+                <input type="tel" pattern="[0-9]{10}" name="numero_telephone" id="numero_telephone"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-80 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder=" " required />
+              </div>
+            </div>
+
+            <div class="grid md:grid-cols-1 md:gap-6">
+              <div class="mb-5">
+                <label for="message" class="block mb-2 text-sm font-medium text-white">Votre
+                  message</label>
+                <textarea id="message" name="message" rows="4"
+                  class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Laissez un commentaire..."></textarea>
+              </div>
+            </div>
+
+            <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background-color: #FFF9F5;">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <a href="home.html" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"><span id="color-easy">Easy</span> <span
+                id="color-feed">Feed</span></span>
+            </a>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                <li>
+                    <a href="#section-projet" class="hover:underline me-4 md:me-6">Projet</a>
+                </li>
+                <li>
+                    <a href="#section-equipe" class="hover:underline me-4 md:me-6">Equipe</a>
+                </li>
+                <li>
+                    <a href="#section-contact" class="hover:underline me-4 md:me-6">Contact</a>
+                </li>
             </ul>
-        </nav>
-        <div id="nav-placeholder"></div>
-    </header>
-
-    <section id="section-projet">
-        <div class="conteneur-message">
-            <div class="message">
-                <h1 class="titre" style="text-align: left;"><span class="color-easy">Easy</span> <span class="color-feed">Feed</span></h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus harum error accusantium tenetur pariatur unde, autem et similique voluptate dicta vitae! Praesentium, hic porro earum facere dolor nam accusamus ut soluta, atque repellendus perferendis? Quam id fuga rerum! Ducimus molestiae aut sit dolor amet sequi, obcaecati aliquam assumenda esse quas! Similique dolorem autem ab, eligendi quam voluptate doloribus explicabo laborum eos natus.
-                </p>
-                <br>
-                <div class="boutonConnexion">
-                    <a href="/login/">Se connecter</a>
-                </div>
-            </div>
         </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="home.html" class="hover:underline">EasyFeed</a>. Tous droits réservés.</span>
+    </div>
+  </footer>
 
-        <figure class="conteneur-photo">
-            <figure class="photo">
-                <img src="../../static/css/img/photoAnimauxBigBig.png" alt="img-animaux">
-            </figure>
-        </figure>
-    </section>
-
-    <section id="section-equipe">
-
-        <br/> <br/> <br/>
-
-        <div style="width: 100%; text-align: center; justify-content: center;">
-            <h1 class="titre-equipe"> Notre Equipe </h1>
-
-            <br/> <br/> <br>
-            <div style="display: flex; text-align: center; justify-content: center;">
-                <p style="text-align: justify; padding-left: auto; padding-right: auto; color: black;">
-                    Cette equipe est composée de 5 membres, repartis en 2 groupes : le groupe Back-end( 03 membres ) et le groupe Front-end( 02 membres )
-
-                    <br/> <br/>
-
-                    -Le groupe <span class="titre-role"> Back-end </span> est chargé de la gestion des données et de la sécurité de l'application.
-
-                    <br/> <br/>
-
-                    -Le groupe <span class="titre-role"> Front-end </span> est chargé de la partie visible de l'application, c'est à dire l'interface utilisateur.
-                </p>
-            </div>
-        </div>
-
-        <br/> <br/> <br/> <br />
-        <!-- Back-end team -->
-        <br /> <br />
-        <div class="flex gap-10 max-sm:flex-col justify-center items-center">
-            <div class="profile-card">
-                <img src="../../static/css/img/imgEquipe/dorian.svg" alt="">
-                <div class="profile-info">
-                    <p class="profile-name">Dorian Wontcheu</p>
-                    <p class="profile-work">Back-end</p>
-                </div>
-            </div>
-
-            <div class="profile-card">
-                <img src="../../static/css/img/imgEquipe/emmanuel2.svg" alt="">
-                <div class="profile-info">
-                    <p class="profile-name">Emmanuel Takam</p>
-                    <p class="profile-work">Back-end</p>
-                </div>
-            </div>
-
-            <div class="profile-card">
-                <img src="../../static/css/img/imgEquipe/gracia.svg" alt="">
-                <div class="profile-info">
-                    <p class="profile-name">Ange Yemele</p>
-                    <p class="profile-work">Back-end</p>
-                </div>
-            </div>
-        </div>
-        <br/><br/><br/>
-
-        <!-- Front-end team -->
-        <br /> <br />
-        <div class="flex gap-10 max-sm:flex-col justify-center items-center">
-            <div class="profile-card">
-                <img src="../../static/css/img/imgEquipe/yannis.svg" alt="">
-                <div class="profile-info">
-                    <p class="profile-name">Yannis Nenzeko</p>
-                    <p class="profile-work">Front-end</p>
-                </div>
-            </div> <!-- Ajout de la balise de fermeture manquante -->
-            <div class="profile-card">
-                <img src="../../static/css/img/imgEquipe/ansoumane.svg" alt="">
-                <div class="profile-info">
-                    <p class="profile-name">Ansoumane Condé</p>
-                    <p class="profile-work">Front-end</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <!-- <section id="section-contact">
-
-    </section> -->
-
-    <script src="../../static/js/script.js"></script>
+  <script src="../../static/js/script.js"></script>
 
 </body>
+
 </html>
