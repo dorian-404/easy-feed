@@ -13,3 +13,7 @@ def login(request):
 
 def dashboard(request):
     return render(request, 'html/dashboard.html', context={})
+
+
+def form(request):
+    return render(request, 'html/form.html', context={})
