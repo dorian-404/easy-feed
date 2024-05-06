@@ -1,4 +1,15 @@
+"""
+    Ici sont définis tous les modèles de notre application.
+    Les modèles permettent à l'ORM (Object-relational Mapper) django de générer nos tables
+    et créer la base de données de motre application.
+    Donc ces lignes de codes ont un équivalent sql
+"""
+
 from django.db import models
+
+# class ListeIngredientsManager(models.Manager):
+#     def get_queryset(self):
+#         return super().get_queryset()
 
 class TypeUtilisateur(models.Model):
     titre = models.CharField(max_length=30, null=False)
@@ -24,6 +35,9 @@ class ListeIngredients(models.Model):
     prix = models.FloatField(null=False)
     created = models.DateTimeField(auto_now_add=True)  # ajoute une date au moment de l'insertion
     updated = models.DateTimeField(auto_now=True)  # prendre la date au moment de la modification
+
+    objects = models.Manager()   # manager par defaut
+    # liste_ingredient = ListeIngredientsManager()
     def __str__(self):
         return f"{self.codeIngredient}"
 
@@ -33,6 +47,7 @@ class Pays(models.Model):
     nomPays = models.CharField(max_length=40, null=False)
     created = models.DateTimeField(auto_now_add=True)  # ajoute une date au moment de l'insertion
     updated = models.DateTimeField(auto_now=True)  # prendre la date au moment de la modification
+    objects = models.Manager()  # manager par defaut
     def __str__(self):
         return self.codePays
         # return f"{self.codePays} ({self.nomPays})"
@@ -64,6 +79,7 @@ class FormulationDisponible(models.Model):
     nomAnimal = models.CharField(max_length=30, null=False)
     created = models.DateTimeField(auto_now_add=True)  # ajoute une date au moment de l'insertion
     updated = models.DateTimeField(auto_now=True)  # prendre la date au moment de la modification
+    objects = models.Manager()  # manager par defaut
     def __str__(self):
         return self.nomAnimal
 
@@ -72,6 +88,7 @@ class Ingredient(models.Model):
     codePays = models.ForeignKey(Pays, on_delete=models.CASCADE, default='CMR')
     created = models.DateTimeField(auto_now_add=True)  # ajoute une date au moment de l'insertion
     updated = models.DateTimeField(auto_now=True)  # prendre la date au moment de la modification
+    objects = models.Manager()  # manager par defaut
 
 class CategorieIngredient(models.Model):
     idIngredient = models.ForeignKey(Ingredient, on_delete=models.CASCADE)
@@ -124,6 +141,7 @@ class PhaseDeveloppement(models.Model):
     ratioLysineMethionineMax = models.FloatField(null=False)
     created = models.DateTimeField(auto_now_add=True)  # ajoute une date au moment de l'insertion
     updated = models.DateTimeField(auto_now=True)  # prendre la date au moment de la modification
+    objects = models.Manager()  # manager par defaut
     def __str__(self):
         return f"{self.codePhase} ({self.nomPhase})"
 
