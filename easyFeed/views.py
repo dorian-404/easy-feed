@@ -14,3 +14,6 @@ def login(request):
 def dashboard(request):
     return render(request, 'html/dashboard.html', context={})
 
+
+def formulation(request):
+    return render(request, 'html/formulation.html', context={})

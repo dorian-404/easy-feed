@@ -1,0 +1,161 @@
+/*
+    Auteur: Ansoumane Condé
+    Date:   06 mai 2024
+    Page:   formulation.css
+
+*/
+
+/* Les spécifications sur toute la page */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/* Les specifications du sidebar */
+.sidebar {
+    position: fixed;
+    width: 180px;
+    height: 100%;
+    background: #9FEFBC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Les modifications du parametre */
+.setting {
+    padding: 15px 30%;
+    background: #EFEF8B;
+    position: absolute;
+    bottom: 0;
+    border-bottom-right-radius: 10px;
+    /* width: 50%; */
+}
+
+/* Modifaction du titre EasyFeed */
+.sidebar h2 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Positionnement des items liste du sidebar */
+.sidebar ul li {
+    padding: 10px 30%;
+    border-left: 4px solid #9FEFBC;
+}
+
+/* la couleur des items liste du sidebar */
+.sidebar ul li a {
+    color: #000;
+}
+
+/* la couleur des items du sidebar lorsque hover */
+.sidebar ul li:hover {
+    border-left: 4px solid #006450;
+}
+
+/* la couleur des items du sidebar lorsque active */
+.sidebar ul li:active {
+    background: #F5F5DC;
+}
+
+/* Les modifications du navbar */
+.navbar {
+    margin-left: 170px;
+    padding: 20px;
+    background: #006450;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Modification du mot de bienvenue */
+.welcome {
+    color: #FCFCFC;
+    margin-left: 25px;
+}
+
+/* Aligner horizontalement les items liste du navbar */
+.item ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* la largeur des items dans le navbar */
+.item {
+    width: 30%;
+}
+
+/* Couleur des items dans le navbar */
+.item li a{
+    color: #FFF;
+}
+
+/* Positionner le contenu c'est a dire le formulaire */
+.main-content {
+    margin-left: 180px;
+    padding: 20px;
+}
+
+/* Mettre une bordure au div form */
+/* .main-content .form {
+    border: 1px solid #000;
+    border-radius: 5px;
+
+} */
+
+.main-content .border {
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+/* Centrer le titre Formulation */
+.main-content .form h2 {
+    text-align: center;
+}
+
+/* Les specifications du formulaire */
+
+.main-content form {
+    margin: 0 auto;
+    margin-top: 10px;
+    /* text-align: center; */
+    padding: 1px 150px;
+}
+
+/* Les specifications des label du formulaire */
+.main-content .form label {
+    display: block;
+    /* margin-bottom: px; */
+}
+/* Les specifications des selects du formulaire */
+.main-content .form select {
+    width: 250px;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.main-content .form input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.main-content .form button {
+    width: 100px;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+    margin-top: 5px;
+}
+
+.main-content .form .formuler {
+    background: #006450;
+    color: #fff;
+    margin-left: 41px;
+}
+
