@@ -1,0 +1,106 @@
+{% extends 'html/test/base.html' %}
+
+{% block title %}Test BD{% endblock %}
+
+{% block content %}
+    <h1>Liste des ingredients</h1>
+    <form>
+        {% csrf_token %}    <!--donner les permissions (autorison lorsqu'on fait du json en django)-->
+
+        <!-- Selectionner un ingredient et visualiser les nutriments qui le constituent -->
+        <p>
+            <label>Choisir un ingredient :
+                <select id="select-ingredient">
+                    <option value="-1">-----------------------------------</option>
+                    {% for ingredient in ingredients %}
+                        <option value="{{ ingredient.id }}">{{ ingredient.nomIngredient }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </p>
+        <table id="info" border="2">
+            <thead>
+                <tr><th id="nutriment-table-header1" colspan="2"></th></tr>
+                <tr>
+                    <th id="nutriment-table-header2"></th>
+                    <th id="nutriment-table-header3"></th>
+                </tr>
+            </thead>
+            <tbody id="nutriment-table-body">
+            </tbody>
+        </table>
+
+        <!-- Afficher les formulations disponibles -->
+        <p>
+            <label>Choisir un animal :
+                <select id="select-animal">
+                    <option value="-1">------------</option>
+                    {% for animal in animaux %}
+                        <option value="{{ animal.id }}">{{ animal.nomAnimal }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </p>
+
+        <!-- Afficher les tranches d'age -->
+        <p>
+            <label>Choisir une tranche d'age :
+                <select id="select-age">
+                    <option value="-1">------------</option>
+                    {% for age in ages %}
+                        <option value="{{ age.id }}">{{ age.trancheAge }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </p>
+
+         <!-- Afficher les contraintes liees a la phase de developpement -->
+        <p>
+            <label>Phase de developpement :</label>
+        </p>
+        <table id="phase-info" border="2">
+            <thead>
+                <tr><th id="phase-table-header1" colspan="2"></th></tr>
+                <tr>
+                    <th id="phase-table-header2"></th>
+                    <th id="phase-table-header3"></th>
+                </tr>
+            </thead>
+            <tbody id="phase-table-body">
+            </tbody>
+        </table>
+
+        <!-- Afficher les pays -->
+        <p>
+            <label>Choisir un pays :
+                <select id="select-pays">
+                    <option value="-1">------------</option>
+                    {% for pays in countries %}
+                        <option value="{{ pays.codePays }}">{{ pays.nomPays }}</option>
+                    {% endfor %}
+                </select>
+            </label>
+        </p>
+
+        <!-- Afficher les ingredients lies a un pays -->
+        <p>
+            <label style='display: flex; align-items: center;'>Afficher la liste des ingredients disponibles
+                <input id="chkbox-af-liste" type="checkbox">
+            </label>
+        </p>
+        <p id="chkbox"></p>
+    </form>
+{% endblock %}
+{% block script %}
+    <script>
+        {% comment %}
+            cet url est envoyee au fichier .js
+            car js ne reconnait pas le langage template de django
+        {% endcomment %}
+
+        let url = '{% url "easyFeed:details_ingredient" %}';
+        let url_pays = '{% url "easyFeed:pays_ingredients" %}';
+        let url_phase = '{% url "easyFeed:obtenir_contraintes" %}';
+    </script>
+    <script src="../../static/js/test/ingredient.js"></script>
+{% endblock %}
