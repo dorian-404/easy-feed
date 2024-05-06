@@ -21,6 +21,10 @@ def dashboard(request):
     return render(request, 'html/dashboard.html', context={})
 
 
+def formulation(request):
+    return render(request, 'html/formulation.html', context={})
+
+
 # requete pour recuperer tous les ingredients
 
 def ingredient_test(request):

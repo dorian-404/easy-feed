@@ -11,4 +11,5 @@ urlpatterns = [
     path('ingredient_test/pays_ingredients/', views.pays_ingredients, name='pays_ingredients'),
     path('ingredient_test/obtenir_contraintes/', views.obtenir_contraintes, name='obtenir_contraintes'),
     path('ingredient_test/', views.ingredient_test, name='ingredient_test'),
+    path('formulation/', views.formulation, name="formulation"),
 ]
