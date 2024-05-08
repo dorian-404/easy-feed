@@ -5,7 +5,12 @@
 
  -->
 
+
+
 <!DOCTYPE html>
+
+{% extends 'base.html' %}
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -21,39 +26,7 @@
 </head>
 
 <body>
-
-    <div class="sidebar">
-        <h2>EasyFeed</h2>
-        <ul>
-            <li><a href="#"><img class="icon" src="../../static/css/img/home.png" alt="">Accueil</a></li>
-            <li><a href="#"><img class="icon" src="../../static/css/img/formulation.png" alt="">Formulation</a></li>
-            <li><a href="#"><img class="icon" src="../../static/css/img/carrots.png" alt="">Ingrédients</a></li>
-            <li><a href="#"><img class="icon" src="../../static/css/img/gestion.png" alt="">Gestion <img class="chevron"
-                        src="../../static/css/img/chevron-down.png" alt=""> </a>
-                <ul class="slide-dropdown">
-                    <li><a href="#">Animaux</a></li>
-                    <li><a href="#">Employés</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Rapports</a></li>
-        </ul>
-        <div class="setting">Paramètres</div>
-    </div>
-
-    <div class="navbar">
-        <div class="welcome">
-            Bienvenue, John Doe
-        </div>
-        <div class="item">
-            <ul>
-                <li><a href="#"><span class="material-symbols-outlined">Search</span></a></li>
-                <li><a href="#"><span class="material-symbols-outlined">notifications</span></a></li>
-                <li><a href="#"><span class="material-symbols-outlined">account_circle</span></a></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="main-content">
+<div class="main-content">
 
         <div class="border">
             <div class="form">
@@ -98,6 +71,5 @@
 
         </div>
     </div>
-
 </body>
 </html>
