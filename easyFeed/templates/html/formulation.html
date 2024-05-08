@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="../../static/css/formulation.css">
     <!-- <link href="https://fonts.google.com/ "/> -->
     <!-- <link href="https://fontawesome.com/icons" rel="stylesheet" /> -->
+     <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Formulation</title>
 </head>
@@ -22,11 +25,17 @@
     <div class="sidebar">
         <h2>EasyFeed</h2>
         <ul>
-            <li><a href="#"><i class="fa-solid fa-house"></i>Accueil</a></li>
-            <li><a href="#">Formulation<i class="fa-solid fa-wand-magic-sparkles"></i></a></li>
-            <li><a href="#">Ingrédients<i class="fa-solid fa-carrot"></i></a></li>
-            <li><a href="#">Gestion<i class="fa-solid fa-book"></i></a></li>
-            <li><a href="#">Rapports<i class="fa-solid fa-chart-line"></i></a></li>
+            <li><a href="#"><img class="icon" src="../../static/css/img/home.png" alt="">Accueil</a></li>
+            <li><a href="#"><img class="icon" src="../../static/css/img/formulation.png" alt="">Formulation</a></li>
+            <li><a href="#"><img class="icon" src="../../static/css/img/carrots.png" alt="">Ingrédients</a></li>
+            <li><a href="#"><img class="icon" src="../../static/css/img/gestion.png" alt="">Gestion <img class="chevron"
+                        src="../../static/css/img/chevron-down.png" alt=""> </a>
+                <ul class="slide-dropdown">
+                    <li><a href="#">Animaux</a></li>
+                    <li><a href="#">Employés</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Rapports</a></li>
         </ul>
         <div class="setting">Paramètres</div>
     </div>
@@ -50,25 +59,25 @@
             <div class="form">
                 <h2>Formulation</h2>
             <form action="">
-                <label for="select-animal">Quel animal souhaitez-vous élévé</label><br/>
-                    <select name="animal" id="select-animal">
-                        <option value="poisson">Poisson</option>
-                        <option value="porc">Porc</option>
-                        <option value="poule">Poule</option>
-                        <option value="vache">Vache</option>
-                    </select><br>
+<!--                <label for="select-animal">Quel animal souhaitez-vous élévé</label><br/>-->
+<!--                    <select name="animal" id="select-animal">-->
+<!--                        <option value="poisson">Poisson</option>-->
+<!--                        <option value="porc">Porc</option>-->
+<!--                        <option value="poule">Poule</option>-->
+<!--                        <option value="vache">Vache</option>-->
+<!--                    </select><br>-->
 
-                <label for="select-age">Selectionner l'âge de l'animal</label><br>
+                <label for="select-age">Selectionner l'âge de l'animal</label>
                     <select name="age" id="select-age">
                         <option value="1">1 semaine</option>
                         <option value="2">2 semaine</option>
                         <option value="3">3 semaine</option>
                     </select><br>
 
-                <label for="select-masse">Veillez entrez la masse de l'animal</label><br>
-                <input type="text" name="masse" id="select-masse"><br>
+<!--                <label for="select-masse">Veillez entrez la masse de l'animal</label><br>-->
+<!--                <input type="text" name="masse" id="select-masse"><br>-->
 
-                <label for="select-pays">Dans quel pays vous trouvez vous?</label><br>
+                <label for="select-pays">Dans quel pays vous trouvez vous?</label>
                     <select name="pays" id="select-pays">
                         <option value="DZA">Algérie</option>
                         <option value="CMR">Cameroun</option>
