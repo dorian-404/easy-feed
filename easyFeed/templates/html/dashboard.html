@@ -1,5 +1,5 @@
 <!--
-    Auteur: Ansoumane Condé
+    Auteur: Ansoumane Condé, Yannis, Dorian
     Date:   06 mai 2024
     Page:   formulation.html
 
@@ -9,31 +9,81 @@
 
 {% block content %}
     <div class="main-content">
-        <ul class="gallery">
-            <li class="profile-card">
-                <img src="../../static/css/img/animaux/poule.svg" alt="profile" class="profile-img">
-            </li>
+        <div class="card-parent">
+            <div class="card-formulation">
+                <div class="myDiv">
+                    <a href="#" class="myLink">
+                        <h5 class="myHeading">Meilleures formulations</h5>
+                    </a>
+                    <p class="myParagraph">Ici vous trouverez les formulations qui ont le mieux fonctionnés pour vous.</p>
+                    <a id="btn-creer-formulation" href="#" class="myButton">
+                        <img style="width: 20px; height: 20px;" src="../../static/css/img/plus.svg" alt="">
+                           &nbsp;
+                        Créer une formulation
+                    </a>
+                </div>
+            </div>
+            <div class="card-ingredient">
+                <div class="myDiv">
+                    <a href="#" class="myLink">
+                        <h5 class="myHeading">Meilleurs ingrédients</h5>
+                    </a>
+                    <p class="myParagraph">Ici vous trouverez les ingrédient qui ont le meilleur rapport qualité prix.</p>
+                    <a id="btn-ajouter-ingredient"  href="#" class="myButton">
+                        <img style="width: 20px; height: 20px;" src="../../static/css/img/plus.svg" alt="">
+                           &nbsp;
+                        Ajouter un ingrédient
+                    </a>
+                </div>
+            </div>
+            <div class="card-gestion">
+                <div class="myDiv">
+                    <a href="#" class="myLink">
+                        <h5 class="myHeading">Gestion</h5>
+                    </a>
+                    <p class="myParagraph">
+                        Ici l'administrateur pourra ajouter, modifier ou supprimer des utilisateurs ou des animaux.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-            <li class="profile-card img-grayscale">
-                <img src="../../static/css/img/animaux/porc.svg" alt="profile" class="profile-img">
-            </li>
-
-            <li class="profile-card img-grayscale">
-                <img src="../../static/css/img/animaux/boeuf.svg" alt="profile" class="profile-img">
-            </li>
-
-            <li class="profile-card img-grayscale">
-                <img src="../../static/css/img/animaux/oie.svg" alt="profile" class="profile-img">
-            </li>
-
-            <li class="profile-card img-grayscale">
-                <img src="../../static/css/img/animaux/canard.svg" alt="profile" class="profile-img">
-            </li>
-
-            <li class="profile-card img-grayscale">
-                <img src="../../static/css/img/animaux/poisson.svg" alt="profile" class="profile-img">
-            </li>
-        </ul>
+        <div class="card-parent2">
+            <div class="card-rapport">
+                <div class="card">
+                    <h5 class="card-title">Rapports</h5>
+                    <p class="card-text">
+                        Ici vous retrouverez les rapports de vos activités(perters, gains, etc).
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+<!--    <div class="main-content">-->
+<!--        <ul class="gallery">-->
+<!--            <li class="profile-card">-->
+<!--                <img src="../../static/css/img/animaux/poule.svg" alt="profile" class="profile-img">-->
+<!--            </li>-->
 
+<!--            <li class="profile-card img-grayscale">-->
+<!--                <img src="../../static/css/img/animaux/porc.svg" alt="profile" class="profile-img">-->
+<!--            </li>-->
+
+<!--            <li class="profile-card img-grayscale">-->
+<!--                <img src="../../static/css/img/animaux/boeuf.svg" alt="profile" class="profile-img">-->
+<!--            </li>-->
+
+<!--            <li class="profile-card img-grayscale">-->
+<!--                <img src="../../static/css/img/animaux/oie.svg" alt="profile" class="profile-img">-->
+<!--            </li>-->
+
+<!--            <li class="profile-card img-grayscale">-->
+<!--                <img src="../../static/css/img/animaux/canard.svg" alt="profile" class="profile-img">-->
+<!--            </li>-->
+
+<!--            <li class="profile-card img-grayscale">-->
+<!--                <img src="../../static/css/img/animaux/poisson.svg" alt="profile" class="profile-img">-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
 {% endblock %}

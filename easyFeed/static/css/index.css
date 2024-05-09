@@ -1,5 +1,5 @@
 /*
-    Auteur: Ansoumane Condé
+    Auteur: Ansoumane Condé, Yannis, Dorian
     Date:   06 mai 2024
     Page:   formulation.css
 
@@ -28,6 +28,9 @@
     --diff-width-sidebar: 0px;
     --width-sidebar : calc(250px - var(--diff-width-sidebar));
     --height-navbar: 70px;
+
+    /**** hauteur des divs ****/
+    --height-div-card: 300px;
 }
 
 *
@@ -38,6 +41,10 @@
     padding: 0;
     list-style-type: none;
     text-decoration: none;
+}
+
+body{
+    background-color: #F1F5F9;
 }
 
 a, li {
@@ -53,7 +60,6 @@ hr {
 }
 
 .sidebar {
-
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
     z-index: 1000;
     /* animation de l'effet smooth */
@@ -84,14 +90,8 @@ hr {
     transition: all .15s ease;
 }
 
-/* .sidebar .side-dropdown .show {
-    max-height: 1000px;
-    height: 15px;
-} */
-
 .sidebar .side-menu {
-    margin: 36px 0;
-    /*padding: 0 60px; */
+    margin: 80px 0px 0px 0px;
 }
 
 .sidebar .side-menu a {
@@ -110,6 +110,12 @@ hr {
     margin-right: 25px;
     width: 24px;
     height: 24px;
+}
+
+.icon-plus {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .icon-bell{
@@ -140,7 +146,6 @@ hr {
 .sidebar .side-menu a:hover {
     border-left: 3px solid #006450;
     color: #008A31;
-    /* background: #F5F5DC; */
 }
 
 .sidebar .side-menu a:active {
@@ -149,8 +154,9 @@ hr {
 }
 
 .setting {
+    position: fixed;
     background: #EFEF8B;
-    width: var(--width-sidebar);
+    width: 100%;
     height: 48px;
     position: absolute;
     bottom: 0;
@@ -158,6 +164,7 @@ hr {
     align-items: center;
     font-family: var(--sfpro-text-font);
     transition: all .15s ease;
+    margin-top: 100px;
 }
 
 .setting a {
@@ -165,19 +172,6 @@ hr {
     align-items: center;
     margin-left: 25px
 }
-
-/* #content {
-    position: relative;
-    width: calc(100% - var(--width-sidebar));
-    left: 300px;
-} */
-
-p {
-   color: white;
-   margin-left: 100px;
-}
-
-
 
 
 /* Les modifications du navbar */
@@ -199,167 +193,151 @@ p {
 /* Modification du mot de bienvenue */
 .welcome {
     color: #FCFCFC;
-    margin-left: 25px;
 }
 
 /* Aligner horizontalement les items liste du navbar */
 .item ul {
     display: flex;
-    margin-left: 300px;
-    /* justify-content: space-around; */
+    margin-left: 50vw;
 }
-
-/* la largeur des items dans le navbar */
-/* .item {
-
-} */
 
 /* Couleur des items dans le navbar */
-.item li a{
+/*.item li a{
     color: #FFF;
-}
+}*/
 
-/* Positionner le contenu c'est a dire le formulaire */
+
+/* style main-content et contenu du main-content */
 .main-content {
     position: relative;
     margin-left: var(--width-sidebar);
     top: var(--height-navbar);
     font-family: var(--sfpro-text-font);
     overflow: auto;
-    height: auto;
+    /* height: auto; */
 }
 
-/* Mettre une bordure au div form */
-/* .main-content .form {`
-    border: 1px solid #000;
-    border-radius: 5px;
-
-} */
-
-.main-content .border {
-    border: 1px solid #000;
-    border-radius: 2px;
-}
-
-/* Centrer le titre Formulation */
-.main-content .form h2 {
-    text-align: center;
-}
-
-/* Les specifications du formulaire */
-
-.main-content form {
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 1px 150px;
-}
-
-/* Les specifications des label du formulaire */
-.main-content .form label {
-    display: block;
-}
-
-/* Les specifications des selects du formulaire */
-.main-content .form select {
-    width: 250px;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-.main-content .form input[type="text"] {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-}
-
-.main-content .form button {
-    width: 100px;
-    padding: 10px;
-    border-radius: 7px;
-    border: none;
-    margin-top: 5px;
-}
-
-.main-content .form .formuler {
-    background: #006450;
-    color: #fff;
-    margin-left: 41px;
-}
-
-/* ----- style choix animaux ----- */
-
-.gallery {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 100px 10px;
+/* --- DIV DES CARD POUR LA MEILLEURE FORMULATION, MEILLEURS INGREDIENTS, GESTION --- */
+.card-parent {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-auto-rows: 300px;
-    grid-gap: 50px;
-    justify-content: center;
-    list-style-type: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: px;
+
+    margin: 10px; /* marge entre les cards */
 }
 
-.profile-card {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.4s ease-out;
-    border-radius: 10px;
-}
-
-.profile-img {
+.card-formulation {
+    grid-area: 1 / 1 / 2 / 2;
     width: 100%;
+    height: var(--height-div-card);
+    }
+
+.card-ingredient {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 100%;
+    height: var(--height-div-card);
+}
+
+.card-gestion {
+    grid-area: 1 / 3 / 2 / 4;
+    width: 100%;
+    height: var(--height-div-card);
+}
+
+/*  */
+.myDiv {
+    max-width: 100%;
     height: 100%;
-    object-fit: cover;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid rgb(0, 100, 80, 0.4);
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-.img-grayscale{
-    filter: grayscale(.7);
+.myLink h5 {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #006450;
 }
 
-.profile-card:hover .profile-info,
-.profile-card:hover .side-social a {
-    transform: translate(0);
+.myParagraph {
+    margin-bottom: 0.75rem;
+    color: #4b5563;
 }
 
-.profile-card:hover .side-social a:nth-child(1) {
-    transition-delay: 0.1s;
-}
-.profile-card:hover .side-social a:nth-child(2) {
-    transition-delay: 0.2s;
-}
-.profile-card:hover .side-social a:nth-child(3) {
-    transition-delay: 0.3s;
-}
-
-.profile-card:hover {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 3px #f1f1f1;
-}
-
-@media (pointer: coarse) {
-
-.profile-card:hover {
-    transform: none;
-    box-shadow: none;
-}
+.myButton {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    background-color: #9FEFBC;
+    color: #008A31;
+    border: 1px solid #008A31;
+    border-radius: 0.2rem;
+    transition: background-color 0.2s; /* Pour l'effet de survol */
 }
 
-@media (max-width: 1024px) {
-.gallery {
-    grid-template-columns: minmax(auto, 450px);
-    grid-auto-rows: auto;
-    grid-gap: 50px;
+.myButton:hover {
+    background-color: #c1fcd5;
 }
+
+.myButton:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #9FEFBC;
+}
+
+
+/* --- DIV DE LA GRANDE CARD POUR LE RAPPORT --- */
+.card-parent2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: px;
+
+    margin: 10px; /* marge entre les cards */
+}
+
+.card-rapport {
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: calc(100dvh - (var(--height-navbar) + var(--height-div-card) + 10px + 10px) - 10px);  /* hauteur de la page - (hauteur_navbar + hauteur_div1 + 10px + 10px (le margin top et bottom de la div1)) - 10px(marge par rapport au bas de la page)*/
+}
+
+.card {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    background-color: white;
+    border: 1px solid rgb(0, 100, 80, 0.4);
+    border-radius: 0.2rem;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #006450;
+}
+
+.card-text {
+    font-weight: 400;
+    color: #4a5568;
 }
 
 /* ----- RESPONSIVE----- */
 
+/* Responsive pour adapter la cloche de notification et le logo du compte d'utilisateur */
 @media screen and (max-width: 768px) {
 
     .icon-bell{
@@ -382,14 +360,12 @@ p {
 
 }
 
-/* --- cacher la sidebar au clic du hamberger button --- */
-/* .sidebar-collapsed {
-    width: 0;
-    transition: width 0.5s;
-
-} */
-
-.hide-text
-{
-    display: none;
+/* Responsive pour disposer les cards sur une colonne lorsque */
+@media (max-width: 1024px) {
+    .card-parent {
+        display: flex;
+        grid-auto-rows: auto;
+        grid-gap: 10px;
+        flex-direction: column;
+    }
 }

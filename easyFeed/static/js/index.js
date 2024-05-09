@@ -1,59 +1,58 @@
-// Logique pour gerer le sous-menu de gestion
-const dropdown = document.querySelector(".slide-dropdown");
-const chevron = document.querySelector(".chevron");
-const rapports = document.querySelector(".rapports");
-let isClick = false;
+// Déclaration des variables pour les éléments du DOM
+const dropdown = document.querySelector(".slide-dropdown"); // Element à dérouler pour afficher le sous-menu de gestion
+const dropdownGestion = document.querySelector(".dropdown-gestion"); // Element qui déclenche le déroulement du sous-menu de gestion
+const chevron = document.querySelector(".chevron"); // Icone chevron pour indiquer si le sous-menu de gestion est déroulé ou non
+const rapports = document.querySelector(".rapports"); // Element à déplacer vers le bas lorsque le sous-menu de gestion est déroulé
+let isClick = false; // Variable pour suivre si le sous-menu de gestion est déroulé ou non
 
- // logique pour reduire la largeur de la sidebar à 74px au click sur le hamburger button gestion des valeur des classes sidebar et main-content
- const hamburgerButton = document.querySelector(".hamburger-button");
- const sidebar = document.querySelector(".sidebar");
- const sidemenu = document.querySelector(".side-menu");
- const setting = document.querySelector(".setting");
- const mainContent = document.querySelector(".main-content");
- const tabTitles = document.querySelectorAll(".tab-title"); // Remplacez ".tab-title" par le sélecteur approprié pour vos titres d'onglets
+const hamburgerButton = document.querySelector(".hamburger-button"); // Bouton hamburger pour réduire ou agrandir la sidebar
+const sidebar = document.querySelector(".sidebar"); // Sidebar à réduire ou agrandir
+const sidemenu = document.querySelector(".side-menu");
+const setting = document.querySelector(".setting");
+const sidebarCollapsedResponsive = document.querySelector(".sidebar-collapsed-responsive");
+let isSidebarCollapsed = false; // Variable pour suivre si la sidebar est réduite ou non au clic sur le hamburger button
+
 
 
 function toggleSidebarClick() {
 
-     sidebar.classList.toggle("sidebar-collapsed");
-     mainContent.classList.toggle("main-content-collapsed");
-
      if (sidebar.classList.contains("sidebar-collapsed")) {
           // Si la sidebar est réduite, définissez --diff-width-sidebar à 176px et masquez les titres d'onglets
+          sidebar.classList.toggle("sidebar-collapsed");
           hamburgerButton.style.transform = "rotate(90deg)";
           document.documentElement.style.setProperty("--diff-width-sidebar", "176px");
-          tabTitles.forEach(title => title.classList.add("hide-text"));
+          isSidebarCollapsed = true;
      } else {
           // Si la sidebar n'est pas réduite, définissez --diff-width-sidebar à 0px et affichez les titres d'onglets
+          sidebar.classList.toggle("sidebar-collapsed");
           hamburgerButton.style.transform = "rotate(0deg)";
           document.documentElement.style.setProperty("--diff-width-sidebar", "0px");
-          tabTitles.forEach(title => title.classList.remove("hide-text"));
+          isSidebarCollapsed = false;
      }
 }
-     
+
 function toggleSidebarMouseover() {
-     if (sidebar.classList.contains("sidebar-collapsed")) {
+     //verifie que la sidebar est réduite au click sur le hamburger button
+     if (isSidebarCollapsed) {
           document.documentElement.style.setProperty("--diff-width-sidebar", "0px");
-          tabTitles.forEach(title => title.classList.remove("hide-text"));
      }
 }
 
 function toggleSidebarMouseout() {
-     if (sidebar.classList.contains("sidebar-collapsed")) {
+     //verifie que la sidebar est réduite au click sur le hamburger button
+     if (isSidebarCollapsed) {
           document.documentElement.style.setProperty("--diff-width-sidebar", "176px");
-          tabTitles.forEach(title => title.classList.add("hide-text"));
      }
 }
 
+document.addEventListener("DOMContentLoaded", (event) => { // Attend que le DOM soit chargé pour exécuter le code
 
-document.addEventListener("DOMContentLoaded", (event) => {
-
-     chevron.addEventListener("click", () => {
+     dropdownGestion.addEventListener("click", () => {
           isClick = !isClick;
           dropdown.style.overflowY = isClick ? "visible" : "hidden";
           rapports.style.marginTop = isClick ? "100px" : "0px";
           chevron.style.transform = isClick ? "rotate(180deg)" : "rotate(0deg)";
-     });
+    });
 
      hamburgerButton.addEventListener("click", toggleSidebarClick);
 
@@ -70,3 +69,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
      setting.addEventListener("mouseout", toggleSidebarMouseout);
 
  });
+
+
+
