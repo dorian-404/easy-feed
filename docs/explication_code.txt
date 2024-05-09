@@ -1,0 +1,35 @@
+Bouton de code creation des contraintes
+
+La fonction `create_min_constraint(nom)` prend en argument un nom de nutriment et renvoie une fonction anonyme (lambda)
+qui prend en argument un vecteur `X` et renvoie la différence entre la somme des produits de `X`
+et les valeurs du nutriment dans `data_df` et la valeur minimale de ce nutriment dans `contraintes_df`.
+
+La fonction `create_max_constraint(nom)` fait la même chose, mais renvoie la différence entre la valeur maximale du nutriment
+dans `contraintes_df` et la somme des produits de `X` et les valeurs du nutriment dans `data_df`.
+
+Ensuite, pour chaque nutriment dans la liste `nutriments`,
+le code ajoute deux contraintes à la liste `contraintes_list` : une pour la limite inférieure (min)
+et une pour la limite supérieure (max) du nutriment.
+Chaque contrainte est un dictionnaire avec deux clés : "type" qui est fixé à "ineq"
+pour indiquer qu'il s'agit d'une contrainte d'inégalité,
+et "fun" qui est la fonction de contrainte générée par `create_min_constraint(nom)` ou `create_max_constraint(nom)`.
+
+
+Creation des contraintes pour les ratios de nutriments.
+
+La fonction `create_ratio_min_constraint(num, den, i)` prend en argument deux noms de nutriments (`num` et `den`)
+et un index `i`. Elle renvoie une fonction anonyme (lambda) qui prend en argument un vecteur `X`
+et renvoie la différence entre la somme des produits de `X` et les valeurs du nutriment `num` dans `data_df`
+et le produit du ratio minimum dans `contraintes_ratio_df` à l'index `i` et la somme des produits de `X`
+et les valeurs du nutriment `den` dans `data_df`.
+
+La fonction `create_ratio_max_constraint(num, den, i)` fait la même chose,
+mais renvoie la différence entre la somme des produits du ratio maximum dans `contraintes_ratio_df` à l'index `i`, `X`
+et les valeurs du nutriment `den` dans `data_df` et la somme des produits de `X` et les valeurs du nutriment `num` dans `data_df`.
+
+Ensuite, pour chaque paire de nutriments dans la liste `ratios`,
+le code ajoute deux contraintes à la liste `contraintes_list` : une pour la limite inférieure (min)
+et une pour la limite supérieure (max) du ratio de ces nutriments.
+Chaque contrainte est un dictionnaire avec deux clés : "type" qui est fixé à "ineq"
+pour indiquer qu'il s'agit d'une contrainte d'inégalité, et "fun" qui est la fonction de contrainte générée
+par `create_ratio_min_constraint(num, den, i)` ou `create_ratio_max_constraint(num, den, i)`.

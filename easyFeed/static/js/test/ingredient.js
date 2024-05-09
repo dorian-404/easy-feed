@@ -2,6 +2,8 @@
 let estCoche = false;   // Variable pour verifier si la case a cocher
                         //pour la visibilite de la liste des ingredients lies a un pays est cochee
 
+let id_phase = 0;          // Variable pour stocker l'identifiant de la phase de developpement
+let code_pays = "";          // Variable pour stocker l'identifiant de la phase de developpement
 /*
     Note:
     la fonction isJSON(str) est une fonction qui prend une chaîne str en entrée
@@ -76,7 +78,7 @@ function ingredientInfo() {
 
 function paysIngredients() {
     let chkbox_af_liste = $("#chkbox-af-liste");
-    let code_pays = $("#select-pays").val();
+    code_pays = $("#select-pays").val();
 
     if (code_pays != -1){ // un pays a ete selectionne
         $.ajax({
@@ -95,7 +97,7 @@ function paysIngredients() {
                     for (let key in json) {
                         let idValue = json[key].replace(/[ ']+/g, '-').replace(/%$/, ''); // Remplace les espaces par des traits d'union
                         valeurs += `<label id='${idValue}' style='display: flex; align-items: center;'><input type='checkbox'>${json[key]}</label><br />`;
-                    };
+                    }
                     if (estCoche){
                         $("#chkbox").html(valeurs);
                     }
@@ -129,7 +131,7 @@ function rendreVisibleListeIngredients(){
 //
 
 function phaseInfo() {
-    let id_phase = $("#select-age").val();
+    id_phase = $("#select-age").val();
 
     if (id_phase != -1){
             $.ajax({
@@ -157,10 +159,48 @@ function phaseInfo() {
     }
 }
 
+//
+//  Faire la formulation
+//
+
+function optimize() {
+//alert("oups");
+    $.ajax({
+        url: url_formuler,  // url est une variable declaree dans le fichier .html
+        type: 'GET',
+        dataType: "json",
+        data: {
+            id_phase: id_phase,
+            code_pays: code_pays,
+            csrfmiddlewaretoken: '{{ csrf_token }}', // donner les permissions (autorison lorsqu'on fait du json en django)
+        },
+        success: function(data) {
+            console.log("L'optimisation a réussi: " + data.success);
+            console.log("Message: " + data.message);
+            console.log("Valeur minimale de la fonction objectif: " + data.fun);
+            console.log("Point qui minimise la fonction objectif: " + data.x);
+
+            // Creer une liste HTML pour afficher les valeurs de solution.x
+            let solution = "<ul>";
+
+            for (let i = 0; i < data.x.length; i++) {
+                solution += `<li>${data.x[i]}</li>`;
+            }
+
+            solution += "</ul>";
+            $("#p-formuler").html(solution);
+        },
+        error: function(error) {
+            console.log("Une erreur s'est produite lors de l'optimisation: " + error);
+        }
+    });
+}
+
 //************************* Gestion des evenements *****************************
 $(document).ready(function () {
     $("#select-ingredient").change(ingredientInfo); // un ingredient a ete selectionne
     $("#select-age").change(phaseInfo);             // un age a ete selectionne
     $("#select-pays").change(paysIngredients);      // un pays a ete selectionne
     $("#chkbox-af-liste").click(rendreVisibleListeIngredients)  // la case a cocher la visibilite des ingredients a ete cliquee
+    $("#btn-formuler").click(optimize);  // le bouton formuler a ete clique
 });

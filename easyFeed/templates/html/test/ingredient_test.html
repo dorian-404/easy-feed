@@ -89,6 +89,11 @@
             </label>
         </p>
         <p id="chkbox"></p>
+
+        <!-- Faire la formulation -->
+        <p id="p-formuler">
+            <input type="button" id="btn-formuler" value="Formuler">
+        </p>
     </form>
 {% endblock %}
 {% block script %}
@@ -101,6 +106,7 @@
         let url = '{% url "easyFeed:details_ingredient" %}';
         let url_pays = '{% url "easyFeed:pays_ingredients" %}';
         let url_phase = '{% url "easyFeed:obtenir_contraintes" %}';
+        let url_formuler = '{% url "easyFeed:optimize" %}';
     </script>
     <script src="../../static/js/test/ingredient.js"></script>
 {% endblock %}
