@@ -148,10 +148,10 @@ hr {
     color: #008A31;
 }
 
-.sidebar .side-menu a:active {
+/*.sidebar .side-menu a:active {
     color: #008A31;
-    background: #F5F5DC; /* Ajout de la couleur de fond pour les liens actifs */
-}
+    background: #F5F5DC;
+}*/
 
 .setting {
     position: fixed;
@@ -334,6 +334,77 @@ hr {
     font-weight: 400;
     color: #4a5568;
 }
+
+/*--------------- Style premiere page formulation ---------------*/
+.gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-auto-rows: 300px;
+    grid-gap: 10px;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.profile-card {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease-out;
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-grayscale{
+    filter: grayscale(.7);
+}
+
+.profile-card:hover .profile-info,
+.profile-card:hover .side-social a {
+    transform: translate(0);
+}
+
+.profile-card:hover .side-social a:nth-child(1) {
+    transition-delay: 0.1s;
+}
+.profile-card:hover .side-social a:nth-child(2) {
+    transition-delay: 0.2s;
+}
+.profile-card:hover .side-social a:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.profile-card:hover {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 3px #f1f1f1;
+}
+
+@media (pointer: coarse) {
+
+.profile-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+}
+
+@media (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: minmax(auto, 450px);
+        grid-auto-rows: auto;
+        grid-gap: 50px;
+    }
+}
+
+/* ------- Style du formulaire de la page de formulation -------- */
+
+
 
 /* ----- RESPONSIVE----- */
 

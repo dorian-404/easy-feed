@@ -13,6 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../static/css/index.css">
+    <link rel="stylesheet" href="../../static/css/formulation.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link
@@ -20,6 +21,11 @@
         rel="stylesheet">
     <title>EasyFeed | Dashboard</title>
 </head>
+
+<style>
+    {% block bgListSidebar %}
+    {% endblock %}
+</style>
 
 <body>
 
@@ -30,28 +36,33 @@
         <hr style="width: 230px; margin: auto;">
         <div class="sidebar-collapsed-responsive">
             <ul class="side-menu">
-                <li><a href="#"> <img class="icon" src="../../static/css/img/accueil.svg" alt="">Accueil</a></li>
-                <li><a href="#"> <img class="icon" src="../../static/css/img/formulation.svg" alt="">Formulation</a>
+                <li class="bgAccueil">
+                    <a href="../dashboard"><img class="icon" src="../../static/css/img/accueil.svg" alt="">Accueil</a>
                 </li>
-                <li><a href="#"> <img class="icon" src="../../static/css/img/ingredient.svg" alt="">Ingrédients</a></li>
+                <li class="bgFormulation">
+                    <a href="../formulation"><img class="icon" src="../../static/css/img/formulation.svg" alt="">Formulation</a>
+                </li>
+                <li class="bgIngredient">
+                    <a href="#"><img class="icon" src="../../static/css/img/ingredient.svg" alt="">Ingrédients</a>
+                </li>
                 <li>
-                    <a class="dropdown-gestion" href="#"><img class="icon" src="../../static/css/img/gestion.svg"
-                            alt="">Gestion<img class="icon chevron" src="../../static/css/img/chevron-down.svg"
-                            alt=""></a>
+                    <a class="dropdown-gestion" href="#">
+                        <img class="icon" src="../../static/css/img/gestion.svg" alt="">Gestion<img class="icon chevron" src="../../static/css/img/chevron-down.svg" alt="">
+                    </a>
                     <ul class="slide-dropdown">
-                        <li><a href="#"><img class="icon" src="../../static/css/img/animaux.svg" alt="">Animaux</a></li>
-                        <li><a href="#"><img class="icon" src="../../static/css/img/employees.svg" alt="">Employés</a>
+                        <li class="bgGestionAnimaux"><a href="#"><img class="icon" src="../../static/css/img/animaux.svg" alt="">Animaux</a></li>
+                        <li class="bgGestionEmployes"><a href="#"><img class="icon" src="../../static/css/img/employees.svg" alt="">Employés</a>
                         </li>
                     </ul>
                 </li>
-                <li class="rapports"><a href="#"><img class="icon" src="../../static/css/img/rapports.svg" width="24px"
-                            height="24px" alt="">Rapports</a>
+                <li class="rapports bgRapport">
+                    <a href="#"><img class="icon" src="../../static/css/img/rapports.svg" width="24px" height="24px" alt="">Rapports</a>
                 </li>
             </ul>
 
-            <ul class="">
-                <li class="setting"><a href="#"><img class="icon" src="../../static/css/img/parametre.svg"
-                            alt="">Paramètres</a>
+            <ul>
+                <li class="setting">
+                    <a href="#"><img class="icon" src="../../static/css/img/parametre.svg" alt="">Paramètres</a>
                 </li>
             </ul>
         </div>
@@ -79,75 +90,9 @@
 
     <!-- Importation du fichier js -->
     <script src="../../static/js/index.js"></script>
+    <script src="../../static/js/formulation.js"></script>
 
 </body>
 
 </html>
-
-<!--<!DOCTYPE html>-->
-<!--<html lang="fr">-->
-
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--    <link rel="stylesheet" href="../../static/css/index.css">-->
-<!--    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />-->
-<!--    <link-->
-<!--        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pathway+Extreme:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"-->
-<!--        rel="stylesheet">-->
-<!--    <title>EasyFeed | Dashboard</title>-->
-<!--</head>-->
-
-<!--<body>-->
-
-<!--     <div class="sidebar sidebar-collapsed">-->
-<!--        <h2><a href="#" class="title-home"><img class="icon hamburger-button"-->
-<!--                    src="../../static/css/img/hamburger-button.svg" alt="">EasyFeed</a></h2>-->
-<!--        <hr style="width: 230px; margin: auto;">-->
-<!--        <br><br>-->
-<!--        <ul class="side-menu">-->
-<!--            <li><a href="#"> <img class="icon" src="../../static/css/img/accueil.svg" alt=""><span class="tab-title">Accueil</span></a></li>-->
-<!--            <li><a href="#"> <img class="icon" src="../../static/css/img/formulation.svg" alt=""><span class="tab-title">Formulation</span></a></li>-->
-<!--            <li><a href="#"> <img class="icon" src="../../static/css/img/ingredient.svg" alt=""><span class="tab-title">Ingrédients</span></a></li>-->
-<!--            <li>-->
-<!--                <a href="#"><img class="icon" src="../../static/css/img/gestion.svg" alt=""><span class="tab-title">Gestion<img class="icon chevron"-->
-<!--                            src="../../static/css/img/chevron-down.svg" alt=""></span> </a>-->
-<!--                <ul class="slide-dropdown">-->
-<!--                    <li><a href="#"><img class="icon" src="../../static/css/img/animaux.svg" alt=""><span-->
-<!--                                class="tab-title">Animaux</span></a></li>-->
-<!--                    <li><a href="#"><img class="icon" src="../../static/css/img/employees.svg" alt=""><span-->
-<!--                                class="tab-title">Employés</span></a></li>-->
-<!--                </ul>-->
-<!--            </li>-->
-<!--            <li class="rapports"><a href="#"><img class="icon" src="../../static/css/img/rapports.svg" width="24px"-->
-<!--                        height="24px" alt=""><span class="tab-title">Rapports</span></a>-->
-<!--            </li>-->
-<!--        </ul>-->
-
-<!--        <ul class="">-->
-<!--            <li class="setting"><a href="#"><img class="icon" src="../../static/css/img/parametre.svg" alt=""><span-->
-<!--                        class="tab-title">Paramètres</span></a>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
-
-<!--    <div class="navbar">-->
-<!--        <div class="welcome">-->
-<!--            Bienvenue, John Doe-->
-<!--        </div>-->
-<!--        <div class="item">-->
-<!--            <ul>-->
-<!--                <li><a href="#"><img class="icon-bell" src="../../static/css/img/notification.svg" width="24px"-->
-<!--                            height="24px" alt=""></a></li>-->
-
-<!--                <li><a href="#"><img class="icon-user" src="../../static/css/img/utilisateur.svg" width="24px"-->
-<!--                            height="24px" alt=""></a></li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-
-<!--    <script src="../../static/js/index.js"></script>-->
-
-<!--</body>-->
-
-<!--</html>-->
+<!-- Path: easyFeed/templates/html/dashboard.html -->

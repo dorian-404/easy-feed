@@ -17,6 +17,10 @@ def home(request):
     return render(request, 'html/home.html', context={})
 
 
+def signup(request):
+    return render(request, 'html/signup.html', context={})
+
+
 def login(request):
     return render(request, 'html/login.html', context={})
 
@@ -31,6 +35,9 @@ def formulation(request):
 def formulation_form(request):
     return render(request, 'html/formulation_form.html', context={})
 
+
+def formulation_form(request):
+    return render(request, 'html/formulation_form.html', context={})
 
 # requete pour recuperer tous les ingredients
 
