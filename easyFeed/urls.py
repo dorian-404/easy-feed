@@ -6,6 +6,7 @@ app_name = 'easyFeed'
 urlpatterns = [
     path('', views.home, name="home"),
     path('login/', views.login, name="login"),
+    path('signup/', views.signup, name="signup"),
     path('dashboard/', views.dashboard, name="dashboard"),
     path('ingredient_test/details_ingredient/', views.details_ingredient, name='details_ingredient'),
     path('ingredient_test/pays_ingredients/', views.pays_ingredients, name='pays_ingredients'),
