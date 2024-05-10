@@ -13,4 +13,5 @@ urlpatterns = [
     path('ingredient_test/', views.ingredient_test, name='ingredient_test'),
     path('formulation/', views.formulation, name="formulation"),
     path('ingredient_test/optimize', views.optimize, name="optimize"),
+    path('formulation_form/', views.formulation_form, name="formulation_form"),
 ]

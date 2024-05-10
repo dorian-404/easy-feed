@@ -29,6 +29,9 @@ def formulation(request):
     return render(request, 'html/formulation.html', context={})
 
 
+def formulation_form(request):
+    return render(request, 'html/formulation_form.html', context={})
+
 # requete pour recuperer tous les ingredients
 
 def ingredient_test(request):

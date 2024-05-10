@@ -1,0 +1,66 @@
+<!--
+    Auteur: Ansoumane Condé, Dorian, Yannis
+    Date:   10 mai 2024
+    Page:   formulation_form.html
+
+ -->
+
+
+{% extends 'html/bases/base.html' %}
+
+{% block bgListSidebar %}
+    .bgFormulation { background-color: #F5F5DC; }
+{% endblock %}
+
+{% block content %}
+<div class="main-content">
+        <h2 class="titre-formulation">Formulation</h2>
+        <div class="form-content">
+            <form action="" method="">
+                <label for="age" class="age-label">Selectionner l'âge de l'animal</label>
+                <select id="age" class="age-select" required>
+                    <option selected disabled>choisir</option>
+                    <option value="1">1 semaine</option>
+                    <option value="2">2 semaine</option>
+                    <option value="3">3 semaine</option>
+                </select>
+
+                <label for="pays" class="pays-label">Dans quel pays vous trouvez vous?</label>
+                <select id="pays" class="pays-select" required>
+                    <option selected disabled>choisir</option>
+                    <option value="DZA">Algérie</option>
+                    <option value="CMR">Cameroun</option>
+                    <option value="CA">Canada</option>
+                    <option value="CI">Côte d'ivoire</option>
+                    <option value="GN">Guinée</option>
+                    <option value="MLI">Mali</option>
+                    <option value="MAR">Maroc</option>
+                    <option value="SEN">Sénégal</option>
+                </select>
+                <br>
+                <label class="mode-form-label">Mode de formulation</label>
+                <br><br>
+                <div class="div-auto-manuel">
+                    <input id="auto-radio" type="radio" value="" name="default-radio" class="auto-input" required>
+                    <label for="auto-radio" name="mode-form-radio" class="auto-label">Auto</label>
+                </div>
+
+                <div class="div-auto-manuel">
+                    <input id="manuel-radio" type="radio" value="" name="default-radio" class="manuel-input" required>
+                    <label for="manuel-radio" name="mode-form-radio" class="manuel-label">Manuel</label>
+                </div>
+
+                <div class="card-choice-ingredient">
+
+                </div>
+                <br>
+                <button type="reset" class="annuler-button">Annuler</button>
+                <button type="submit" class="formuler-button">Formuler</button>
+            </form>
+
+            <div class="card-resultat">
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
