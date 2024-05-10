@@ -1,0 +1,123 @@
+/*
+    Auteur: Ansoumane Condé, Yannis, Dorian
+    Date:   06 mai 2024
+    Page:   formulation.css
+
+*/
+/* Déclaration des variable*/
+@font-face {
+    font-family: 'sfpro-text';
+    src: url('../css/Font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf');
+}
+
+:root {
+    /**** Text ****/
+    --pathway-font: "Pathway Extreme", system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+    --sfpro-text-font: "sfpro-text", sans-serif;
+
+    --raleway-font: "Raleway", sans-serif;
+
+    --title-font: "Lilita One", sans-serif;
+
+    /**** Color ****/
+    --color-easy: #006450;
+    --color-feed: #dab651;
+
+    /**** hauteur des navbars ****/
+    --diff-width-sidebar: 0px;
+    --width-sidebar : calc(250px - var(--diff-width-sidebar));
+    --height-navbar: 70px;
+
+    /**** hauteur des divs ****/
+    --height-div-card: 300px;
+}
+
+*
+,::after
+,::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.content-table {
+    border-collapse: collapse;
+    border-radius: 0.2rem;
+    overflow: hidden;
+    border: 1px solid rgb(0, 100, 80, 0.4);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    color: black;
+    width: 85%;
+    height: 100%;
+    margin-left: 200px;
+    padding: 50px;
+}
+
+.content-table thead tr {
+    font-weight: 700;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #ABAAAA;
+}
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #EEEEEE;
+}
+
+td {
+    text-align: center;
+}
+
+.table {
+    font-family: "sfpro-text", sans-serif;
+    padding-top: 150px;
+    padding-left: 80px;
+
+}
+
+.btn-modify {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: #008A31;
+    border: 1px solid #008A31;
+    border-radius: 0.9rem;
+    background-color: #9FEFBC;
+}
+
+.btn-delete {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: #CE0000;
+    border: 1px solid #D71E1E;
+    border-radius: 0.9rem;
+    background-color: #EF9F9F;
+}
+
+#title {
+    color: black;
+    margin-left: 12.5rem;
+    padding: 0.7rem;
+}
+
+.btn-add {
+    margin-left: 99.5rem;
+    margin-top: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: #008A31;
+    border: 1px solid #008A31;
+    border-radius: 0.6rem;
+    background-color: #9FEFBC;
+    display: inline-flex;
+    align-items: center;
+    transition: #9FEFBC 0.2s;
+}
+

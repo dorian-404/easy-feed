@@ -29,6 +29,10 @@ def formulation(request):
     return render(request, 'html/formulation.html', context={})
 
 
+def ingredients(request):
+    return render(request, 'html/ingredients.html', context={})
+
+
 # requete pour recuperer tous les ingredients
 
 def ingredient_test(request):
@@ -429,24 +433,31 @@ def optimize(request):
             return contraintes_df.loc["max", "sodium"] - np.sum(X * df["sodium"])
 
         def cons_ratio_EM_Prot_inf(X):
-            return np.sum(X * df["energieMetabolisable"]) - contraintes_ratio_df.loc["min", "ratioEnergieProteine"] * np.sum(X * df["proteineBrute"])
+            return np.sum(X * df["energieMetabolisable"]) - contraintes_ratio_df.loc[
+                "min", "ratioEnergieProteine"] * np.sum(X * df["proteineBrute"])
 
         def cons_ratio_EM_Prot_sup(X):
-            return contraintes_ratio_df.loc["max", "ratioEnergieProteine"] * np.sum(X * df["proteineBrute"]) - np.sum(X * df["energieMetabolisable"])
+            return contraintes_ratio_df.loc["max", "ratioEnergieProteine"] * np.sum(X * df["proteineBrute"]) - np.sum(
+                X * df["energieMetabolisable"])
 
         def cons_ratio_Ca_Prot_inf(X):
-            return np.sum(X * df["calcium"]) - contraintes_ratio_df.loc["min", "ratioCalciumPhosphore"] * np.sum(X * df["phosphore"])
+            return np.sum(X * df["calcium"]) - contraintes_ratio_df.loc["min", "ratioCalciumPhosphore"] * np.sum(
+                X * df["phosphore"])
 
         def cons_ratio_Ca_Prot_sup(X):
-            return contraintes_ratio_df.loc["max", "ratioCalciumPhosphore"] * np.sum(X * df["phosphore"]) - np.sum(X * df["calcium"])
+            return contraintes_ratio_df.loc["max", "ratioCalciumPhosphore"] * np.sum(X * df["phosphore"]) - np.sum(
+                X * df["calcium"])
 
         def cons_ratio_Lys_Meth_inf(X):
-            return np.sum(X * df["lysine"]) - contraintes_ratio_df.loc["min", "ratioLysineMethionine"] * np.sum(X * df["methionine"])
+            return np.sum(X * df["lysine"]) - contraintes_ratio_df.loc["min", "ratioLysineMethionine"] * np.sum(
+                X * df["methionine"])
 
         def cons_ratio_Lys_Meth_sup(X):
-            return contraintes_ratio_df.loc["max", "ratioLysineMethionine"] * np.sum(X * df["methionine"]) - np.sum(X * df["lysine"])
+            return contraintes_ratio_df.loc["max", "ratioLysineMethionine"] * np.sum(X * df["methionine"]) - np.sum(
+                X * df["lysine"])
 
         qte_ingredients = 100
+
         def cons_total(X):
             return np.sum(X) - qte_ingredients  # definir la quantité totale de mélange souhaitée
 
@@ -498,8 +509,6 @@ def optimize(request):
         # Filtrer les ingrédients correspondant aux indices zéro
         # filtered_ingredients = [ingredient for i, ingredient in enumerate(ingredients_df) if i not in zero_indices]
 
-
-
         # Recalculer le coût total
         total_cost = sum(x * p for x, p in zip(solution.x, prix))
 
@@ -525,7 +534,7 @@ def optimize(request):
             'success': bool(solution.success),  # Convertir en booléen (python natif) pour la sérialisation JSON
             'message': solution.message,
             'fun': solution.fun,
-            'x': solution.x # Convertir le tableau numpy en liste pour la sérialisation JSON
+            'x': solution.x  # Convertir le tableau numpy en liste pour la sérialisation JSON
         }
         logger.info(f"optimisation : {solution_dict}")
         # Renvoyer la solution sous forme de réponse JSON
@@ -533,20 +542,6 @@ def optimize(request):
     except Exception as e:
         logger.error(f"Une erreur s'est produite lors du calcul d'optimisation : {e}")
         raise Http404("Une erreur s'est produite lors du calcul d'optimisation.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     # try:
     #     # Liste des nutriments et des ratios
@@ -621,10 +616,6 @@ def optimize(request):
     # except Exception as e:
     #     logger.error(f"Une erreur s'est produite lors du calcul d'optimisation : {e}")
     #     raise Http404("Une erreur s'est produite lors du calcul d'optimisation.")
-
-
-
-
 
     #     # print(f"Contraintes obtenues 2 : {contraintes}")
     #     logger.info(f"Contraintes obtenues 2 : {contraintes}")
