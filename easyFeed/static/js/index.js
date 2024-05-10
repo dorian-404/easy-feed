@@ -68,6 +68,11 @@ document.addEventListener("DOMContentLoaded", (event) => { // Attend que le DOM 
      // Lorsque la souris quitte le setting, si la sidebar est réduite, la réduire à nouveau
      setting.addEventListener("mouseout", toggleSidebarMouseout);
 
+    // Au click de radioManuel, affiche la cardChoiceIngredient
+    radioManuel.addEventListener("click", () => {
+        cardChoiceIngredient.style.display = "block";
+    });
+
  });
 
 
