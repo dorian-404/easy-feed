@@ -143,12 +143,9 @@
                     <li>→ Créer des formulations </li>
                 </ul>
                 <center>
-                    <a href="create_account">
-                        <button type="button" style="margin-top: 5vh;"
+                    <button type="button" style="margin-top: 5vh;"
                         class="text-white bg-teal-700 hover:bg-teal-800 focus:ring-4 focus:outline-none focus:ring-teal-300 font-medium rounded-lg text-sm w-full sm:w-56 px-5 py-2.5 text-center dark:bg-teal-600 dark:hover:bg-teal-700 dark:focus:ring-teal-800">Acheter
                         maintenant</button>
-                    </a>
-
                 </center>
             </div>
         </div>
@@ -244,15 +241,13 @@
 
                     $('#btn-enregistrer').click(function () {
 
-                        //verifie si tous les champs sont remplis sinon mets le focus sur le premier champ vide
                         $('input').each(function () {
-                            if ($(this).val() == '') {
+                            if (this.type !== 'checkbox' && $(this).val() === ''){
                                 alert('Veuillez remplir tous les champs');
                                 $(this).focus();
                                 return false;
                             }
                         });
-
                     });
                 }
                 else {
