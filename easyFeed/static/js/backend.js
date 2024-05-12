@@ -28,25 +28,27 @@ function valideInfoClient() {
       password = $("#floating_password").val();
       password2 = $("#floating_repeat_password").val();
 
-    // Validation des champs
-    if (password.length < 4){
-    alert("passwords too short");
-        // Il faut creer un span avec l'ID 'password-error' pour afficher les erreurs
-//        $('#password-error').text("Le mot de passe doit contenir au moins 4 caractères");
-//        $('#password-error').show();
-        return $('#floating_password').focus();
-    } else {
-//        $('#password-error').hide();
-    }
-
-    if (password != password2){
-//         Il faut creer un span avec l'ID 'password2-error' pour afficher les erreurs
-//         $('#password2-error').text("Les mots de passe ne correspondent pas");
-//         $('#password2-error').show();
-         return $('#floating_repeat_password').focus();
-    } else {
-//         $('#password2-error').hide();
-    }
+//    // Validation des champs
+//    if (password.length < 4){
+//    alert("passwords too short");
+//        // Il faut creer un span avec l'ID 'password-error' pour afficher les erreurs
+////        $('#password-error').text("Le mot de passe doit contenir au moins 4 caractères");
+////        $('#password-error').show();
+//        return $('#floating_password').focus();
+//    } else {
+////        $('#password-error').hide();
+//    }
+//
+//    if (password != password2){
+////         Il faut creer un span avec l'ID 'password2-error' pour afficher les erreurs
+////         $('#password2-error').text("Les mots de passe ne correspondent pas");
+////         $('#password2-error').show();
+//         return $('#floating_repeat_password').focus();
+//    } else {
+////         $('#password2-error').hide();
+//    }
+    alert("Information enregistrées avec succès!!!");
+    return $('#mensuel').focus();
 }
 
 //
@@ -125,7 +127,7 @@ function loginClient(){
 //************************* Gestion des evenements *****************************
 $(document).ready(function () {
     abonnementMensuel();
-    $("#btn-save").click(valideInfoClient);
+    $("#btn-enregistrer").click(valideInfoClient);
     $("#btn-buy-now").click(saveInfoClient);
     $("#mensuel").click(abonnementMensuel);
     $("#btn-login").click(loginClient);
