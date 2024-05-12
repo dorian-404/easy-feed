@@ -1,7 +1,14 @@
+from datetime import date, timedelta
+
 import numpy as np
-from django.shortcuts import render, get_object_or_404
-from .models import ListeIngredients, FormulationDisponible, PhaseDeveloppement, Pays, Ingredient
-from django.http import Http404, JsonResponse
+from dateutil.relativedelta import relativedelta
+from django.contrib.auth.hashers import check_password
+from django.contrib.auth.hashers import make_password
+from django.core.exceptions import ValidationError, ObjectDoesNotExist
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import ListeIngredients, FormulationDisponible, PhaseDeveloppement, Pays, Ingredient, Client, \
+    TypeAbonnement, Abonnement, TypeUtilisateur, Utilisateur
+from django.http import Http404, JsonResponse, HttpResponse
 import pandas as pd
 import json
 import logging
@@ -16,13 +23,153 @@ logger = logging.getLogger(__name__)
 def home(request):
     return render(request, 'html/home.html', context={})
 
+#
+#   Acheter un abonnement
+#
 
 def signup(request):
-    return render(request, 'html/signup.html', context={})
+    if request.method == 'POST':
+        logger.info('Signup view triggered with POST method')
+
+        # Récupérer les données du formulaire
+        nom = request.POST.get('nom')
+        prenom = request.POST.get('prenom')
+        email = request.POST.get('email')
+        # telephone = request.POST.get('telephone')
+        # ville = request.POST.get('ville')
+        # pays = request.POST.get('pays')
+        # adresse = request.POST.get('adresse')
+        # code_postal = request.POST.get('code_postal')
+        password = request.POST['password']
+
+        # Créer une nouvelle instance de Client
+
+        def create_client(nom, prenom, email, password):
+            if Client.objects.filter(email=email).exists():
+                logger.warning(f'Tentative de création d\'un client avec un email existant : {email}')
+                raise ValidationError("Email already exists")
+            else:
+                client = Client(nom=nom, prenom=prenom, email=email, password=password)
+                client.save()
+
+        try:
+            client = create_client(nom, prenom, email, password)
+            id_client = Client.objects.get(email=email).id
+            client = Client.objects.get(id=id_client)
+
+            # Récupérer les données de l'abonnement
+            nomAbonnement = request.POST.get('titre')
+            type_abonnement = TypeAbonnement.objects.get(titre=nomAbonnement)
+
+            if nomAbonnement == "Mensuel":
+                date_fin = date.today() + timedelta(days=30)
+            else:
+                date_fin = date.today() + timedelta(days=365)
+
+            # Créer une nouvelle instance d'Abonnement
+            abonnement = Abonnement(client=client, type_abonnement=type_abonnement, date_debut=date.today(),
+                                    date_fin=date_fin)
+            abonnement.save()
+
+            result = {'result': 'ok', 'message': 'Inscription réussie'}
+            logger.info('Client successfully created and saved')
+            return JsonResponse(result, safe=False)
+        except ValidationError as ve:
+            logger.error(f'ValidationError: {str(ve)}')
+            return JsonResponse({'result': 'error', 'message': str(ve)}, safe=False)
+        except ObjectDoesNotExist as ode:
+            logger.error(f'ObjectDoesNotExist: {str(ode)}')
+            return JsonResponse({'result': 'error', 'message': 'Object does not exist: ' + str(ode)}, safe=False)
+        except Exception as e:
+            logger.error(f'An unexpected error occurred: {str(e)}')
+            return JsonResponse({'result': 'error', 'message': 'An unexpected error occurred: ' + str(e)}, safe=False)
+    else:
+        logger.info('Signup view triggered with GET method')
+        return render(request, 'html/signup.html')
+
+
+#
+#   Creer administrateur
+#
+
+
+def createAdmin(request):
+    if request.method == 'POST':
+        try:
+            # Récupérer les données du formulaire
+            code_pays = Pays.objects.get(id=request.POST['code_pays'])
+            id_type_utilisateur = TypeUtilisateur.objects.get(id=request.POST['id_type_utilisateur'])
+            matricule = request.POST['matricule']
+            nom = request.POST['nom']
+            prenom = request.POST['prenom']
+            date_naissance = request.POST['date_naissance']
+            date_embauche = request.POST[date.today()]
+            numero_telephone = request.POST['numero_telephone']
+            adresse = request.POST['adresse']
+            email = request.POST['email']
+
+            # Créer une nouvelle instance de Utilisateur
+            utilisateur = Utilisateur(
+                codePays=code_pays,
+                idTypeUtilisateur=id_type_utilisateur,
+                matricule=matricule,
+                nom=nom,
+                prenom=prenom,
+                dateNaissance=date_naissance,
+                dateEmbauche=date_embauche,
+                numeroTelephone=numero_telephone,
+                adresse=adresse,
+                email=email
+            )
+
+            # Sauvegarder l'instance dans la base de données
+            utilisateur.save()
+
+            logger.info('Création de compte administrateur réussie')
+
+            result = {'result': 'ok', 'message': 'Création de compte administrateur réussie'}
+            return JsonResponse(result, safe=False)
+
+        except Exception as e:
+            logger.error('Erreur lors de la création du compte administrateur : %s' % e)
+            result = {'result': 'error', 'message': 'Erreur lors de la création du compte administrateur : %s' % e}
+            return JsonResponse(result, safe=False)
+
+    else:
+        logger.info('Affichage du formulaire de création de compte administrateur')
+        return render(request, 'html/create_account.html', context={})
 
 
 def login(request):
     return render(request, 'html/login.html', context={})
+
+
+def connexion(request):
+    logger.info('Connexion view triggered')
+    email = request.GET.get('email')
+    password = request.GET.get('password')
+    clients = Client.objects.all()
+
+    # Fonction pour vérifier si le mot de passe en clair correspond au mot de passe haché
+    def verify_password(plain_password, hashed_password):
+        return check_password(plain_password, hashed_password)
+
+    result = {}
+
+    try:
+        client = Client.objects.get(email=email)
+        password_correspondant = client.password
+        is_password_correct = verify_password(password, password_correspondant)
+        if is_password_correct:
+            result = {'result': 'ok', 'message': 'Connexion réussie'}
+        else:
+            result = {'result': 'error', 'message': 'Mot de passe incorrect'}
+        logger.info(json.dumps(result))
+        return JsonResponse(result, safe=False)
+    except ObjectDoesNotExist:
+        result = {'result': 'error', 'message': 'Email non trouvé'}
+        logger.info(json.dumps(result))
+        return JsonResponse(result, safe=False)
 
 
 def dashboard(request):

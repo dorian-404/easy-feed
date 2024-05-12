@@ -7,7 +7,7 @@ from django.urls import path
 
 from .models import TypeUtilisateur, Utilisateur, Pays, FormulationDisponible, Ingredient, CategorieIngredient, Recette, \
     PhaseDeveloppement, PhaseActuelle, Vague, VagueRecette, Vaccin, VaccinAdministre, EvolutionMasse, Perte, Sortie, \
-    ListeIngredients
+    ListeIngredients, Client, TypeAbonnement, Abonnement
 
 from .forms import ListeIngredientsImport
 
@@ -133,3 +133,20 @@ class SortieAdmin(admin.ModelAdmin):
     list_display = ["codeSortie", "qteSortie", "dateSortie", "masseSortie", "codeVague"]
 
 
+@admin.register(Client)
+class ClientAdmin(admin.ModelAdmin):
+    list_display = ["id", "nom", "prenom", "email", "password"]
+    search_fields = ["nom"]
+    list_filter = ["nom"]
+
+@admin.register(TypeAbonnement)
+class TypeAbonnementAdmin(admin.ModelAdmin):
+    list_display = ["id", "titre", "prix", "duree"]
+    search_fields = ["titre"]
+    list_filter = ["titre"]
+
+@admin.register(Abonnement)
+class AbonnementAdmin(admin.ModelAdmin):
+    list_display = ["id", "client", "type_abonnement", "date_debut", "date_fin"]
+    search_fields = ["client"]
+    list_filter = ["client"]
