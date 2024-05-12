@@ -32,16 +32,25 @@ def dashboard(request):
 def formulation(request):
     return render(request, 'html/formulation.html', context={})
 
+
 def formulation_form(request):
     return render(request, 'html/formulation_form.html', context={})
+
 
 def ingredients(request):
     return render(request, 'html/ingredients.html', context={})
 
+
 def formulation_form(request):
     return render(request, 'html/formulation_form.html', context={})
 
+
+def create_account(request):
+    return render(request, 'html/create_account.html', context={})
+
+
 # requete pour recuperer tous les ingredients
+
 
 def ingredient_test(request):
     # ListeIngredient

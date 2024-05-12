@@ -16,4 +16,5 @@ urlpatterns = [
     path('ingredient_test/optimize', views.optimize, name="optimize"),
     path('formulation_form/', views.formulation_form, name="formulation_form"),
     path('ingredients/', views.ingredients, name="ingredients"),
+    path('create_account/', views.create_account, name="create_account"),
 ]
