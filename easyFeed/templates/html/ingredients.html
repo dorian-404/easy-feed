@@ -13,62 +13,33 @@
             <th>Cellulose Brute</th>
             <th>Phosphore</th>
             <th>Lysine</th>
+            <th>Methionine</th>
             <th>Cystéine Methionine</th>
             <th>Calcium</th>
-            <th>Méthionine</th>
+            <th>Sodium</th>
+            <th>Prix</th>
             <th>Actions</th>
         </tr>
         </thead>
         <tbody>
-           <tr>
-      <th scope="row">Mais</th>
-      <td>7.6</td>
-      <td>22</td>
-      <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td> <button type="button" class="btn-modify">Ajouter</button> <button type="button" class="btn-delete">Supprimer</button> </td>
+        {% for elt in liste %}
+            <tr>
+                <th scope="row">{{elt.nomIngredient}}</th>
+                <td>{{elt.proteine}}</td>
+                <td>{{elt.energie}}</td>
+                <td>{{elt.cellulose}}</td>
+                <td>{{elt.phosphore}}</td>
+                <td>{{elt.lysine}}</td>
+                <td>{{elt.methionine}}</td>
+                <td>{{elt.cysMethionine}}</td>
+                <td>{{elt.calcium}}</td>
+                <td>{{elt.sodium}}</td>
+                <td>{{elt.prix}}</td>
+                <td></td>
+                 <td> <button type="button" class="btn-modify">Ajouter</button> <button type="button" class="btn-delete">Supprimer</button> </td>
+            </tr>
+        {% endfor %}
 
-    </tr>
-    <tr>
-      <th scope="row">Blé</th>
-      <td>7.6</td>
-      <td>45</td>
-        <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-        <td>7.6</td>
-               <td>7.6</td>
-               <td> <button type="button" class="btn-modify">Ajouter</button> <button type="button" class="btn-delete">Supprimer</button> </td>
-    </tr>
-    <tr>
-      <th scope="row">Banane</th>
-      <td> 7.6</td>
-      <td>29</td>
-        <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-        <td>7.6</td>
-               <td>7.6</td>
-               <td> <button type="button" class="btn-modify">Ajouter</button> <button type="button" class="btn-delete">Supprimer</button> </td>
-    </tr>
-    <tr>
-      <th scope="row">Soja</th>
-      <td>7.6</td>
-      <td>36</td>
-        <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-               <td>7.6</td>
-        <td>7.6</td>
-               <td>7.6</td>
-               <td> <button type="button" class="btn-modify">Ajouter</button> <button type="button" class="btn-delete">Supprimer</button> </td>
-    </tr>
         </tbody>
 
     </table>

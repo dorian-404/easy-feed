@@ -23,6 +23,7 @@ logger = logging.getLogger(__name__)
 def home(request):
     return render(request, 'html/home.html', context={})
 
+
 #
 #   Acheter un abonnement
 #
@@ -185,7 +186,25 @@ def formulation_form(request):
 
 
 def ingredients(request):
-    return render(request, 'html/ingredients.html', context={})
+    # ListeIngredient
+    ingred = ListeIngredients.objects.all()
+
+    print(ingred)
+    # liste des ingredients avec leurs nutriments
+    liste = {}
+    for ingredient in ingred:
+        liste = {'ingredient': ingredient.nomIngredient,
+                 'proteine': ingredient.proteineBrute,
+                 'energie': ingredient.energieMetabolisable,
+                 'cellulose': ingredient.celluloseBrute,
+                 'phosphore': ingredient.phosphore,
+                 'lysine': ingredient.lysine,
+                 'calcium': ingredient.calcium,
+                 'cysMethionine': ingredient.cysteineMethionine,
+                 'methionine': ingredient.methionine,
+                 'sodium': ingredient.sodium,
+                 'prix': ingredient.prix}
+    return render(request, 'html/ingredients.html', {'liste': liste})
 
 
 def formulation_form(request):
