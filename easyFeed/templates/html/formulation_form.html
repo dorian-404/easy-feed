@@ -8,12 +8,13 @@
 
 {% extends 'html/bases/base.html' %}
 
-{% block script_head %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-{% endblock %}
 
 {% block bgListSidebar %}
     .bgFormulation { background-color: #F5F5DC; }
+{% endblock %}
+
+{% block username %}
+    <span id="username-form"></span>
 {% endblock %}
 
 {% block content %}
@@ -122,9 +123,10 @@
                 <div class="card-resultat">
                     <p id="p-formuler"></p>
                 </div>
-        </div>
+            </div>
 
     </div>
+ </div>
     <script>
         {% comment %}
             cet url est envoyee au fichier .js

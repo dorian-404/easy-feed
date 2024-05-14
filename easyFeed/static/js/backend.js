@@ -20,13 +20,8 @@ function valideInfoClient() {
     nom = $("#floating_last_name").val();
     prenom = $("#floating_first_name").val();
     email = $("#floating_email").val();
-//    telephone = $("#floating_telephone").val();
-//    adresse = $("#floating_adresse").val();
-//    ville = $("#floating_ville").val();
-//    code_postal = $("#floating_code_postal").val();
-//    pays = $("#floating_pays").val();
-      password = $("#floating_password").val();
-      password2 = $("#floating_repeat_password").val();
+    password = $("#floating_password").val();
+    password2 = $("#floating_repeat_password").val();
 
 //    // Validation des champs
 //    if (password.length < 4){
@@ -106,12 +101,7 @@ function createAccount(){
     let dde = new Date().toISOString().slice(0,10);
     let [annee, mois, jour] = dde.split("-");
     let methode = "POST";
-    alert(`Année: ${annee}, Mois: ${mois}, Jour: ${jour}`);
-    alert(annee);
     let matricule = "A"+mois+annee;
-    alert(matricule);
-    alert(url_create);
-    alert(url_login);
 
 
     $.ajax({
@@ -162,6 +152,8 @@ function loginClient(){
        success: function(data) {
            if (data.result == "ok"){
                alert(data.message );
+               sessionStorage.setItem('prenomU', data.prenom);
+               sessionStorage.setItem('nomU', data.nom);
                window.location.href = url_dashboard;
            }else{
                alert(data.message);
@@ -217,7 +209,6 @@ function phaseInfo() {
 
 function paysIngredients() {
     code_pays = $("#pays").val();
-    alert(code_pays);
     activerDesactiverFormuler();
 
     if (code_pays != -1){ // un pays a ete selectionne
@@ -310,10 +301,7 @@ function activerDesactiverFormuler(){
 //
 
 function optimize() {
-//    alert("oups");
-alert("id_phase: " + id_phase + " code_pays: " + code_pays);
     mode = ($("#manuel-radio").is(":checked")) ? 'manuel' : 'auto';
-    alert("mode: " + mode);
 
     $.ajax({
         url: url_formuler,  // url est une variable declaree dans le fichier .html
@@ -368,7 +356,7 @@ alert("id_phase: " + id_phase + " code_pays: " + code_pays);
                 $("#p-formuler").append(nutriments);
                 $("#p-formuler").append(`Valeurs des ratios : <br/> Ratio EM/Proteine: ${(data.ratioEMProt).toFixed(2)}<br/>Ratio Ca/P:${(data.ratioCaP).toFixed(2)} <br/>Ratio Lys/Meth: ${(data.ratioLysMeth).toFixed(2)}`);
                 $("#p-formuler").append(ratio);
-                $("#p-formuler").html(ratioNutriments);
+                $("#p-formuler").append(ratioNutriments);
                 $("#p-formuler").append("Le prix total est " + (data.pt*100).toFixed(2) + " FCFA");
             }
 
@@ -384,13 +372,17 @@ alert("id_phase: " + id_phase + " code_pays: " + code_pays);
 $(document).ready(function () {
     activerDesactiverFormuler();
     abonnementMensuel();
+    let prenom = sessionStorage.getItem('prenomU');
+    let nom = sessionStorage.getItem('nomU');
+    // Utiliser les variables prenom et nom comme nécessaire
+    $("#username-form").html("Bienvenue " + prenom + " " + nom);
     $("#btn-enregistrer").click(valideInfoClient);
     $("#btn-buy-now").click(saveInfoClient);
     $("#mensuel").click(abonnementMensuel);
     $("#btn-create").click(createAccount);
     $("#btn-login").click(loginClient);
     $("#annuel").click(function() {
-        type_abonnement = "annuel";
+        type_abonnement = "Annuel";
     });
 
                       /************* Gestion des evenements formulation ****************/
@@ -406,40 +398,3 @@ $(document).ready(function () {
 });
 
 
-
-//alert("success");
-////                    let valeurs = "";
-//                    $("#liste").empty();   // Vider le contenu de la liste des ingredients
-//                    let count = 0;
-//                    let valeurs = "<tr>";
-//                    $.each(json, function(key, value) {
-//                        let idValue = value.replace(/[ ']+/g, '-').replace(/%$/, ''); // Replace spaces with hyphens
-//                        valeurs += `<td><input type='checkbox' id='${idValue}' name='${idValue}' value=''><label for='${value}'>${value}</label></td>`;
-//                        count++;
-//                        if (count === 3) {
-//                            valeurs += "</tr><tr>";
-//                            count = 0;
-//                        }
-//                    });
-//                    valeurs += "</tr>";
-//
-//                    // Add the values to the HTML table
-//                    $('#table').html(valeurs);
-
-//                    for (let key in json) {
-//                        let idValue = json[key].replace(/[ ']+/g, '-').replace(/%$/, ''); // Remplace les espaces par des traits d'union
-//                        valeurs += `<tr><td><input type='checkbox' id='${idValue}' name='${idValue}' value=''><label for='${json[key]}'>${json[key]}</label></td></tr>`;
-//                    }
-//                        $("#liste").html(valeurs);
-//                    if (estCoche){
-//                        $("#chkbox").html(valeurs);
-//                    }
-
-
-//let valeurs = "";
-//                    $("#liste").empty();   // Vider le contenu de la liste des ingredients
-//                    for (let key in data) {
-//                        let idValue = data[key].replace(/[ ']+/g, '-').replace(/%$/, ''); // Remplace les espaces par des traits d'union
-//                        valeurs += `<label id='${idValue}' style='display: flex; align-items: center;'><input type='checkbox'>${data[key]}</label><br />`;
-//                    }
-//                    $("#liste").html(valeurs);

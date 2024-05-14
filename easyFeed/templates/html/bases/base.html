@@ -11,6 +11,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="stylesheet" href="../../static/css/index.css">
     <link rel="stylesheet" href="../../static/css/formulation.css">
@@ -73,9 +74,7 @@
 
     <!-- Navbar -->
     <div class="navbar">
-        <div class="welcome">
-            Bienvenue, John Doe
-        </div>
+        <div class="welcome" id="div-username">{% block username %}{% endblock %}</div>
         <div class="item">
             <ul>
                 <li><a href="#"><img class="icon-bell" src="../../static/css/img/notification.svg" width="24px"
@@ -94,7 +93,7 @@
     <!-- Importation du fichier js -->
     <script src="../../static/js/index.js"></script>
     <script src="../../static/js/formulation.js"></script>
-
+    <script src="../../static/js/backend.js"></script>
 </body>
 
 </html>

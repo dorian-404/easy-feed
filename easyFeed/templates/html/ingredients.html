@@ -2,6 +2,10 @@
 
 {% block content %}
 
+{% block username %}
+    <span id="username-ingredients">Bienvenue {{ prenom }}  {{nom}}</span>
+{% endblock %}
+
 <div class="table">
     <h1 id="title">Ingrédients <img class="icon" src="../../static/css/img/ingredient.svg" alt=""></h1>
     <table class="content-table">

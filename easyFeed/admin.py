@@ -21,7 +21,8 @@ class TypeUtilisateurAdmin(admin.ModelAdmin):
 
 @admin.register(Utilisateur)
 class UtilisateurAdmin(admin.ModelAdmin):
-    list_display = ["matricule", "codePays", "nom", "prenom", "dateNaissance", "numeroTelephone", "adresse", "email", "dateEmbauche", "created", "updated"]
+    list_display = ["matricule", "codePays", "nom", "prenom", "dateNaissance", "numeroTelephone", "adresse", "email",
+                    "dateEmbauche", "password", "created", "updated"]
     search_fields = ["codePays"]
     list_filter = ["nom"]
 

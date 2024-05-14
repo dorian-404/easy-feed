@@ -11,6 +11,11 @@
     .bgAccueil{ background-color: #F5F5DC;}
 {% endblock %}
 
+{% block username %}
+    <span id="username-dash">Bienvenue {{ prenom }}  {{nom}}</span>
+{% endblock %}
+
+
 {% block content %}
     <div class="main-content">
         <div class="card-parent">
@@ -63,4 +68,5 @@
             </div>
         </div>
     </div>
+    <script src="../../static/js/backend.js"></script>
 {% endblock %}

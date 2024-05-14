@@ -138,9 +138,15 @@ class Utilisateur(models.Model):
     numeroTelephone = models.CharField(max_length=10, null=False)
     adresse = models.CharField(max_length=50, null=False)
     email = models.EmailField(max_length=200, null=False, unique=True)
+    password = models.CharField(max_length=128)
     created = models.DateTimeField(auto_now_add=True)  # ajoute une date au moment de l'insertion
     updated = models.DateTimeField(auto_now=True)  # prendre la date au moment de la modification
     objects = models.Manager()  # manager par defaut
+
+    def save(self, *args, **kwargs):
+        # S'assurer que le mot de passe est haché avant d'être enregistré
+        self.password = make_password(self.password)
+        super().save(*args, **kwargs)
 
     class Meta:
         ordering = ['-created']
