@@ -71,7 +71,7 @@ class Abonnement(models.Model):
             'type_abonnement',)  #permet de s'assurer qu'un client ne peut pas avoir deux abonnements du même type
 
     def __str__(self):
-        return f"{self.client} ({self.dateDebut} - {self.dateFin})"
+        return f"{self.client} ({self.date_debut} - {self.date_fin})"
 
 
 # class ListeIngredientsManager(models.Manager):
