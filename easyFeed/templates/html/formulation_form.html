@@ -8,6 +8,10 @@
 
 {% extends 'html/bases/base.html' %}
 
+{% block script_head %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+{% endblock %}
+
 {% block bgListSidebar %}
     .bgFormulation { background-color: #F5F5DC; }
 {% endblock %}
@@ -19,26 +23,23 @@
             <div class="form-content-left">
                 <h2 class="titre-formulation">Formulation</h2>
 
-                <form action="" method="">
+                <form>
+                    {% csrf_token %}    <!--donner les permissions (autorison lorsqu'on fait du json en django)-->
+
                     <label for="age" class="age-label">Selectionner l'âge de l'animal</label>
                     <select id="age" class="age-select" required>
-                        <option value="0" selected disabled hidden>Choisir...</option>
-                        <option value="1">1 semaine</option>
-                        <option value="2">2 semaine</option>
-                        <option value="3">3 semaine</option>
+                        <option value="-1" >Choisir...</option>
+                        {% for age in ages %}
+                        <option value="{{ age.id }}">{{ age.trancheAge }}</option>
+                        {% endfor %}
                     </select>
-
+                    <!--selected disabled hidden-->
                     <label for="pays" class="pays-label">Dans quel pays vous trouvez vous?</label>
                     <select id="pays" class="pays-select" required>
-                        <option value="" selected disabled hidden>Choisir...</option>
-                        <option value="DZA">Algérie</option>
-                        <option value="CMR">Cameroun</option>
-                        <option value="CA">Canada</option>
-                        <option value="CI">Côte d'ivoire</option>
-                        <option value="GN">Guinée</option>
-                        <option value="MLI">Mali</option>
-                        <option value="MAR">Maroc</option>
-                        <option value="SEN">Sénégal</option>
+                        <option value="-1" >Choisir...</option>
+                        {% for pays in countries %}
+                            <option value="{{ pays.codePays }}">{{ pays.nomPays }}</option>
+                        {% endfor %}
                     </select>
                     <br>
                     <label class="mode-form-label">Mode de formulation</label>
@@ -57,8 +58,10 @@
 
                     <div class="card-choice-ingredient">
                         <p>Vueillez choisir les Ingrédients dont vous disposez.</p>
+                        <p id="liste"></p>
 
-                        <table style="margin: 0 auto;" cellspacing="20">
+                        <table style="margin: 0 auto;" cellspacing="20" id="table">
+                            <!--
                             <tr>
                                 <td>
                                     <input type="checkbox" id="ingredient1" name="ingredient1" value="ingredient1">
@@ -102,12 +105,13 @@
                                     <label for="ingredient9">Ingrédient 9</label>
                                 </td>
                             </tr>
+                            -->
                         </table>
                     </div>
                     <br>
                     <div class="button-content">
                         <button type="reset" class="annuler-button">Annuler</button>
-                        <button type="submit" class="formuler-button">Formuler</button>
+                        <button type="button" id="btn-formuler" class="formuler-button">Formuler</button>
                     </div>
 
                 </form>
@@ -116,11 +120,24 @@
             <div class="form-content-right">
                 <h2 class="titre-formulation">Résultat</h2>
                 <div class="card-resultat">
-
+                    <p id="p-formuler"></p>
                 </div>
-            </div>
         </div>
 
     </div>
+    <script>
+        {% comment %}
+            cet url est envoyee au fichier .js
+            car js ne reconnait pas le langage template de django
+
+            let url = '{% url "easyFeed:details_ingredient" %}';
+        {% endcomment %}
+
+
+        let url_pays = '{% url "easyFeed:pays_ingredients" %}';
+        let url_phase = '{% url "easyFeed:obtenir_contraintes" %}';
+        let url_formuler = '{% url "easyFeed:optimize" %}';
+    </script>
+    <script src="../../static/js/backend.js"></script>
 
 {% endblock %}

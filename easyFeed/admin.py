@@ -15,7 +15,7 @@ from .forms import ListeIngredientsImport
 # appel du decorateur admin
 @admin.register(TypeUtilisateur)
 class TypeUtilisateurAdmin(admin.ModelAdmin):
-    list_display = ["titre", "created", "updated"]
+    list_display = ["id", "titre", "created", "updated"]
     search_fields = ["titre"]
     list_filter = ["titre"]
 

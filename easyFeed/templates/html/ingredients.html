@@ -24,19 +24,19 @@
         <tbody>
         {% for elt in liste %}
             <tr>
-                <th scope="row">{{elt.nomIngredient}}</th>
-                <td>{{elt.proteine}}</td>
-                <td>{{elt.energie}}</td>
-                <td>{{elt.cellulose}}</td>
+                <th scope="row">{{ elt.nomIngredient }}</th>
+                <td>{{elt.proteineBrute}}</td>
+                <td>{{elt.energieMetabolisable}}</td>
+                <td>{{elt.celluloseBrute}}</td>
                 <td>{{elt.phosphore}}</td>
                 <td>{{elt.lysine}}</td>
                 <td>{{elt.methionine}}</td>
-                <td>{{elt.cysMethionine}}</td>
+                <td>{{elt.cysteineMethionine}}</td>
                 <td>{{elt.calcium}}</td>
                 <td>{{elt.sodium}}</td>
-                <td>{{elt.prix}}</td>
+                <td>{{elt.prix}} $</td>
                 <td></td>
-                 <td> <button type="button" class="btn-modify">Ajouter</button> <button type="button" class="btn-delete">Supprimer</button> </td>
+                 <td> <button type="button" class="btn-modify">Modifier</button> <button type="button" class="btn-delete">Supprimer</button> </td>
             </tr>
         {% endfor %}
 
