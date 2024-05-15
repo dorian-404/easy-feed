@@ -321,43 +321,104 @@ function optimize() {
 
             if(mode == 'auto'){
                 // Creer une liste HTML pour afficher les valeurs de solution.x
-                let ingredient = "<ul>";
+                let ingredient = "<table border='2' style='margin-right: 5%;'>";
+
+                ingredient += `<thead><tr><th colspan="2">Aliments</th></tr></thead>`;
 
                 for (let i = 0; i < data.x.length; i++) {
-                    ingredient += `<li>${data.ing[i]} : ${(data.x[i]*100).toFixed(3)} kg</li>`;
+                    ingredient += `<tr><td class="space-cell">${data.ing[i]}</td><td>${(data.x[i]*100).toFixed(3)} kg</td></tr>`;
                 }
 
-                ingredient += "</ul><br />";
+                ingredient += "</table>";
 
-                let nutriments = "<ul>";
+                let nutriments = "<table border='2' style='margin-right:5%;'>";
+                nutriments += `<thead><tr><th class="space-cell" colspan="2">Nutriments</th></tr></thead>`;
+
                 for (let i = 0; i < data.nutri.length; i++) {
-                    nutriments += `<li>${data.nutri[i]} : ${(data.v_nutri[i]).toFixed(3)}</li>`;
+                    nutriments += `<tr><td class="space-cell">${data.nutri[i]}</td><td>${(data.v_nutri[i]).toFixed(3)}</td></tr>`;
                 }
 
-                nutriments += "</ul><br />";
+                nutriments += "</table>";
 
-                let ratio = "<table border='2'>";
 
+                let ratio = "<center><table border='2'style='margin-right: 5%; margin-left: 5%;'>";
+
+                ratio += "<tr>";
                 for (let i = 0; i < data.nom_ratio.length; i++) {
-                    ratio += `<th>${data.nom_ratio[i]}</th><tr><td>${data.min_ratio[i]}</td></tr><tr><td>${data.max_ratio[i]}</td></tr>`;
+                    ratio += `<th class="space-cell">${data.nom_ratio[i]}</th>`;
                 }
+                ratio += "</tr>";
 
-                ratio += "</table><br />";
+                ratio += "<tr>";
+                for (let i = 0; i < data.nom_ratio.length; i++) {
+                    ratio += `<td class="space-cell">${data.min_ratio[i]}</td>`;
+                }
+                ratio += "</tr>";
 
-                let ratioNutriments = "<table border='2'>";
+                ratio += "<tr>";
+                for (let i = 0; i < data.nom_ratio.length; i++) {
+                    ratio += `<td class="space-cell">${data.max_ratio[i]}</td>`;
+                }
+                ratio += "</tr>";
 
+                ratio += "</table></center><br />";
+
+                let ratioNutriments = "<center><table border='2' style='margin-right: 5%; margin-left:5%;'>";
+
+                ratioNutriments += "<tr><th class='space-cell'>Contraintes</th>";
                 for (let i = 0; i < data.nom_nutri.length; i++) {
-                    ratioNutriments += `<th>${data.nom_nutri[i]}</th><tr><td>${data.min_nutri[i]}</td></tr><tr><td>${data.max_nutri[i]}</td></tr>`;
+                    ratioNutriments += `<th>${data.nom_nutri[i]}</th>`;
                 }
+                ratioNutriments += "</tr>";
 
-                ratioNutriments += "</table><br />";
+                ratioNutriments += "<tr><td class='space-cell'>minimale</td>";
+                for (let i = 0; i < data.nom_nutri.length; i++) {
+                    ratioNutriments += `<td class="space-cell">${data.min_nutri[i]}</td>`;
+                }
+                ratioNutriments += "</tr>";
 
-                $("#p-formuler").html(ingredient);
-                $("#p-formuler").append(nutriments);
-                $("#p-formuler").append(`Valeurs des ratios : <br/> Ratio EM/Proteine: ${(data.ratioEMProt).toFixed(2)}<br/>Ratio Ca/P:${(data.ratioCaP).toFixed(2)} <br/>Ratio Lys/Meth: ${(data.ratioLysMeth).toFixed(2)}`);
-                $("#p-formuler").append(ratio);
-                $("#p-formuler").append(ratioNutriments);
-                $("#p-formuler").append("Le prix total est " + (data.pt*100).toFixed(2) + " FCFA");
+                ratioNutriments += "<tr><td class='space-cell'>maximale</td>";
+                for (let i = 0; i < data.nom_nutri.length; i++) {
+                    ratioNutriments += `<td class="space-cell">${data.max_nutri[i]}</td>`;
+                }
+                ratioNutriments += "</tr>";
+
+                ratioNutriments += "</table></center><br />";
+
+//                let ratioNutriments = "<table border='2' style='margin-right: 5%'>";
+//
+//                for (let i = 0; i < data.nom_nutri.length; i++) {
+//                    ratioNutriments += `<th>${data.nom_nutri[i]}</th><tr><td>${data.min_nutri[i]}</td></tr><tr><td>${data.max_nutri[i]}</td></tr>`;
+//                }
+//
+//                ratioNutriments += "</table>";
+
+                $("#ligne-formuler-1").html(ingredient);
+                $("#ligne-formuler-1").append(nutriments);
+                $("#ligne-formuler-1").append(`
+                    <table border='2'>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Valeurs des ratios</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>Ratio EM/Proteine</td>
+                            <td>${(data.ratioEMProt).toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <td>Ratio Ca/P</td>
+                            <td>${(data.ratioCaP).toFixed(2)}</td>
+                        </tr>
+                        <tr>
+                            <td>Ratio Lys/Meth</td>
+                            <td>${(data.ratioLysMeth).toFixed(2)}</td>
+                        </tr>
+                    </table>
+                `);
+                $("#ligne-formuler-2").append(ratio);
+                $("#ligne-formuler-2").append(ratioNutriments);
+                $("#ligne-formuler-2").append("<center style='margin-top: 5%; font-family: var(--title-font); color: rgb(0, 66, 20); font-size = 60pt'>Le prix total est " + (data.pt*100).toFixed(2) + " FCFA </center>");
             }
 
         },

@@ -79,7 +79,7 @@ label {
     font-weight: 500;
 }
 
-input[type="text"] {
+input[type="text"], input[type="email"]{
     width: 300px;
     height: 45px;
     padding: 10px;
@@ -88,6 +88,16 @@ input[type="text"] {
     box-sizing: border-box;
     background-color: #fafafa;
 }
+
+/*#username{
+    width: 300px;
+    height: 45px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fafafa;
+}*/
 
 input[type="checkbox"] {
     margin-right: 10px;
@@ -120,5 +130,5 @@ button:hover {
 }
 
 .text-condition {
-     font-size: 10px;
+     font-size: 12px;
 }

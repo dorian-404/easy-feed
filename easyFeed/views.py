@@ -607,12 +607,12 @@ def optimize(request):
             data_df.set_index('nomIngredient', inplace=True)
 
             # Obtenir l'index de l'ingrédient 'Sel iodé'
-            index_sel_iode = data_df.index.get_loc('Sel iodé')
-            index_premix_05 = data_df.index.get_loc('Prémix 0.5%')
-            index_premix_25 = data_df.index.get_loc('prémix 2.5%')
-            index_premix_2 = data_df.index.get_loc('Prémix 2 %')
-            index_ble = data_df.index.get_loc('Blé')
-            print(f"Index de l'ingrédient 'Sel iodé' : {index_sel_iode}")
+            # index_sel_iode = data_df.index.get_loc('Sel iodé')
+            # index_premix_05 = data_df.index.get_loc('Prémix 0.5%')
+            # index_premix_25 = data_df.index.get_loc('prémix 2.5%')
+            # index_premix_2 = data_df.index.get_loc('Prémix 2 %')
+            # index_ble = data_df.index.get_loc('Blé')
+            # print(f"Index de l'ingrédient 'Sel iodé' : {index_sel_iode}")
 
             # liste des ingredients
             ingredient_list = data_df.index.tolist()
@@ -716,24 +716,24 @@ def optimize(request):
                     X * df["lysine"])
 
             # Define the constraint for 'sel iode'
-            def cons_Sel_Iode(X):
-                return 0.01 - X[index_sel_iode]
-
-            # Define the constraint for 'premix 0.5%'
-            def cons_premix_05(X):
-                return 0.5 - X[index_premix_05]
-
-            # Define the constraint for 'premix 2.5%'
-            def cons_premix_25(X):
-                return 2.5 - X[index_premix_25]
-
-            # Define the constraint for 'premix 2%'
-            def cons_premix_2(X):
-                return 2 - X[index_premix_2]
-
-            # Define the constraint for 'ble'
-            def cons_ble(X):
-                return 0 - X[index_ble]
+            # def cons_Sel_Iode(X):
+            #     return 0.01 - X[index_sel_iode]
+            #
+            # # Define the constraint for 'premix 0.5%'
+            # def cons_premix_05(X):
+            #     return 0.5 - X[index_premix_05]
+            #
+            # # Define the constraint for 'premix 2.5%'
+            # def cons_premix_25(X):
+            #     return 2.5 - X[index_premix_25]
+            #
+            # # Define the constraint for 'premix 2%'
+            # def cons_premix_2(X):
+            #     return 2 - X[index_premix_2]
+            #
+            # # Define the constraint for 'ble'
+            # def cons_ble(X):
+            #     return 0 - X[index_ble]
 
             qte_ingredients = 2
 
@@ -763,18 +763,20 @@ def optimize(request):
             cons21 = {"type": "ineq", "fun": cons_ratio_Lys_Meth_inf}
             cons22 = {"type": "ineq", "fun": cons_ratio_Lys_Meth_sup}
             cons23 = {"type": "eq", "fun": cons_total}
-            cons24 = {"type": "ineq", "fun": cons_Sel_Iode}
-            cons25 = {"type": "ineq", "fun": cons_premix_05}
-            cons26 = {"type": "ineq", "fun": cons_premix_25}
-            cons27 = {"type": "ineq", "fun": cons_premix_2}
-            cons28 = {"type": "eq", "fun": cons_ble}
+            # cons24 = {"type": "ineq", "fun": cons_Sel_Iode}
+            # cons25 = {"type": "ineq", "fun": cons_premix_05}
+            # cons26 = {"type": "ineq", "fun": cons_premix_25}
+            # cons27 = {"type": "ineq", "fun": cons_premix_2}
+            # cons28 = {"type": "eq", "fun": cons_ble}
 
             b = (0, None)
             bnds = [b] * n
 
+            # contraintes_list = [cons1, cons2, cons3, cons4, cons5, cons6, cons7, cons8, cons9, cons10, cons11, cons12,
+            #                     cons13, cons14, cons15, cons16, cons17, cons18, cons19, cons20, cons21, cons22, cons23,
+            #                     cons24, cons25, cons26, cons27, cons28]
             contraintes_list = [cons1, cons2, cons3, cons4, cons5, cons6, cons7, cons8, cons9, cons10, cons11, cons12,
-                                cons13, cons14, cons15, cons16, cons17, cons18, cons19, cons20, cons21, cons22, cons23,
-                                cons24, cons25, cons26, cons27, cons28]
+                                cons13, cons14, cons15, cons16, cons17, cons18, cons19, cons20, cons21, cons22, cons23]
 
             # Appel de la fonction minimize pour l'optimisation
             solution = minimize(objectif, X0, bounds=bnds, constraints=contraintes_list, method='SLSQP')
