@@ -177,7 +177,7 @@ p{
     border-radius: 0.2rem;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
     /* display: none; */
-    padding-left: 0%;
+    padding-top: 3%;
     overflow-y: auto;
 }
 
@@ -240,7 +240,8 @@ p{
         background-color: white;
         border-radius: 0.2rem;
         box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-        padding-top: 25%;
+        padding-top: 3%;
         overflow-y: auto;
     }
+
 }
