@@ -323,25 +323,25 @@ function optimize() {
                 // Creer une liste HTML pour afficher les valeurs de solution.x
                 let ingredient = "<table border='2' style='margin-right: 5%;'>";
 
-                ingredient += `<thead><tr><th colspan="2">Aliments</th></tr></thead>`;
+                ingredient += `<thead><tr><th colspan="2">Ingrédients</th></tr></thead>`;
 
                 for (let i = 0; i < data.x.length; i++) {
                     ingredient += `<tr><td class="space-cell">${data.ing[i]}</td><td>${(data.x[i]*100).toFixed(3)} kg</td></tr>`;
                 }
 
-                ingredient += "</table>";
+                ingredient += "</table><br />";
 
-                let nutriments = "<table border='2' style='margin-right:5%;'>";
+                let nutriments = "<center><table border='2' style='margin-right:5%;'>";
                 nutriments += `<thead><tr><th class="space-cell" colspan="2">Nutriments</th></tr></thead>`;
 
                 for (let i = 0; i < data.nutri.length; i++) {
                     nutriments += `<tr><td class="space-cell">${data.nutri[i]}</td><td>${(data.v_nutri[i]).toFixed(3)}</td></tr>`;
                 }
 
-                nutriments += "</table>";
+                nutriments += "</table></center><br/>";
 
 
-                let ratio = "<center><table border='2'style='margin-right: 5%; margin-left: 5%;'>";
+                let ratio = "<center><table border='2'style='margin-right: 5%;'>";
 
                 ratio += "<tr>";
                 for (let i = 0; i < data.nom_ratio.length; i++) {
@@ -393,8 +393,8 @@ function optimize() {
 //
 //                ratioNutriments += "</table>";
 
-                $("#ligne-formuler-1").html(ingredient);
-                $("#ligne-formuler-1").append(nutriments);
+                $("#p-formuler").html(ingredient);
+                $("#ligne-formuler-1").append(ratio);
                 $("#ligne-formuler-1").append(`
                     <table border='2'>
                         <thead>
@@ -416,7 +416,7 @@ function optimize() {
                         </tr>
                     </table>
                 `);
-                $("#ligne-formuler-2").append(ratio);
+                $("#ligne-formuler-2").append(nutriments);
                 $("#ligne-formuler-2").append(ratioNutriments);
                 $("#ligne-formuler-2").append("<center style='margin-top: 5%; font-family: var(--title-font); color: rgb(0, 66, 20); font-size = 60pt'>Le prix total est " + (data.pt*100).toFixed(2) + " FCFA </center>");
             }

@@ -35,6 +35,7 @@ body {
 .title {
     font-size: 60px;
     font-weight: 700;
+    fonr-family: "Lilita One";
 }
 
 .green {
@@ -79,7 +80,7 @@ label {
     font-weight: 500;
 }
 
-input[type="text"], input[type="email"]{
+input[type="password"], input[type="email"]{
     width: 300px;
     height: 45px;
     padding: 10px;
