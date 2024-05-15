@@ -32,8 +32,8 @@ table{
 
 .form-content-left {
     grid-area: 1 / 1 / 2 / 2;
-    margin-left: 5%;
-    margin-right: 10px;
+    margin-left: 10px;
+    margin-right: 0%
 }
 .form-content-right {
     grid-area: 1 / 2 / 2 / 3;
@@ -189,6 +189,7 @@ p{
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
+
 
 .result-ligne-1 {
     grid-area: 1 / 1 / 2 / 2;

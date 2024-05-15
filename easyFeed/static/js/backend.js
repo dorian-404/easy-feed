@@ -321,7 +321,7 @@ function optimize() {
 
             if(mode == 'auto'){
                 // Creer une liste HTML pour afficher les valeurs de solution.x
-                let ingredient = "<table border='2' style='margin-right: 5%;'>";
+                let ingredient = "<table border='2' style='margin-right:2%;'>";
 
                 ingredient += `<thead><tr><th colspan="2">Ingrédients</th></tr></thead>`;
 
@@ -363,7 +363,7 @@ function optimize() {
 
                 ratio += "</table></center><br />";
 
-                let ratioNutriments = "<center><table border='2' style='margin-right: 5%; margin-left:5%;'>";
+                let ratioNutriments = "<center><table border='2' style='margin-right: 5%;'>";
 
                 ratioNutriments += "<tr><th class='space-cell'>Contraintes</th>";
                 for (let i = 0; i < data.nom_nutri.length; i++) {
@@ -393,8 +393,8 @@ function optimize() {
 //
 //                ratioNutriments += "</table>";
 
-                $("#p-formuler").html(ingredient);
-                $("#ligne-formuler-1").append(ratio);
+                $("#ligne-formuler-1").html(ingredient);
+                $("#ligne-formuler-1").append(nutriments);
                 $("#ligne-formuler-1").append(`
                     <table border='2'>
                         <thead>
@@ -416,9 +416,10 @@ function optimize() {
                         </tr>
                     </table>
                 `);
-                $("#ligne-formuler-2").append(nutriments);
+
+                $("#ligne-formuler-2").append(ratio);
                 $("#ligne-formuler-2").append(ratioNutriments);
-                $("#ligne-formuler-2").append("<center style='margin-top: 5%; font-family: var(--title-font); color: rgb(0, 66, 20); font-size = 60pt'>Le prix total est " + (data.pt*100).toFixed(2) + " FCFA </center>");
+                $("#ligne-formuler-2").append("<center style='margin-top: 5%; font-family: var(--title-font); color: rgb(0, 66, 20); font-size:50px;'>Le prix total est " + (data.pt*100).toFixed(2) + " FCFA </center>");
             }
 
         },
