@@ -1,4 +1,4 @@
-//******************************* Fonctions *******************************************
+//******************************* Fonctions  Formulation *******************************************
 let estCoche = false;   // Variable pour verifier si la case a cocher
                         //pour la visibilite de la liste des ingredients lies a un pays est cochee
 

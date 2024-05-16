@@ -1,0 +1,153 @@
+<!--
+    Auteur: Ansoumane Condé, Dorian, Yannis
+    Date:   10 mai 2024
+    Page:   formulation_form.html
+
+ -->
+
+
+{% extends 'html/bases/base.html' %}
+
+
+{% block bgListSidebar %}
+    .bgFormulation { background-color: #F5F5DC; }
+{% endblock %}
+
+{% block username %}
+    <span id="username-form"></span>
+{% endblock %}
+
+{% block content %}
+ <div class="main-content">
+
+        <div class="form-parent">
+            <div class="form-content-left">
+                <h2 class="titre-formulation">Formulation</h2>
+                <div class="resp-form">
+                    <form>
+                        {% csrf_token %}    <!--donner les permissions (autorison lorsqu'on fait du json en django)-->
+
+                        <label for="age" class="age-label">Selectionner l'âge de l'animal</label>
+                        <select id="age" class="age-select" required>
+                            <option value="-1" >Choisir...</option>
+                            {% for age in ages %}
+                            <option value="{{ age.id }}">{{ age.trancheAge }}</option>
+                            {% endfor %}
+                        </select>
+                        <!--selected disabled hidden-->
+                        <label for="pays" class="pays-label">Dans quel pays vous trouvez vous?</label>
+                        <select id="pays" class="pays-select" required>
+                            <option value="-1" >Choisir...</option>
+                            {% for pays in countries %}
+                                <option value="{{ pays.codePays }}">{{ pays.nomPays }}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <label class="mode-form-label">Mode de formulation</label>
+                        <br><br>
+
+                        <div class="div-auto-manuel">
+                            <input id="auto-radio" type="radio" value="" name="default-radio" class="auto-input" required>
+                            <label for="auto-radio" name="mode-form-radio" class="auto-label" >Auto</label>
+                        </div>
+
+                        <div class="div-auto-manuel">
+                            <input id="manuel-radio" type="radio" value="" name="default-radio" class="manuel-input"
+                                required>
+                            <label for="manuel-radio" name="mode-form-radio" class="manuel-label">Manuel</label>
+                        </div>
+
+                        <div class="card-choice-ingredient">
+                            <p>Vueillez choisir les Ingrédients dont vous disposez.</p>
+                            <p id="liste"></p>
+                            <br />
+                            <table style="margin: 0 auto;" cellspacing="20" id="table">
+                                <!--
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="ingredient1" name="ingredient1" value="ingredient1">
+                                        <label for="ingredient1">Ingrédient 1</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ingredient2" name="ingredient2" value="ingredient2">
+                                        <label for="ingredient2">Ingrédient 2</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ingredient3" name="ingredient3" value="ingredient3">
+                                        <label for="ingredient3">Ingrédient 3</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="ingredient4" name="ingredient4" value="ingredient4">
+                                        <label for="ingredient4">Ingrédient 4</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ingredient5" name="ingredient5" value="ingredient5">
+                                        <label for="ingredient5">Ingrédient 5</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ingredient6" name="ingredient6" value="ingredient6">
+                                        <label for="ingredient6">Ingrédient 6</label>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <input type="checkbox" id="ingredient7" name="ingredient7" value="ingredient7">
+                                        <label for="ingredient7">Ingrédient 7</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ingredient8" name="ingredient8" value="ingredient8">
+                                        <label for="ingredient8">Ingrédient 8</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ingredient9" name="ingredient9" value="ingredient9">
+                                        <label for="ingredient9">Ingrédient 9</label>
+                                    </td>
+                                </tr>
+                                -->
+                            </table>
+                        </div>
+                        <br>
+                        <div class="button-content">
+                            <button type="reset" class="annuler-button">Annuler</button>
+                            <button type="button" id="btn-formuler" class="formuler-button">Formuler</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+
+            <div class="form-content-right">
+                <h2 class="titre-formulation">Résultat</h2>
+                <div class="resp-form">
+                    <div class="card-resultat">
+                        <div class="result-parent">
+                            <div id="ligne-formuler-1" class="result-ligne-1"> </div>
+                            <div id="prix-formuler" style="margin-top: 5%; font-family: var(--title-font); color: rgb(0, 66, 20); font-size:50px;"></div>
+                            <div id="ligne-formuler-2" class="result-ligne-2"> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+ </div>
+    <script>
+        {% comment %}
+            cet url est envoyee au fichier .js
+            car js ne reconnait pas le langage template de django
+
+            let url = '{% url "easyFeed:details_ingredient" %}';
+        {% endcomment %}
+
+
+        let url_pays = '{% url "easyFeed:pays_ingredients" %}';
+        let url_phase = '{% url "easyFeed:obtenir_contraintes" %}';
+        let url_formuler = '{% url "easyFeed:optimize" %}';
+    </script>
+    <script src="../../static/js/backend.js"></script>
+
+{% endblock %}

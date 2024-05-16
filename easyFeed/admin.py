@@ -7,7 +7,7 @@ from django.urls import path
 
 from .models import TypeUtilisateur, Utilisateur, Pays, FormulationDisponible, Ingredient, CategorieIngredient, Recette, \
     PhaseDeveloppement, PhaseActuelle, Vague, VagueRecette, Vaccin, VaccinAdministre, EvolutionMasse, Perte, Sortie, \
-    ListeIngredients
+    ListeIngredients, Client, TypeAbonnement, Abonnement
 
 from .forms import ListeIngredientsImport
 
@@ -15,13 +15,14 @@ from .forms import ListeIngredientsImport
 # appel du decorateur admin
 @admin.register(TypeUtilisateur)
 class TypeUtilisateurAdmin(admin.ModelAdmin):
-    list_display = ["titre", "created", "updated"]
+    list_display = ["id", "titre", "created", "updated"]
     search_fields = ["titre"]
     list_filter = ["titre"]
 
 @admin.register(Utilisateur)
 class UtilisateurAdmin(admin.ModelAdmin):
-    list_display = ["matricule", "codePays", "nom", "prenom", "dateNaissance", "numeroTelephone", "adresse", "email", "dateEmbauche", "created", "updated"]
+    list_display = ["matricule", "codePays", "nom", "prenom", "dateNaissance", "numeroTelephone", "adresse", "email",
+                    "dateEmbauche", "password", "created", "updated"]
     search_fields = ["codePays"]
     list_filter = ["nom"]
 
@@ -133,3 +134,20 @@ class SortieAdmin(admin.ModelAdmin):
     list_display = ["codeSortie", "qteSortie", "dateSortie", "masseSortie", "codeVague"]
 
 
+@admin.register(Client)
+class ClientAdmin(admin.ModelAdmin):
+    list_display = ["id", "nom", "prenom", "email", "password"]
+    search_fields = ["nom"]
+    list_filter = ["nom"]
+
+@admin.register(TypeAbonnement)
+class TypeAbonnementAdmin(admin.ModelAdmin):
+    list_display = ["id", "titre", "prix", "duree"]
+    search_fields = ["titre"]
+    list_filter = ["titre"]
+
+@admin.register(Abonnement)
+class AbonnementAdmin(admin.ModelAdmin):
+    list_display = ["id", "client", "type_abonnement", "date_debut", "date_fin"]
+    search_fields = ["client"]
+    list_filter = ["client"]

@@ -1,11 +1,20 @@
 <!--
-    Auteur: Ansoumane Condé, Yannis, Dorian
+    Auteur: Ansoumane Condé, Dorian, Yannis
     Date:   06 mai 2024
     Page:   formulation.html
 
  -->
 
 {% extends 'html/bases/base.html' %}
+
+{% block bgListSidebar %}
+    .bgAccueil{ background-color: #F5F5DC;}
+{% endblock %}
+
+{% block username %}
+    <span id="username-dash">Bienvenue {{ prenom }}  {{nom}}</span>
+{% endblock %}
+
 
 {% block content %}
     <div class="main-content">
@@ -16,7 +25,7 @@
                         <h5 class="myHeading">Meilleures formulations</h5>
                     </a>
                     <p class="myParagraph">Ici vous trouverez les formulations qui ont le mieux fonctionnés pour vous.</p>
-                    <a id="btn-creer-formulation" href="#" class="myButton">
+                    <a id="btn-creer-formulation" href="../formulation" class="myButton">
                         <img style="width: 20px; height: 20px;" src="../../static/css/img/plus.svg" alt="">
                            &nbsp;
                         Créer une formulation
@@ -59,31 +68,5 @@
             </div>
         </div>
     </div>
-<!--    <div class="main-content">-->
-<!--        <ul class="gallery">-->
-<!--            <li class="profile-card">-->
-<!--                <img src="../../static/css/img/animaux/poule.svg" alt="profile" class="profile-img">-->
-<!--            </li>-->
-
-<!--            <li class="profile-card img-grayscale">-->
-<!--                <img src="../../static/css/img/animaux/porc.svg" alt="profile" class="profile-img">-->
-<!--            </li>-->
-
-<!--            <li class="profile-card img-grayscale">-->
-<!--                <img src="../../static/css/img/animaux/boeuf.svg" alt="profile" class="profile-img">-->
-<!--            </li>-->
-
-<!--            <li class="profile-card img-grayscale">-->
-<!--                <img src="../../static/css/img/animaux/oie.svg" alt="profile" class="profile-img">-->
-<!--            </li>-->
-
-<!--            <li class="profile-card img-grayscale">-->
-<!--                <img src="../../static/css/img/animaux/canard.svg" alt="profile" class="profile-img">-->
-<!--            </li>-->
-
-<!--            <li class="profile-card img-grayscale">-->
-<!--                <img src="../../static/css/img/animaux/poisson.svg" alt="profile" class="profile-img">-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
+    <script src="../../static/js/backend.js"></script>
 {% endblock %}

@@ -1,177 +1,247 @@
-/*
-    Auteur: Ansoumane Condé
-    Date:   06 mai 2024
-    Page:   formulation.css
-
-*/
-
-/* Les spécifications sur toute la page */
-* {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-decoration: none;
-    font-family: 'Poppins';
+/* ----- importation de la police ----- */
+@font-face {
+    font-family: 'sfpro-text';
+    src: url('../css/Font/SF-Pro-Text-Font-Family/SF-Pro-Text-Light.otf');
 }
 
-/* Les specifications du sidebar */
-.sidebar {
-    position: fixed;
-    width: 201px;
-    height: 100%;
-    background: #9FEFBC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+/* ----- style du formulaire de la page formulation ----- */
+.titre-formulation{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 50px;
+    font-family: var(--title-font);
+    color: #006450;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-size: 30pt;
 }
 
-/* Les modifications du parametre */
-.setting {
-    padding: 15px 30%;
-    background: #EFEF8B;
-    position: absolute;
-    bottom: 0;
-    border-bottom-right-radius: 10px;
-    /* width: 50%; */
-    width: 41%;
+table{
+    background-color: white;
 }
 
-.icon {
-       margin-right: 10px;
-       width: 25px;
-       height: 25px;
+.form-parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 100px;
 }
 
- .chevron {
-      width: 15px;
-      height: 10px;
-      margin-left: 50px;
+.form-content-left {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 10px;
+    margin-right: 0%
+}
+.form-content-right {
+    grid-area: 1 / 2 / 2 / 3;
+    margin-left: 0%;
+    margin-right: 10px;
 }
 
-/* Modifaction du titre EasyFeed */
-.sidebar h2 {
-    margin: 20px 0;
-    text-align: center;
-}
-
-/* Positionnement des items liste du sidebar */
-.sidebar ul li {
-    padding: 10px 30%;
-    border-left: 4px solid #9FEFBC;
-}
-
-/* la couleur des items liste du sidebar */
-.sidebar ul li a {
-    color: #000;
-}
-
-/* la couleur des items du sidebar lorsque hover */
-.sidebar ul li:hover {
-    border-left: 4px solid #006450;
-}
-
-/* la couleur des items du sidebar lorsque active */
-.sidebar ul li:active {
-    background: #F5F5DC;
-}
-
-/* Les modifications du navbar */
-.navbar {
-    margin-left: 170px;
-    padding: 20px;
-    background: #006450;
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Modification du mot de bienvenue */
-.welcome {
-    color: #FCFCFC;
-    margin-left: 25px;
-}
-
-/* Aligner horizontalement les items liste du navbar */
-.item ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-/* la largeur des items dans le navbar */
-.item {
-    width: 30%;
-}
-
-/* Couleur des items dans le navbar */
-.item li a{
-    color: #FFF;
-}
-
-/* Positionner le contenu c'est a dire le formulaire */
-.main-content {
-    margin-left: 180px;
-    padding: 20px;
-}
-
-/* Mettre une bordure au div form */
-/* .main-content .form {
-    border: 1px solid #000;
-    border-radius: 5px;
-
-} */
-
-.main-content .border {
-    /* border: 1px solid #000;
-    border-radius: 5px; */
-}
-
-/* Centrer le titre Formulation */
-.main-content .form h2 {
-    text-align: center;
-}
-
-/* Les specifications du formulaire */
-
-.main-content form {
-    margin: 0 auto;
-    margin-top: 10px;
-    /* text-align: center; */
-    padding: 1px 150px;
-}
-
-/* Les specifications des label du formulaire */
-.main-content .form label {
+/* select age et pays */
+.age-label, .pays-label, mode-form-label {
     display: block;
-    /* margin-bottom: px; */
-}
-/* Les specifications des selects du formulaire */
-.main-content .form select {
-    width: 250px;
-    padding: 8px;
-    border-radius: 5px;
-    margin-bottom: 40px;
-    margin-top: 10px;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
 }
 
-.main-content .form input[type="text"] {
-    width: 250px;
-    padding: 8px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-bottom: 30px;
-
+.age-select, .pays-select {
+    font-family: sfpro-text;
+    background-color: #f9fafb;
+    border: 1px solid #d1d5db;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    border-radius: 0.5rem;
+    width: 500px;
+    padding: 0.625rem;
 }
 
-.main-content .form button {
-    width: 100px;
+.age-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #93c5fd;
+    border-color: #3b82f6;
+}
+
+
+
+.pays-select:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #93c5fd;
+    border-color: #3b82f6;
+}
+
+/* bouton de soumission et d'annulation */
+
+
+.formuler-button, .annuler-button {
+    font-family: sfpro-text;
+    width: 150px;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: white;
+    background-color: #006450;
+    border: 1px solid #008A31;
+    border-radius: 0.2rem;
+    transition: background-color 0.2s;
+}
+
+.formuler-button:hover{
+    background-color: #008A31;
+}
+.annuler-button:hover {
+    background-color: tomato;
+}
+
+.annuler-button
+{
+    background-color: #FF0000;
+}
+
+@media (min-width: 640px) {
+    .formulerButton,.annulerButton {
+        width: auto;
+    }
+}
+
+/* radio button Auto Manuel */
+.div-auto-manuel {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.auto-input, .manuel-input {
+    width: 1rem;
+    height: 1rem;
+    color: #3b82f6;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+}
+
+
+.auto-label, .manuel-label{
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+/* div pour le choix des ingredient au clic du radio button manuel */
+.card-choice-ingredient{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
     padding: 10px;
-    border-radius: 7px;
-    border: none;
-    margin-top: 5px;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    border: 1px solid rgb(0, 100, 80, 0.4);
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    display: none;
+
+
+    /* display: none; */
+    padding-left: 0%;
+    overflow-y: auto;
 }
 
-.main-content .form .formuler {
-    background: #006450;
-    color: #fff;
-    margin-left: 41px;
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+/* div pour afficher le resultat */
+.card-resultat {
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    /* margin-top: 20%; */
+    width: 100%;
+    height: 80dvh;
+    border: 1px solid rgb(0, 100, 80, 0.4);
+    background-color: white;
+    border-radius: 0.2rem;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    /* display: none; */
+    padding-top: 3%;
+    overflow-y: auto;
+}
+
+/* Style de #p-formuler */
+.result-parent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+.result-ligne-1 {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+.result-ligne-2 {
+    grid-area: 2 / 1 / 3 / 2;
+    margin: 0 auto;
+}
+
+.space-cell{
+    width: 200px;
+}
+
+/* responsive de la div form-parent */
+@media screen and (max-width: 1800px) {
+    .form-parent {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .form-content-left {
+        grid-area: 1 / 1 / 2 / 2;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .form-content-right {
+        grid-area: 2 / 1 / 3 / 2;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: -7%;
+    }
+
+    .resp-form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-resultat {
+        width: 100%;
+        height: 80dvh;
+        border: 1px solid rgb(0, 100, 80, 0.4);
+        background-color: white;
+        border-radius: 0.2rem;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        padding-top: 3%;
+        overflow-y: auto;
+    }
+
+}

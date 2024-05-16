@@ -4,6 +4,8 @@
 ## Img
 img.png
 
+# Vs code
+.vscode
 
 ### Django ###
 *.log

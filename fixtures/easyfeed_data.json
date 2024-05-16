@@ -1,0 +1,5036 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2024-04-30T18:10:39.002Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "1",
+    "object_repr": "CMR",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2024-04-30T18:10:45.049Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "2",
+    "object_repr": "CAN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2024-04-30T18:10:51.538Z",
+    "user": 1,
+    "content_type": 10,
+    "object_id": "3",
+    "object_repr": "GIN",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2024-04-30T18:11:04.003Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Poule",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2024-04-30T18:11:11.087Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Porc",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2024-04-30T18:11:17.544Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "Poisson",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2024-04-30T18:11:40.171Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "1",
+    "object_repr": "Administrateur",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2024-04-30T18:11:44.643Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "2",
+    "object_repr": "Expert",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2024-04-30T18:11:48.655Z",
+    "user": 1,
+    "content_type": 12,
+    "object_id": "3",
+    "object_repr": "Novice",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2024-04-30T18:13:04.008Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Ingredient object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2024-04-30T18:13:16.088Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Ingredient object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2024-04-30T18:14:33.334Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Ingredient object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2024-04-30T18:14:40.991Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Ingredient object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2024-04-30T18:14:47.762Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Ingredient object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2024-04-30T18:14:52.510Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Ingredient object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2024-04-30T18:14:57.078Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Ingredient object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2024-04-30T18:15:01.917Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Ingredient object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2024-04-30T18:15:07.442Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Ingredient object (9)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2024-04-30T18:15:14.381Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Ingredient object (10)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2024-04-30T18:15:20.929Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Ingredient object (11)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2024-04-30T18:15:25.891Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Ingredient object (12)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2024-04-30T18:15:31.642Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Ingredient object (13)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2024-04-30T18:15:36.607Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Ingredient object (14)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2024-04-30T18:15:41.522Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Ingredient object (15)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2024-04-30T18:15:46.423Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Ingredient object (16)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2024-04-30T18:15:51.938Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Ingredient object (17)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2024-04-30T18:15:57.543Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Ingredient object (18)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2024-04-30T18:16:02.548Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Ingredient object (19)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2024-04-30T18:16:10.201Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Ingredient object (20)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2024-04-30T18:16:18.575Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Ingredient object (21)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2024-04-30T18:16:24.714Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Ingredient object (22)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2024-04-30T18:16:31.025Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Ingredient object (23)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2024-04-30T18:16:37.090Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Ingredient object (24)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2024-04-30T18:16:43.256Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Ingredient object (25)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2024-04-30T18:16:49.259Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Ingredient object (26)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2024-04-30T18:16:54.449Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Ingredient object (27)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2024-04-30T18:16:58.996Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Ingredient object (28)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2024-04-30T18:17:04.598Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "29",
+    "object_repr": "Ingredient object (29)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2024-04-30T18:17:11.512Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "30",
+    "object_repr": "Ingredient object (30)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2024-04-30T18:17:17.130Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "31",
+    "object_repr": "Ingredient object (31)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2024-04-30T18:17:24.594Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "32",
+    "object_repr": "Ingredient object (32)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2024-04-30T18:17:31.870Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "33",
+    "object_repr": "Ingredient object (33)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2024-04-30T18:17:38.741Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "34",
+    "object_repr": "Ingredient object (34)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2024-04-30T18:17:46.222Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "35",
+    "object_repr": "Ingredient object (35)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2024-04-30T18:17:52.141Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "36",
+    "object_repr": "Ingredient object (36)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2024-04-30T18:18:01.266Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "37",
+    "object_repr": "Ingredient object (37)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2024-04-30T18:32:06.810Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "1",
+    "object_repr": "CategorieIngredient object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2024-04-30T18:33:38.090Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "2",
+    "object_repr": "CategorieIngredient object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2024-04-30T18:33:44.042Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "3",
+    "object_repr": "CategorieIngredient object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2024-04-30T18:33:49.186Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "4",
+    "object_repr": "CategorieIngredient object (4)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2024-04-30T18:33:55.646Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "5",
+    "object_repr": "CategorieIngredient object (5)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2024-04-30T18:34:01.682Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "6",
+    "object_repr": "CategorieIngredient object (6)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2024-04-30T18:34:09.370Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "7",
+    "object_repr": "CategorieIngredient object (7)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2024-04-30T18:37:12.760Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "8",
+    "object_repr": "CategorieIngredient object (8)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2024-04-30T18:37:25.569Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "9",
+    "object_repr": "CategorieIngredient object (9)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2024-04-30T18:38:54.791Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "10",
+    "object_repr": "CategorieIngredient object (10)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2024-04-30T18:39:43.231Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "11",
+    "object_repr": "CategorieIngredient object (11)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2024-04-30T18:39:53.172Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "12",
+    "object_repr": "CategorieIngredient object (12)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2024-04-30T18:40:04.241Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "13",
+    "object_repr": "CategorieIngredient object (13)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2024-04-30T18:40:11.803Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "14",
+    "object_repr": "CategorieIngredient object (14)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2024-04-30T18:40:19.118Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "15",
+    "object_repr": "CategorieIngredient object (15)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2024-04-30T18:40:30.452Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "16",
+    "object_repr": "CategorieIngredient object (16)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2024-04-30T18:42:36.587Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "17",
+    "object_repr": "CategorieIngredient object (17)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2024-04-30T18:43:14.412Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "18",
+    "object_repr": "CategorieIngredient object (18)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2024-04-30T18:45:36.019Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "19",
+    "object_repr": "CategorieIngredient object (19)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2024-04-30T18:45:47.977Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "20",
+    "object_repr": "CategorieIngredient object (20)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2024-04-30T18:45:57.641Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "19",
+    "object_repr": "CategorieIngredient object (19)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"NomCategorie\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2024-04-30T18:46:17.422Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "21",
+    "object_repr": "CategorieIngredient object (21)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2024-04-30T18:46:28.865Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "22",
+    "object_repr": "CategorieIngredient object (22)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2024-04-30T18:46:45.181Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "23",
+    "object_repr": "CategorieIngredient object (23)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2024-04-30T18:46:53.887Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "24",
+    "object_repr": "CategorieIngredient object (24)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2024-04-30T18:47:14.246Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "25",
+    "object_repr": "CategorieIngredient object (25)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2024-04-30T18:47:26.854Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "26",
+    "object_repr": "CategorieIngredient object (26)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2024-04-30T18:48:03.983Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "27",
+    "object_repr": "CategorieIngredient object (27)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2024-04-30T18:48:23.717Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "28",
+    "object_repr": "CategorieIngredient object (28)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2024-04-30T18:48:32.211Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "29",
+    "object_repr": "CategorieIngredient object (29)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2024-04-30T18:48:44.275Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "30",
+    "object_repr": "CategorieIngredient object (30)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2024-04-30T18:48:59.202Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "31",
+    "object_repr": "CategorieIngredient object (31)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2024-04-30T18:49:12.417Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "32",
+    "object_repr": "CategorieIngredient object (32)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 80,
+  "fields": {
+    "action_time": "2024-04-30T18:49:26.352Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "33",
+    "object_repr": "CategorieIngredient object (33)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 81,
+  "fields": {
+    "action_time": "2024-04-30T18:49:38.153Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "34",
+    "object_repr": "CategorieIngredient object (34)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 82,
+  "fields": {
+    "action_time": "2024-04-30T18:49:49.834Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "35",
+    "object_repr": "CategorieIngredient object (35)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 83,
+  "fields": {
+    "action_time": "2024-04-30T18:50:00.784Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "36",
+    "object_repr": "CategorieIngredient object (36)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 84,
+  "fields": {
+    "action_time": "2024-04-30T18:50:10.517Z",
+    "user": 1,
+    "content_type": 14,
+    "object_id": "37",
+    "object_repr": "CategorieIngredient object (37)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 85,
+  "fields": {
+    "action_time": "2024-04-30T19:02:14.392Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "PHDE (Demarrage)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 86,
+  "fields": {
+    "action_time": "2024-04-30T19:04:00.890Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "PHCR (Croissance)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 87,
+  "fields": {
+    "action_time": "2024-04-30T19:06:51.754Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "PHFI (Finition)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 88,
+  "fields": {
+    "action_time": "2024-04-30T19:08:07.735Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "1",
+    "object_repr": "PhaseActuelle object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 89,
+  "fields": {
+    "action_time": "2024-04-30T19:08:17.171Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "2",
+    "object_repr": "PhaseActuelle object (2)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 90,
+  "fields": {
+    "action_time": "2024-04-30T19:08:26.498Z",
+    "user": 1,
+    "content_type": 15,
+    "object_id": "3",
+    "object_repr": "PhaseActuelle object (3)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 91,
+  "fields": {
+    "action_time": "2024-05-11T20:36:35.400Z",
+    "user": 1,
+    "content_type": 24,
+    "object_id": "1",
+    "object_repr": "Mensuel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 92,
+  "fields": {
+    "action_time": "2024-05-11T20:36:55.759Z",
+    "user": 1,
+    "content_type": 24,
+    "object_id": "2",
+    "object_repr": "Annuel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 93,
+  "fields": {
+    "action_time": "2024-05-14T12:59:26.343Z",
+    "user": 1,
+    "content_type": 26,
+    "object_id": "2",
+    "object_repr": " ",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 94,
+  "fields": {
+    "action_time": "2024-05-14T16:15:19.273Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "SE001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 95,
+  "fields": {
+    "action_time": "2024-05-14T16:16:17.317Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "SE002",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 96,
+  "fields": {
+    "action_time": "2024-05-14T16:16:41.144Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "SE003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 97,
+  "fields": {
+    "action_time": "2024-05-14T16:17:06.908Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "SE004",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 98,
+  "fields": {
+    "action_time": "2024-05-14T16:17:24.699Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "SE005",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 99,
+  "fields": {
+    "action_time": "2024-05-14T16:17:48.208Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "6",
+    "object_repr": "SE006",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 100,
+  "fields": {
+    "action_time": "2024-05-14T16:18:06.945Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "7",
+    "object_repr": "SE007",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 101,
+  "fields": {
+    "action_time": "2024-05-14T16:18:25.810Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "8",
+    "object_repr": "SP001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 102,
+  "fields": {
+    "action_time": "2024-05-14T16:18:47.193Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "9",
+    "object_repr": "SP002",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 103,
+  "fields": {
+    "action_time": "2024-05-14T16:19:07.294Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "10",
+    "object_repr": "SP003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 104,
+  "fields": {
+    "action_time": "2024-05-14T16:19:29.753Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "11",
+    "object_repr": "SP004",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 105,
+  "fields": {
+    "action_time": "2024-05-14T16:19:50.269Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "12",
+    "object_repr": "SP005",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 106,
+  "fields": {
+    "action_time": "2024-05-14T16:20:11.691Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "13",
+    "object_repr": "SP006",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 107,
+  "fields": {
+    "action_time": "2024-05-14T16:20:51.070Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "14",
+    "object_repr": "SP007",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 108,
+  "fields": {
+    "action_time": "2024-05-14T16:21:12.853Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "15",
+    "object_repr": "SP008",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 109,
+  "fields": {
+    "action_time": "2024-05-14T16:21:33.440Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "16",
+    "object_repr": "SP009",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 110,
+  "fields": {
+    "action_time": "2024-05-14T16:23:33.955Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "VITMIN003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 111,
+  "fields": {
+    "action_time": "2024-05-14T16:25:51.226Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "VITMIN004",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 112,
+  "fields": {
+    "action_time": "2024-05-14T16:26:10.510Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "28",
+    "object_repr": "SP012",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 113,
+  "fields": {
+    "action_time": "2024-05-14T16:26:32.595Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "29",
+    "object_repr": "SP013",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 114,
+  "fields": {
+    "action_time": "2024-05-14T16:27:05.677Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "30",
+    "object_repr": "SP014",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 115,
+  "fields": {
+    "action_time": "2024-05-14T16:27:25.668Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "31",
+    "object_repr": "SP015",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 116,
+  "fields": {
+    "action_time": "2024-05-14T16:27:51.508Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "32",
+    "object_repr": "SE008",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 117,
+  "fields": {
+    "action_time": "2024-05-14T16:28:15.928Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "35",
+    "object_repr": "SP016",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 118,
+  "fields": {
+    "action_time": "2024-05-14T16:28:31.011Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "36",
+    "object_repr": "SP017",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 119,
+  "fields": {
+    "action_time": "2024-05-14T16:28:52.855Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "37",
+    "object_repr": "SE009",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisable\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 120,
+  "fields": {
+    "action_time": "2024-05-14T16:31:44.718Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "PHDE (Demarrage)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisableMin\", \"EnergieMetabolisableMax\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 121,
+  "fields": {
+    "action_time": "2024-05-14T16:34:30.542Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "2",
+    "object_repr": "PHCR (Croissance)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisableMin\", \"EnergieMetabolisableMax\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 122,
+  "fields": {
+    "action_time": "2024-05-14T16:34:55.449Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "3",
+    "object_repr": "PHFI (Finition)",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"EnergieMetabolisableMin\", \"EnergieMetabolisableMax\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 123,
+  "fields": {
+    "action_time": "2024-05-14T16:52:24.884Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "27",
+    "object_repr": "VITMIN009",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 124,
+  "fields": {
+    "action_time": "2024-05-14T16:52:24.889Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "26",
+    "object_repr": "VITMIN008",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 125,
+  "fields": {
+    "action_time": "2024-05-14T16:52:24.890Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "25",
+    "object_repr": "VITMIN007",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 126,
+  "fields": {
+    "action_time": "2024-05-14T16:52:24.892Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "24",
+    "object_repr": "VITMIN006",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 127,
+  "fields": {
+    "action_time": "2024-05-14T16:53:06.493Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "33",
+    "object_repr": "VITMIN06",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CodeIngredient\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 128,
+  "fields": {
+    "action_time": "2024-05-14T16:53:20.694Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "34",
+    "object_repr": "VITMIN07",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CodeIngredient\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 129,
+  "fields": {
+    "action_time": "2024-05-14T16:55:37.996Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "20",
+    "object_repr": "VITMIN004",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 130,
+  "fields": {
+    "action_time": "2024-05-14T16:55:38.001Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "19",
+    "object_repr": "VITMIN003",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 131,
+  "fields": {
+    "action_time": "2024-05-14T16:55:55.846Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "23",
+    "object_repr": "VITMIN003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CodeIngredient\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 132,
+  "fields": {
+    "action_time": "2024-05-14T16:56:25.827Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "33",
+    "object_repr": "VITMIN004",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CodeIngredient\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 133,
+  "fields": {
+    "action_time": "2024-05-14T16:56:40.561Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "34",
+    "object_repr": "VITMIN005",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"CodeIngredient\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 134,
+  "fields": {
+    "action_time": "2024-05-14T16:57:32.309Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "23",
+    "object_repr": "VITMIN003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Calcium\", \"Phosphore\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 135,
+  "fields": {
+    "action_time": "2024-05-14T16:58:04.292Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "23",
+    "object_repr": "VITMIN003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Prix\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 136,
+  "fields": {
+    "action_time": "2024-05-14T19:47:46.869Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "SE001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Prix\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 137,
+  "fields": {
+    "action_time": "2024-05-14T19:49:33.915Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "SE001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Prix\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 138,
+  "fields": {
+    "action_time": "2024-05-14T19:52:17.636Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "SE001",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Prix\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 139,
+  "fields": {
+    "action_time": "2024-05-14T19:52:37.652Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "SE003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Prix\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 140,
+  "fields": {
+    "action_time": "2024-05-14T19:55:54.213Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "SE003",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Prix\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add formulation disponible",
+    "content_type": 7,
+    "codename": "add_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change formulation disponible",
+    "content_type": 7,
+    "codename": "change_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete formulation disponible",
+    "content_type": 7,
+    "codename": "delete_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view formulation disponible",
+    "content_type": 7,
+    "codename": "view_formulationdisponible"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add ingredient",
+    "content_type": 8,
+    "codename": "add_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change ingredient",
+    "content_type": 8,
+    "codename": "change_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete ingredient",
+    "content_type": 8,
+    "codename": "delete_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view ingredient",
+    "content_type": 8,
+    "codename": "view_ingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add liste ingredients",
+    "content_type": 9,
+    "codename": "add_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change liste ingredients",
+    "content_type": 9,
+    "codename": "change_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete liste ingredients",
+    "content_type": 9,
+    "codename": "delete_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view liste ingredients",
+    "content_type": 9,
+    "codename": "view_listeingredients"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add pays",
+    "content_type": 10,
+    "codename": "add_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change pays",
+    "content_type": 10,
+    "codename": "change_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete pays",
+    "content_type": 10,
+    "codename": "delete_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view pays",
+    "content_type": 10,
+    "codename": "view_pays"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add phase developpement",
+    "content_type": 11,
+    "codename": "add_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change phase developpement",
+    "content_type": 11,
+    "codename": "change_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete phase developpement",
+    "content_type": 11,
+    "codename": "delete_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view phase developpement",
+    "content_type": 11,
+    "codename": "view_phasedeveloppement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 45,
+  "fields": {
+    "name": "Can add type utilisateur",
+    "content_type": 12,
+    "codename": "add_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 46,
+  "fields": {
+    "name": "Can change type utilisateur",
+    "content_type": 12,
+    "codename": "change_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 47,
+  "fields": {
+    "name": "Can delete type utilisateur",
+    "content_type": 12,
+    "codename": "delete_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 48,
+  "fields": {
+    "name": "Can view type utilisateur",
+    "content_type": 12,
+    "codename": "view_typeutilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 49,
+  "fields": {
+    "name": "Can add vaccin",
+    "content_type": 13,
+    "codename": "add_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 50,
+  "fields": {
+    "name": "Can change vaccin",
+    "content_type": 13,
+    "codename": "change_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 51,
+  "fields": {
+    "name": "Can delete vaccin",
+    "content_type": 13,
+    "codename": "delete_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 52,
+  "fields": {
+    "name": "Can view vaccin",
+    "content_type": 13,
+    "codename": "view_vaccin"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 53,
+  "fields": {
+    "name": "Can add categorie ingredient",
+    "content_type": 14,
+    "codename": "add_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 54,
+  "fields": {
+    "name": "Can change categorie ingredient",
+    "content_type": 14,
+    "codename": "change_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 55,
+  "fields": {
+    "name": "Can delete categorie ingredient",
+    "content_type": 14,
+    "codename": "delete_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 56,
+  "fields": {
+    "name": "Can view categorie ingredient",
+    "content_type": 14,
+    "codename": "view_categorieingredient"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 57,
+  "fields": {
+    "name": "Can add phase actuelle",
+    "content_type": 15,
+    "codename": "add_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 58,
+  "fields": {
+    "name": "Can change phase actuelle",
+    "content_type": 15,
+    "codename": "change_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 59,
+  "fields": {
+    "name": "Can delete phase actuelle",
+    "content_type": 15,
+    "codename": "delete_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 60,
+  "fields": {
+    "name": "Can view phase actuelle",
+    "content_type": 15,
+    "codename": "view_phaseactuelle"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 61,
+  "fields": {
+    "name": "Can add utilisateur",
+    "content_type": 16,
+    "codename": "add_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 62,
+  "fields": {
+    "name": "Can change utilisateur",
+    "content_type": 16,
+    "codename": "change_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 63,
+  "fields": {
+    "name": "Can delete utilisateur",
+    "content_type": 16,
+    "codename": "delete_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 64,
+  "fields": {
+    "name": "Can view utilisateur",
+    "content_type": 16,
+    "codename": "view_utilisateur"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 65,
+  "fields": {
+    "name": "Can add recette",
+    "content_type": 17,
+    "codename": "add_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 66,
+  "fields": {
+    "name": "Can change recette",
+    "content_type": 17,
+    "codename": "change_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 67,
+  "fields": {
+    "name": "Can delete recette",
+    "content_type": 17,
+    "codename": "delete_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 68,
+  "fields": {
+    "name": "Can view recette",
+    "content_type": 17,
+    "codename": "view_recette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 69,
+  "fields": {
+    "name": "Can add vague",
+    "content_type": 18,
+    "codename": "add_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 70,
+  "fields": {
+    "name": "Can change vague",
+    "content_type": 18,
+    "codename": "change_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 71,
+  "fields": {
+    "name": "Can delete vague",
+    "content_type": 18,
+    "codename": "delete_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 72,
+  "fields": {
+    "name": "Can view vague",
+    "content_type": 18,
+    "codename": "view_vague"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 73,
+  "fields": {
+    "name": "Can add vaccin administre",
+    "content_type": 19,
+    "codename": "add_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 74,
+  "fields": {
+    "name": "Can change vaccin administre",
+    "content_type": 19,
+    "codename": "change_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 75,
+  "fields": {
+    "name": "Can delete vaccin administre",
+    "content_type": 19,
+    "codename": "delete_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 76,
+  "fields": {
+    "name": "Can view vaccin administre",
+    "content_type": 19,
+    "codename": "view_vaccinadministre"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 77,
+  "fields": {
+    "name": "Can add sortie",
+    "content_type": 20,
+    "codename": "add_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 78,
+  "fields": {
+    "name": "Can change sortie",
+    "content_type": 20,
+    "codename": "change_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 79,
+  "fields": {
+    "name": "Can delete sortie",
+    "content_type": 20,
+    "codename": "delete_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 80,
+  "fields": {
+    "name": "Can view sortie",
+    "content_type": 20,
+    "codename": "view_sortie"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 81,
+  "fields": {
+    "name": "Can add perte",
+    "content_type": 21,
+    "codename": "add_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 82,
+  "fields": {
+    "name": "Can change perte",
+    "content_type": 21,
+    "codename": "change_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 83,
+  "fields": {
+    "name": "Can delete perte",
+    "content_type": 21,
+    "codename": "delete_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 84,
+  "fields": {
+    "name": "Can view perte",
+    "content_type": 21,
+    "codename": "view_perte"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 85,
+  "fields": {
+    "name": "Can add evolution masse",
+    "content_type": 22,
+    "codename": "add_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 86,
+  "fields": {
+    "name": "Can change evolution masse",
+    "content_type": 22,
+    "codename": "change_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 87,
+  "fields": {
+    "name": "Can delete evolution masse",
+    "content_type": 22,
+    "codename": "delete_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 88,
+  "fields": {
+    "name": "Can view evolution masse",
+    "content_type": 22,
+    "codename": "view_evolutionmasse"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 89,
+  "fields": {
+    "name": "Can add vague recette",
+    "content_type": 23,
+    "codename": "add_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 90,
+  "fields": {
+    "name": "Can change vague recette",
+    "content_type": 23,
+    "codename": "change_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 91,
+  "fields": {
+    "name": "Can delete vague recette",
+    "content_type": 23,
+    "codename": "delete_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 92,
+  "fields": {
+    "name": "Can view vague recette",
+    "content_type": 23,
+    "codename": "view_vaguerecette"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 93,
+  "fields": {
+    "name": "Can add type abonnement",
+    "content_type": 24,
+    "codename": "add_typeabonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 94,
+  "fields": {
+    "name": "Can change type abonnement",
+    "content_type": 24,
+    "codename": "change_typeabonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 95,
+  "fields": {
+    "name": "Can delete type abonnement",
+    "content_type": 24,
+    "codename": "delete_typeabonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 96,
+  "fields": {
+    "name": "Can view type abonnement",
+    "content_type": 24,
+    "codename": "view_typeabonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 97,
+  "fields": {
+    "name": "Can add abonnement",
+    "content_type": 25,
+    "codename": "add_abonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 98,
+  "fields": {
+    "name": "Can change abonnement",
+    "content_type": 25,
+    "codename": "change_abonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 99,
+  "fields": {
+    "name": "Can delete abonnement",
+    "content_type": 25,
+    "codename": "delete_abonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 100,
+  "fields": {
+    "name": "Can view abonnement",
+    "content_type": 25,
+    "codename": "view_abonnement"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 101,
+  "fields": {
+    "name": "Can add client",
+    "content_type": 26,
+    "codename": "add_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 102,
+  "fields": {
+    "name": "Can change client",
+    "content_type": 26,
+    "codename": "change_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 103,
+  "fields": {
+    "name": "Can delete client",
+    "content_type": 26,
+    "codename": "delete_client"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 104,
+  "fields": {
+    "name": "Can view client",
+    "content_type": 26,
+    "codename": "view_client"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$fkijUYG5ddrD3aeZdEKbvw$pssAqwKZKeb5ReS9kLqlVmCsfPQcRTNTuwGSHJpGJ8g=",
+    "last_login": "2024-05-12T16:25:35.838Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "emmataks@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2024-04-30T18:10:01.837Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "formulationdisponible"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "ingredient"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "listeingredients"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "pays"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "phasedeveloppement"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 12,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "typeutilisateur"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 13,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vaccin"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 14,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "categorieingredient"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 15,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "phaseactuelle"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 16,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "utilisateur"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 17,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "recette"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 18,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vague"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 19,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vaccinadministre"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 20,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "sortie"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 21,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "perte"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 22,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "evolutionmasse"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 23,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "vaguerecette"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 24,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "typeabonnement"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 25,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "abonnement"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 26,
+  "fields": {
+    "app_label": "easyFeed",
+    "model": "client"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "2ajgmtdiebr7ycnbaye1kcwkbmcikhmv",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllx1l9K-pzBWns3OIAcKU4qxN1JpBTQvpl5bxFxW0vcGi9xInEVSlx-t4T5yfUA9MB6n2We67pMSR6KPGmTw0z8up3u30HBVvYaLKPpCT3kRGzJjDYpry1Y7xx1oIJnHimk3jurwWHGDgKg1zvnbMTnC-rnN8E:1s1rvr:pcRoAfmH4JegxC_pbAPo3xJi8TvRBkl8BZMixruJIf4",
+    "expire_date": "2024-05-14T18:10:23.414Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "rwjxistijapvg1ub6z245ltoqi82h76k",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQBe_iGllx1l9K-pzBWns3OIAcKU4qxN1JpBTQvpl5bxFxW0vcGi9xInEVSlx-t4T5yfUA9MB6n2We67pMSR6KPGmTw0z8up3u30HBVvYaLKPpCT3kRGzJjDYpry1Y7xx1oIJnHimk3jurwWHGDgKg1zvnbMTnC-rnN8E:1s5tIq:atmjJSTH56sY0MiGYuvFcuqrfAmD9oIvg_-N74sx0X0",
+    "expire_date": "2024-05-25T20:26:44.645Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "z37lu64jcnnvvv88julx851fjpepkckh",
+  "fields": {
+    "session_data": ".eJx9jjEPgjAQRv8KYTYNWCjFDRMmxc3BiVzbA6pATQEX43-3RGJwcb333pd7-iVMY1NOA9pSK3_nh_5mfRMgb9jPQF2hrw2Rph-tFmRWyEIHUhiF7X5xfwYaGBpXU4YQbxVwKoVCpuKKiZBHjDKeJCqgYcoRK5WKLU9YRBOQENCUAo8cRxm70bvF3nRuy_2BXof2gbpt0astSA1O-NBLXuTH3Dtkp-wbnd0n_8PFWMevNxXvXHM:1s71lz:85_BLpZ2LJtVchFe8Byol91XoIAa4dKSK33r8sTAzY4",
+    "expire_date": "2024-05-28T23:41:31.382Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 3,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmataks@gmail.com",
+    "password": "pbkdf2_sha256$720000$yVMPqv1mzGWfCWKrGOxCCF$T0i7vmITzHj4cJv2BZy8AREBEId0HBLHfJSLcOiq8zc=",
+    "created": "2024-05-11T19:17:59.370Z",
+    "updated": "2024-05-11T19:17:59.370Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 4,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "felixlafoi@gmail.com",
+    "password": "pbkdf2_sha256$720000$Fgvn2d295ynyBvBnA2Ew3C$Ywa6BML3WjWnn4bS40mUfs2w1pOhoPvzn+l0TYGIBSo=",
+    "created": "2024-05-11T19:32:58.308Z",
+    "updated": "2024-05-11T19:32:58.308Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 5,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "fe@gmail.com",
+    "password": "pbkdf2_sha256$720000$oG8Q5ZJvRYzIK5yp2ceCYc$QXCcUoWYsERUQ7a8LZQjj6G/INd5r7WO8Q0sL0giHo4=",
+    "created": "2024-05-11T20:13:29.384Z",
+    "updated": "2024-05-11T20:13:29.384Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 6,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "f@gmail.com",
+    "password": "pbkdf2_sha256$720000$hlUa8TUh6ReqEn3R6K9zpT$FFACzwqmA9QdItNXUsK1LhKIEuJH1xeTjLEWvurjAS4=",
+    "created": "2024-05-11T20:21:21.455Z",
+    "updated": "2024-05-11T20:21:21.455Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 7,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "ange@gmail.com",
+    "password": "pbkdf2_sha256$720000$JQWg1BTeeKqXbMtMs2H7E6$R489by0cbagT2VrBUWhLiRrz1bN415POyfk0U9Dx7Mo=",
+    "created": "2024-05-11T20:41:19.367Z",
+    "updated": "2024-05-11T20:41:19.367Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 8,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "an@gmail.com",
+    "password": "pbkdf2_sha256$720000$ba6xd6W48dXYdqeX2mvtIn$42XsU05IaEG32OdDVye/xAQmylq2ZebrK6c1n2X6xGE=",
+    "created": "2024-05-11T20:45:04.807Z",
+    "updated": "2024-05-11T20:45:04.807Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 9,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "dorian@gmail.com",
+    "password": "pbkdf2_sha256$720000$WhwFQ9Rj8PwwzN2g8qaOzX$O9fEBexLnQ7hmoUR1mLCNR43kIETK8LN/vBTuQQb0qU=",
+    "created": "2024-05-11T20:52:44.584Z",
+    "updated": "2024-05-11T20:52:44.584Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 10,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmata@gmail.com",
+    "password": "pbkdf2_sha256$720000$upWZZMzpKCj8Qi14Qy1J6J$nFeyxQV0tFKrDJdFsDJAyg7gXHD7hP5s/Bn+a58/FeA=",
+    "created": "2024-05-12T07:59:22.331Z",
+    "updated": "2024-05-12T07:59:22.331Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 11,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emks@gmail.com",
+    "password": "pbkdf2_sha256$720000$ArEl6zrHkboLnXZ1CVxg82$gu4M+jWVDIn9C7wlmlECUJKOwC0cKB9XS0AGTrfyAhc=",
+    "created": "2024-05-12T08:03:08.504Z",
+    "updated": "2024-05-12T08:03:08.504Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 12,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emma@gmail.com",
+    "password": "pbkdf2_sha256$720000$fUH8kYTDDGfWqRuAWuaJEZ$1mAufw1GXX/lZgmsNUG1x44ICI3O0dyHpHPpBbkB4p8=",
+    "created": "2024-05-12T08:07:40.175Z",
+    "updated": "2024-05-12T08:07:40.175Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 13,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "em@gmail.com",
+    "password": "pbkdf2_sha256$720000$48xFjEFwjZTHGn6tNsokBO$15JKLPL7SuNOt/34tllH3wZoEDhaGN8OPtzibwKznZU=",
+    "created": "2024-05-12T08:09:23.141Z",
+    "updated": "2024-05-12T08:09:23.141Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 14,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmar@gmail.com",
+    "password": "pbkdf2_sha256$720000$yS3J54bPXiAZS5reJ6geTR$dIEkO5jn9MDGalkxuGt3N8idAJAh6ldbKj2yyBcQB6s=",
+    "created": "2024-05-12T08:23:30.573Z",
+    "updated": "2024-05-12T08:23:30.573Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 15,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmataksss@gmail.com",
+    "password": "pbkdf2_sha256$720000$y3ykU1xo38p8fFtAJdXG4C$lcvo2y6o2wLeK4RUJhJIPH6tMqPDF99ddEcz5DYHCKI=",
+    "created": "2024-05-12T08:25:19.918Z",
+    "updated": "2024-05-12T08:25:19.918Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 16,
+  "fields": {
+    "nom": "Takamrdrd",
+    "prenom": "Emmanuel",
+    "email": "emmataksggss@gmail.com",
+    "password": "pbkdf2_sha256$720000$eW2i2Db0pwqmL0m99m0U3d$cm2BQ0OgfaSSbwLNiSJxAiD/UXdhBq9ZEsWXUjXDSSc=",
+    "created": "2024-05-12T08:30:10.747Z",
+    "updated": "2024-05-12T08:30:10.747Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 17,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emot@gmail.com",
+    "password": "pbkdf2_sha256$720000$LTMXxWDIymaFCusqQ4VxUU$6btiWxn0XZv3eN1M0Hr+XMh2IFoHn0epLR/PgVjfazc=",
+    "created": "2024-05-12T10:16:44.042Z",
+    "updated": "2024-05-12T10:16:44.042Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 18,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmataksds@gmail.com",
+    "password": "pbkdf2_sha256$720000$gjCyZ8DRlfCikMqwAqWBLH$il/XP4IoUK/ivdBZufEjKl06y5ekRrZPEGwbldIDJ2c=",
+    "created": "2024-05-13T00:36:11.324Z",
+    "updated": "2024-05-13T00:36:11.324Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 19,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmataksdfffs@gmail.com",
+    "password": "pbkdf2_sha256$720000$NYBwjlL8FtZCHQLvtbTaWF$8vVdElaUuKAVwjXG1veWFik8COLhbXWFlqoESarIYy0=",
+    "created": "2024-05-13T00:36:50.779Z",
+    "updated": "2024-05-13T00:36:50.779Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 20,
+  "fields": {
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "email": "emmataksuio@gmail.com",
+    "password": "pbkdf2_sha256$720000$pVW8c505OgsZkqHsdn8VnD$sAzJU8d4BTw9NI+GDnvoJqlBByLWivDT99Y8dDwgww0=",
+    "created": "2024-05-13T18:40:19.299Z",
+    "updated": "2024-05-13T18:40:19.299Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 21,
+  "fields": {
+    "nom": "Nenzeko",
+    "prenom": "Yannis",
+    "email": "nenzeko@gmail.com",
+    "password": "pbkdf2_sha256$720000$NuZEadEM3dDvs1YcvZxDm4$lQ3se09P2sly3BsF1D6XQRm3W+cq4GyGbee44MLmGHM=",
+    "created": "2024-05-13T20:25:02.528Z",
+    "updated": "2024-05-13T20:25:02.528Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 22,
+  "fields": {
+    "nom": "jknnln",
+    "prenom": "hjbhbhjbhl",
+    "email": "lj@gmail.com",
+    "password": "pbkdf2_sha256$720000$PdK4lx0ecnMKZDE7jSN4kp$h9NK8VIcTsrt/Svi0ryWC+sBO7oLsdBMsGOeM0UPgPQ=",
+    "created": "2024-05-14T14:53:57.273Z",
+    "updated": "2024-05-14T14:53:57.273Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 23,
+  "fields": {
+    "nom": "uihihinudiad",
+    "prenom": "kjnnjln",
+    "email": "lnnmijjdijai@gmail.com",
+    "password": "pbkdf2_sha256$720000$XM7q3QFnuL14EOVuWS4ZQw$1f2DmMIZgFywdC8rf66xw0FfHzbBOPRgyM+eragqQ+k=",
+    "created": "2024-05-14T15:15:17.554Z",
+    "updated": "2024-05-14T15:15:17.554Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 24,
+  "fields": {
+    "nom": "Williams",
+    "prenom": "esdd",
+    "email": "edd@gmail.com",
+    "password": "pbkdf2_sha256$720000$hzvrVa9rYr27GTz074nb1m$c8mY/V548z4gQ/m+Udo6sFSw4Xa911zPz09ardpGidA=",
+    "created": "2024-05-14T15:19:51.080Z",
+    "updated": "2024-05-14T15:19:51.080Z"
+  }
+},
+{
+  "model": "easyFeed.client",
+  "pk": 25,
+  "fields": {
+    "nom": "yemele kana",
+    "prenom": "ange merveille gracia",
+    "email": "angieleyemel@gmail.com",
+    "password": "pbkdf2_sha256$720000$IfVBKWdrPjH3X2T9IUmrti$HGEr14q9uL0Gp0oEZk1cyIeVce8bumuj1BfjwBFWMMs=",
+    "created": "2024-05-14T15:47:09.224Z",
+    "updated": "2024-05-14T15:47:09.224Z"
+  }
+},
+{
+  "model": "easyFeed.typeabonnement",
+  "pk": 1,
+  "fields": {
+    "titre": "Mensuel",
+    "duree": 30,
+    "prix": 100.0,
+    "created": "2024-05-11T20:36:35.399Z",
+    "updated": "2024-05-11T20:36:35.399Z"
+  }
+},
+{
+  "model": "easyFeed.typeabonnement",
+  "pk": 2,
+  "fields": {
+    "titre": "Annuel",
+    "duree": 365,
+    "prix": 950.0,
+    "created": "2024-05-11T20:36:55.757Z",
+    "updated": "2024-05-11T20:36:55.757Z"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 1,
+  "fields": {
+    "client": 9,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-11",
+    "date_fin": "2024-06-10"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 2,
+  "fields": {
+    "client": 10,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 3,
+  "fields": {
+    "client": 11,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 4,
+  "fields": {
+    "client": 12,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 5,
+  "fields": {
+    "client": 13,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 6,
+  "fields": {
+    "client": 14,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 7,
+  "fields": {
+    "client": 15,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 8,
+  "fields": {
+    "client": 16,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 9,
+  "fields": {
+    "client": 17,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 10,
+  "fields": {
+    "client": 19,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-12",
+    "date_fin": "2024-06-11"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 11,
+  "fields": {
+    "client": 20,
+    "type_abonnement": 1,
+    "date_debut": "2024-05-13",
+    "date_fin": "2024-06-12"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 12,
+  "fields": {
+    "client": 24,
+    "type_abonnement": 2,
+    "date_debut": "2024-05-14",
+    "date_fin": "2025-05-14"
+  }
+},
+{
+  "model": "easyFeed.abonnement",
+  "pk": 13,
+  "fields": {
+    "client": 25,
+    "type_abonnement": 2,
+    "date_debut": "2024-05-14",
+    "date_fin": "2025-05-14"
+  }
+},
+{
+  "model": "easyFeed.typeutilisateur",
+  "pk": 1,
+  "fields": {
+    "titre": "Administrateur",
+    "created": "2024-04-30T18:11:40.170Z",
+    "updated": "2024-04-30T18:11:40.170Z"
+  }
+},
+{
+  "model": "easyFeed.typeutilisateur",
+  "pk": 2,
+  "fields": {
+    "titre": "Expert",
+    "created": "2024-04-30T18:11:44.642Z",
+    "updated": "2024-04-30T18:11:44.642Z"
+  }
+},
+{
+  "model": "easyFeed.typeutilisateur",
+  "pk": 3,
+  "fields": {
+    "titre": "Novice",
+    "created": "2024-04-30T18:11:48.654Z",
+    "updated": "2024-04-30T18:11:48.654Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 1,
+  "fields": {
+    "codeIngredient": "SE001",
+    "nomIngredient": "Mais",
+    "proteineBrute": 8.6,
+    "energieMetabolisable": 43.1431742,
+    "matiereGrasse": 3.8,
+    "celluloseBrute": 5.3,
+    "calcium": 0.01,
+    "phosphore": 0.13,
+    "lysine": 0.27,
+    "methionine": 0.15,
+    "cysteineMethionine": 0.37,
+    "sodium": 0.001,
+    "prix": 300.0,
+    "created": "2024-04-30T18:12:05.121Z",
+    "updated": "2024-05-14T19:52:17.634Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 2,
+  "fields": {
+    "codeIngredient": "SE002",
+    "nomIngredient": "Brisures riz",
+    "proteineBrute": 7.8,
+    "energieMetabolisable": 43.026536,
+    "matiereGrasse": 1.2,
+    "celluloseBrute": 0.0,
+    "calcium": 0.04,
+    "phosphore": 0.15,
+    "lysine": 0.3,
+    "methionine": 0.2,
+    "cysteineMethionine": 0.69,
+    "sodium": 0.0,
+    "prix": 150.0,
+    "created": "2024-04-30T18:12:05.123Z",
+    "updated": "2024-05-14T16:16:17.314Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 3,
+  "fields": {
+    "codeIngredient": "SE003",
+    "nomIngredient": "Manioc",
+    "proteineBrute": 2.7,
+    "energieMetabolisable": 38.8794,
+    "matiereGrasse": 0.7,
+    "celluloseBrute": 3.0,
+    "calcium": 0.2,
+    "phosphore": 0.15,
+    "lysine": 0.08,
+    "methionine": 0.03,
+    "cysteineMethionine": 0.05,
+    "sodium": 0.003,
+    "prix": 100.0,
+    "created": "2024-04-30T18:12:05.123Z",
+    "updated": "2024-05-14T19:55:54.211Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 4,
+  "fields": {
+    "codeIngredient": "SE004",
+    "nomIngredient": "Remoulage de bl├⌐",
+    "proteineBrute": 16.0,
+    "energieMetabolisable": 35.769048,
+    "matiereGrasse": 4.5,
+    "celluloseBrute": 0.0,
+    "calcium": 0.1,
+    "phosphore": 0.9,
+    "lysine": 0.72,
+    "methionine": 0.25,
+    "cysteineMethionine": 0.58,
+    "sodium": 0.0001,
+    "prix": 150.0,
+    "created": "2024-04-30T18:12:05.124Z",
+    "updated": "2024-05-14T16:17:06.907Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 5,
+  "fields": {
+    "codeIngredient": "SE005",
+    "nomIngredient": "Son Bl├⌐",
+    "proteineBrute": 15.0,
+    "energieMetabolisable": 19.050906,
+    "matiereGrasse": 4.5,
+    "celluloseBrute": 9.6,
+    "calcium": 0.15,
+    "phosphore": 1.2,
+    "lysine": 0.59,
+    "methionine": 0.21,
+    "cysteineMethionine": 0.51,
+    "sodium": 0.0001,
+    "prix": 150.0,
+    "created": "2024-04-30T18:12:05.126Z",
+    "updated": "2024-05-14T16:17:24.696Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 6,
+  "fields": {
+    "codeIngredient": "SE006",
+    "nomIngredient": "Mil",
+    "proteineBrute": 11.5,
+    "energieMetabolisable": 41.47136,
+    "matiereGrasse": 4.3,
+    "celluloseBrute": 3.5,
+    "calcium": 0.06,
+    "phosphore": 0.33,
+    "lysine": 0.43,
+    "methionine": 0.23,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 291.7,
+    "created": "2024-04-30T18:12:05.129Z",
+    "updated": "2024-05-14T16:17:48.205Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 7,
+  "fields": {
+    "codeIngredient": "SE007",
+    "nomIngredient": "Sorgho blanc",
+    "proteineBrute": 10.0,
+    "energieMetabolisable": 41.47136,
+    "matiereGrasse": 2.8,
+    "celluloseBrute": 2.3,
+    "calcium": 0.03,
+    "phosphore": 0.28,
+    "lysine": 0.21,
+    "methionine": 0.16,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 250.0,
+    "created": "2024-04-30T18:12:05.130Z",
+    "updated": "2024-05-14T16:18:06.944Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 8,
+  "fields": {
+    "codeIngredient": "SP001",
+    "nomIngredient": "Soja extrud├⌐",
+    "proteineBrute": 35.6,
+    "energieMetabolisable": 49.24724,
+    "matiereGrasse": 18.0,
+    "celluloseBrute": 0.0,
+    "calcium": 0.31,
+    "phosphore": 0.55,
+    "lysine": 2.16,
+    "methionine": 0.53,
+    "cysteineMethionine": 1.09,
+    "sodium": 0.0,
+    "prix": 240.0,
+    "created": "2024-04-30T18:12:05.131Z",
+    "updated": "2024-05-14T16:18:25.809Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 9,
+  "fields": {
+    "codeIngredient": "SP002",
+    "nomIngredient": "Tourteau de coton",
+    "proteineBrute": 41.0,
+    "energieMetabolisable": 30.45553,
+    "matiereGrasse": 0.5,
+    "celluloseBrute": 13.0,
+    "calcium": 0.2,
+    "phosphore": 0.48,
+    "lysine": 1.72,
+    "methionine": 0.5,
+    "cysteineMethionine": 1.44,
+    "sodium": 0.005,
+    "prix": 275.0,
+    "created": "2024-04-30T18:12:05.131Z",
+    "updated": "2024-05-14T16:18:47.191Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 10,
+  "fields": {
+    "codeIngredient": "SP003",
+    "nomIngredient": "Tourteau de soja 49",
+    "proteineBrute": 49.0,
+    "energieMetabolisable": 32.3995,
+    "matiereGrasse": 0.5,
+    "celluloseBrute": 3.4,
+    "calcium": 0.2,
+    "phosphore": 0.37,
+    "lysine": 3.2,
+    "methionine": 0.7,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.001,
+    "prix": 370.0,
+    "created": "2024-04-30T18:12:05.132Z",
+    "updated": "2024-05-14T16:19:07.293Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 11,
+  "fields": {
+    "codeIngredient": "SP004",
+    "nomIngredient": "Ni├⌐b├⌐",
+    "proteineBrute": 25.0,
+    "energieMetabolisable": 44.452114,
+    "matiereGrasse": 1.5,
+    "celluloseBrute": 3.9,
+    "calcium": 0.01,
+    "phosphore": 0.04,
+    "lysine": 4.0,
+    "methionine": 0.9,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 400.0,
+    "created": "2024-04-30T18:12:05.132Z",
+    "updated": "2024-05-14T16:19:29.748Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 12,
+  "fields": {
+    "codeIngredient": "SP005",
+    "nomIngredient": "Tourteau d'arachide",
+    "proteineBrute": 43.0,
+    "energieMetabolisable": 32.788294,
+    "matiereGrasse": 12.0,
+    "celluloseBrute": 10.0,
+    "calcium": 0.15,
+    "phosphore": 0.6,
+    "lysine": 1.7,
+    "methionine": 0.5,
+    "cysteineMethionine": 1.14,
+    "sodium": 0.0,
+    "prix": 320.0,
+    "created": "2024-04-30T18:12:05.133Z",
+    "updated": "2024-05-14T16:19:50.266Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 13,
+  "fields": {
+    "codeIngredient": "SP006",
+    "nomIngredient": "Tourteau palmiste",
+    "proteineBrute": 18.0,
+    "energieMetabolisable": 17.366132,
+    "matiereGrasse": 1.7,
+    "celluloseBrute": 15.0,
+    "calcium": 0.28,
+    "phosphore": 0.6,
+    "lysine": 0.66,
+    "methionine": 0.32,
+    "cysteineMethionine": 0.7,
+    "sodium": 0.002,
+    "prix": 95.0,
+    "created": "2024-04-30T18:12:05.133Z",
+    "updated": "2024-05-14T16:20:11.690Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 14,
+  "fields": {
+    "codeIngredient": "SP007",
+    "nomIngredient": "Sang",
+    "proteineBrute": 84.0,
+    "energieMetabolisable": 46.65528,
+    "matiereGrasse": 1.1,
+    "celluloseBrute": 0.0,
+    "calcium": 0.3,
+    "phosphore": 0.25,
+    "lysine": 7.62,
+    "methionine": 0.93,
+    "cysteineMethionine": 1.68,
+    "sodium": 0.0,
+    "prix": 325.0,
+    "created": "2024-04-30T18:12:05.134Z",
+    "updated": "2024-05-14T16:20:51.065Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 15,
+  "fields": {
+    "codeIngredient": "SP008",
+    "nomIngredient": "Farine de poisson 60",
+    "proteineBrute": 60.0,
+    "energieMetabolisable": 35.250656,
+    "matiereGrasse": 2.0,
+    "celluloseBrute": 9.2,
+    "calcium": 6.5,
+    "phosphore": 3.5,
+    "lysine": 5.3,
+    "methionine": 1.8,
+    "cysteineMethionine": 2.14,
+    "sodium": 0.01,
+    "prix": 330.0,
+    "created": "2024-04-30T18:12:05.135Z",
+    "updated": "2024-05-14T16:21:12.848Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 16,
+  "fields": {
+    "codeIngredient": "SP009",
+    "nomIngredient": "Farine d'asticot",
+    "proteineBrute": 45.0,
+    "energieMetabolisable": 35.250656,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 2.0,
+    "phosphore": 5.2,
+    "lysine": 0.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 50.0,
+    "created": "2024-04-30T18:12:05.135Z",
+    "updated": "2024-05-14T16:21:33.439Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 17,
+  "fields": {
+    "codeIngredient": "VITMIN001",
+    "nomIngredient": "Coquillages",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 38.0,
+    "phosphore": 0.05,
+    "lysine": 0.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 88.0,
+    "created": "2024-04-30T18:12:05.136Z",
+    "updated": "2024-04-30T18:12:05.136Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 18,
+  "fields": {
+    "codeIngredient": "VITMIN002",
+    "nomIngredient": "Farine d'os",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 26.0,
+    "phosphore": 13.0,
+    "lysine": 0.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 200.0,
+    "created": "2024-04-30T18:12:05.136Z",
+    "updated": "2024-04-30T18:12:05.136Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 21,
+  "fields": {
+    "codeIngredient": "SP010",
+    "nomIngredient": "Lysine",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 0.0,
+    "phosphore": 0.0,
+    "lysine": 99.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 3500.0,
+    "created": "2024-04-30T18:12:05.138Z",
+    "updated": "2024-04-30T18:12:05.138Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 22,
+  "fields": {
+    "codeIngredient": "SP011",
+    "nomIngredient": "M├⌐thionine",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 0.0,
+    "phosphore": 0.0,
+    "lysine": 0.0,
+    "methionine": 99.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 5000.0,
+    "created": "2024-04-30T18:12:05.138Z",
+    "updated": "2024-04-30T18:12:05.138Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 23,
+  "fields": {
+    "codeIngredient": "VITMIN003",
+    "nomIngredient": "Pr├⌐cophos",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 24.0,
+    "phosphore": 23.0,
+    "lysine": 0.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 1500.0,
+    "created": "2024-04-30T18:12:05.139Z",
+    "updated": "2024-05-14T16:58:04.291Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 28,
+  "fields": {
+    "codeIngredient": "SP012",
+    "nomIngredient": "Concentr├⌐ de chair 10%",
+    "proteineBrute": 43.8,
+    "energieMetabolisable": 29.80754,
+    "matiereGrasse": 6.0,
+    "celluloseBrute": 0.0,
+    "calcium": 8.0,
+    "phosphore": 3.1,
+    "lysine": 3.1,
+    "methionine": 1.5,
+    "cysteineMethionine": 2.2,
+    "sodium": 0.0,
+    "prix": 550.0,
+    "created": "2024-04-30T18:12:05.143Z",
+    "updated": "2024-05-14T16:26:10.508Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 29,
+  "fields": {
+    "codeIngredient": "SP013",
+    "nomIngredient": "Concentr├⌐ de ponte 10%",
+    "proteineBrute": 49.0,
+    "energieMetabolisable": 29.15955,
+    "matiereGrasse": 5.8,
+    "celluloseBrute": 0.0,
+    "calcium": 9.2,
+    "phosphore": 3.4,
+    "lysine": 2.2,
+    "methionine": 1.3,
+    "cysteineMethionine": 1.9,
+    "sodium": 0.0,
+    "prix": 600.0,
+    "created": "2024-04-30T18:12:05.144Z",
+    "updated": "2024-05-14T16:26:32.593Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 30,
+  "fields": {
+    "codeIngredient": "SP014",
+    "nomIngredient": "Concentr├⌐ de ponte 5%",
+    "proteineBrute": 40.0,
+    "energieMetabolisable": 26.437992,
+    "matiereGrasse": 3.6,
+    "celluloseBrute": 0.0,
+    "calcium": 8.0,
+    "phosphore": 2.0,
+    "lysine": 3.24,
+    "methionine": 2.3,
+    "cysteineMethionine": 1.09,
+    "sodium": 0.0,
+    "prix": 680.0,
+    "created": "2024-04-30T18:12:05.145Z",
+    "updated": "2024-05-14T16:27:05.676Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 31,
+  "fields": {
+    "codeIngredient": "SP015",
+    "nomIngredient": "Concentr├⌐ de chair 5%",
+    "proteineBrute": 40.0,
+    "energieMetabolisable": 25.9196,
+    "matiereGrasse": 3.4,
+    "celluloseBrute": 0.0,
+    "calcium": 8.0,
+    "phosphore": 2.0,
+    "lysine": 3.3,
+    "methionine": 2.4,
+    "cysteineMethionine": 2.2,
+    "sodium": 0.0,
+    "prix": 720.0,
+    "created": "2024-04-30T18:12:05.145Z",
+    "updated": "2024-05-14T16:27:25.665Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 32,
+  "fields": {
+    "codeIngredient": "SE008",
+    "nomIngredient": "Huile de palme",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 93.31056,
+    "matiereGrasse": 97.0,
+    "celluloseBrute": 0.0,
+    "calcium": 0.0,
+    "phosphore": 0.0,
+    "lysine": 0.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 700.0,
+    "created": "2024-04-30T18:12:05.146Z",
+    "updated": "2024-05-14T16:27:51.506Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 33,
+  "fields": {
+    "codeIngredient": "VITMIN004",
+    "nomIngredient": "Sel iod├⌐",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 0.0,
+    "phosphore": 0.0,
+    "lysine": 0.0,
+    "methionine": 0.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.39,
+    "prix": 117.0,
+    "created": "2024-04-30T18:12:05.146Z",
+    "updated": "2024-05-14T16:56:25.825Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 34,
+  "fields": {
+    "codeIngredient": "VITMIN005",
+    "nomIngredient": "Pr├⌐mix 0.5%",
+    "proteineBrute": 0.0,
+    "energieMetabolisable": 0.0,
+    "matiereGrasse": 0.0,
+    "celluloseBrute": 0.0,
+    "calcium": 21.0,
+    "phosphore": 0.0,
+    "lysine": 14.0,
+    "methionine": 12.0,
+    "cysteineMethionine": 0.0,
+    "sodium": 0.0,
+    "prix": 1800.0,
+    "created": "2024-04-30T18:12:05.147Z",
+    "updated": "2024-05-14T16:56:40.560Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 35,
+  "fields": {
+    "codeIngredient": "SP016",
+    "nomIngredient": "Pr├⌐mix 2 %",
+    "proteineBrute": 34.0,
+    "energieMetabolisable": 25.9196,
+    "matiereGrasse": 4.0,
+    "celluloseBrute": 0.0,
+    "calcium": 2.0,
+    "phosphore": 1.0,
+    "lysine": 2.2,
+    "methionine": 3.0,
+    "cysteineMethionine": 3.5,
+    "sodium": 0.0,
+    "prix": 920.0,
+    "created": "2024-04-30T18:12:05.147Z",
+    "updated": "2024-05-14T16:28:15.927Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 36,
+  "fields": {
+    "codeIngredient": "SP017",
+    "nomIngredient": "pr├⌐mix 2.5%",
+    "proteineBrute": 32.0,
+    "energieMetabolisable": 25.9196,
+    "matiereGrasse": 2.0,
+    "celluloseBrute": 0.0,
+    "calcium": 2.0,
+    "phosphore": 0.8,
+    "lysine": 3.2,
+    "methionine": 4.2,
+    "cysteineMethionine": 4.7,
+    "sodium": 0.0,
+    "prix": 750.0,
+    "created": "2024-04-30T18:12:05.148Z",
+    "updated": "2024-05-14T16:28:31.010Z"
+  }
+},
+{
+  "model": "easyFeed.listeingredients",
+  "pk": 37,
+  "fields": {
+    "codeIngredient": "SE009",
+    "nomIngredient": "Bl├⌐",
+    "proteineBrute": 13.0,
+    "energieMetabolisable": 33.69548,
+    "matiereGrasse": 1.9,
+    "celluloseBrute": 0.0,
+    "calcium": 0.06,
+    "phosphore": 0.42,
+    "lysine": 0.32,
+    "methionine": 0.19,
+    "cysteineMethionine": 0.47,
+    "sodium": 0.0,
+    "prix": 70.0,
+    "created": "2024-04-30T18:12:05.149Z",
+    "updated": "2024-05-14T16:28:52.854Z"
+  }
+},
+{
+  "model": "easyFeed.pays",
+  "pk": 1,
+  "fields": {
+    "codePays": "CMR",
+    "nomPays": "Cameroun",
+    "created": "2024-04-30T18:10:39.001Z",
+    "updated": "2024-04-30T18:10:39.001Z"
+  }
+},
+{
+  "model": "easyFeed.pays",
+  "pk": 2,
+  "fields": {
+    "codePays": "CAN",
+    "nomPays": "Canada",
+    "created": "2024-04-30T18:10:45.048Z",
+    "updated": "2024-04-30T18:10:45.048Z"
+  }
+},
+{
+  "model": "easyFeed.pays",
+  "pk": 3,
+  "fields": {
+    "codePays": "GIN",
+    "nomPays": "Guin├⌐e",
+    "created": "2024-04-30T18:10:51.538Z",
+    "updated": "2024-04-30T18:10:51.538Z"
+  }
+},
+{
+  "model": "easyFeed.utilisateur",
+  "pk": 1,
+  "fields": {
+    "codePays": 1,
+    "idTypeUtilisateur": 1,
+    "matricule": "A132401",
+    "nom": "Takam",
+    "prenom": "Emmanuel",
+    "dateNaissance": "2024-05-13",
+    "dateEmbauche": "2024-05-13",
+    "numeroTelephone": "5065433777",
+    "adresse": "345 sdfgeww",
+    "email": "emmar@gmail.com",
+    "password": "1234",
+    "created": "2024-05-13T19:40:56.826Z",
+    "updated": "2024-05-13T19:40:56.826Z"
+  }
+},
+{
+  "model": "easyFeed.utilisateur",
+  "pk": 2,
+  "fields": {
+    "codePays": 1,
+    "idTypeUtilisateur": 1,
+    "matricule": "A132402",
+    "nom": "yemele",
+    "prenom": "ange",
+    "dateNaissance": "2024-05-13",
+    "dateEmbauche": "2024-05-13",
+    "numeroTelephone": "3453454354",
+    "adresse": "234 jjdg ttue",
+    "email": "emmjk@gmail.com",
+    "password": "1234",
+    "created": "2024-05-13T19:43:34.825Z",
+    "updated": "2024-05-13T19:43:34.825Z"
+  }
+},
+{
+  "model": "easyFeed.utilisateur",
+  "pk": 3,
+  "fields": {
+    "codePays": 1,
+    "idTypeUtilisateur": 1,
+    "matricule": "A132403",
+    "nom": "Wontcheu",
+    "prenom": "Dorian",
+    "dateNaissance": "2024-05-13",
+    "dateEmbauche": "2024-05-13",
+    "numeroTelephone": "4356784321",
+    "adresse": "3 mapple",
+    "email": "roiah@gmail.com",
+    "password": "1234",
+    "created": "2024-05-13T19:50:38.021Z",
+    "updated": "2024-05-13T19:50:38.021Z"
+  }
+},
+{
+  "model": "easyFeed.utilisateur",
+  "pk": 4,
+  "fields": {
+    "codePays": 1,
+    "idTypeUtilisateur": 1,
+    "matricule": "A132404",
+    "nom": "YEMELE KANA",
+    "prenom": "ange merveille gracia",
+    "dateNaissance": "2003-08-23",
+    "dateEmbauche": "2024-05-14",
+    "numeroTelephone": "5149681444",
+    "adresse": "646 CHALMERS COURT",
+    "email": "angieleyemel@gmail.com",
+    "password": "pbkdf2_sha256$720000$uWjKoUGgeNCRlK1niv05FT$i4JS22f7TYPLOYLBgBA3TYnNZk0P9L3YUEdkJHvhM8k=",
+    "created": "2024-05-14T15:50:13.392Z",
+    "updated": "2024-05-14T15:50:13.392Z"
+  }
+},
+{
+  "model": "easyFeed.formulationdisponible",
+  "pk": 1,
+  "fields": {
+    "codeAnimal": "PL",
+    "nomAnimal": "Poule",
+    "created": "2024-04-30T18:11:04.002Z",
+    "updated": "2024-04-30T18:11:04.002Z"
+  }
+},
+{
+  "model": "easyFeed.formulationdisponible",
+  "pk": 2,
+  "fields": {
+    "codeAnimal": "PR",
+    "nomAnimal": "Porc",
+    "created": "2024-04-30T18:11:11.086Z",
+    "updated": "2024-04-30T18:11:11.086Z"
+  }
+},
+{
+  "model": "easyFeed.formulationdisponible",
+  "pk": 3,
+  "fields": {
+    "codeAnimal": "PS",
+    "nomAnimal": "Poisson",
+    "created": "2024-04-30T18:11:17.543Z",
+    "updated": "2024-04-30T18:11:17.543Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 1,
+  "fields": {
+    "codeIngredient": 1,
+    "codePays": 1,
+    "created": "2024-04-30T18:13:04.007Z",
+    "updated": "2024-04-30T18:13:04.007Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 2,
+  "fields": {
+    "codeIngredient": 2,
+    "codePays": 1,
+    "created": "2024-04-30T18:13:16.087Z",
+    "updated": "2024-04-30T18:13:16.087Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 3,
+  "fields": {
+    "codeIngredient": 3,
+    "codePays": 1,
+    "created": "2024-04-30T18:14:33.333Z",
+    "updated": "2024-04-30T18:14:33.333Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 4,
+  "fields": {
+    "codeIngredient": 4,
+    "codePays": 1,
+    "created": "2024-04-30T18:14:40.989Z",
+    "updated": "2024-04-30T18:14:40.989Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 5,
+  "fields": {
+    "codeIngredient": 5,
+    "codePays": 1,
+    "created": "2024-04-30T18:14:47.761Z",
+    "updated": "2024-04-30T18:14:47.761Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 6,
+  "fields": {
+    "codeIngredient": 6,
+    "codePays": 1,
+    "created": "2024-04-30T18:14:52.510Z",
+    "updated": "2024-04-30T18:14:52.510Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 7,
+  "fields": {
+    "codeIngredient": 7,
+    "codePays": 1,
+    "created": "2024-04-30T18:14:57.076Z",
+    "updated": "2024-04-30T18:14:57.076Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 8,
+  "fields": {
+    "codeIngredient": 8,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:01.917Z",
+    "updated": "2024-04-30T18:15:01.917Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 9,
+  "fields": {
+    "codeIngredient": 9,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:07.441Z",
+    "updated": "2024-04-30T18:15:07.441Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 10,
+  "fields": {
+    "codeIngredient": 10,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:14.380Z",
+    "updated": "2024-04-30T18:15:14.380Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 11,
+  "fields": {
+    "codeIngredient": 11,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:20.927Z",
+    "updated": "2024-04-30T18:15:20.927Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 12,
+  "fields": {
+    "codeIngredient": 12,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:25.890Z",
+    "updated": "2024-04-30T18:15:25.890Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 13,
+  "fields": {
+    "codeIngredient": 13,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:31.640Z",
+    "updated": "2024-04-30T18:15:31.640Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 14,
+  "fields": {
+    "codeIngredient": 14,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:36.606Z",
+    "updated": "2024-04-30T18:15:36.606Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 15,
+  "fields": {
+    "codeIngredient": 15,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:41.522Z",
+    "updated": "2024-04-30T18:15:41.522Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 16,
+  "fields": {
+    "codeIngredient": 16,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:46.423Z",
+    "updated": "2024-04-30T18:15:46.423Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 17,
+  "fields": {
+    "codeIngredient": 17,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:51.937Z",
+    "updated": "2024-04-30T18:15:51.937Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 18,
+  "fields": {
+    "codeIngredient": 18,
+    "codePays": 1,
+    "created": "2024-04-30T18:15:57.541Z",
+    "updated": "2024-04-30T18:15:57.541Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 21,
+  "fields": {
+    "codeIngredient": 21,
+    "codePays": 1,
+    "created": "2024-04-30T18:16:18.574Z",
+    "updated": "2024-04-30T18:16:18.574Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 22,
+  "fields": {
+    "codeIngredient": 22,
+    "codePays": 1,
+    "created": "2024-04-30T18:16:24.713Z",
+    "updated": "2024-04-30T18:16:24.713Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 23,
+  "fields": {
+    "codeIngredient": 23,
+    "codePays": 1,
+    "created": "2024-04-30T18:16:31.024Z",
+    "updated": "2024-04-30T18:16:31.024Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 28,
+  "fields": {
+    "codeIngredient": 28,
+    "codePays": 1,
+    "created": "2024-04-30T18:16:58.995Z",
+    "updated": "2024-04-30T18:16:58.996Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 29,
+  "fields": {
+    "codeIngredient": 29,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:04.598Z",
+    "updated": "2024-04-30T18:17:04.598Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 30,
+  "fields": {
+    "codeIngredient": 30,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:11.511Z",
+    "updated": "2024-04-30T18:17:11.511Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 31,
+  "fields": {
+    "codeIngredient": 31,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:17.129Z",
+    "updated": "2024-04-30T18:17:17.129Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 32,
+  "fields": {
+    "codeIngredient": 32,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:24.594Z",
+    "updated": "2024-04-30T18:17:24.594Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 33,
+  "fields": {
+    "codeIngredient": 33,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:31.869Z",
+    "updated": "2024-04-30T18:17:31.869Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 34,
+  "fields": {
+    "codeIngredient": 34,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:38.740Z",
+    "updated": "2024-04-30T18:17:38.740Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 35,
+  "fields": {
+    "codeIngredient": 35,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:46.222Z",
+    "updated": "2024-04-30T18:17:46.222Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 36,
+  "fields": {
+    "codeIngredient": 36,
+    "codePays": 1,
+    "created": "2024-04-30T18:17:52.141Z",
+    "updated": "2024-04-30T18:17:52.141Z"
+  }
+},
+{
+  "model": "easyFeed.ingredient",
+  "pk": 37,
+  "fields": {
+    "codeIngredient": 37,
+    "codePays": 1,
+    "created": "2024-04-30T18:18:01.265Z",
+    "updated": "2024-04-30T18:18:01.265Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 1,
+  "fields": {
+    "idIngredient": 1,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:32:06.809Z",
+    "updated": "2024-04-30T18:32:06.809Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 2,
+  "fields": {
+    "idIngredient": 2,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:33:38.088Z",
+    "updated": "2024-04-30T18:33:38.088Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 3,
+  "fields": {
+    "idIngredient": 3,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:33:44.040Z",
+    "updated": "2024-04-30T18:33:44.040Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 4,
+  "fields": {
+    "idIngredient": 4,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:33:49.184Z",
+    "updated": "2024-04-30T18:33:49.184Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 5,
+  "fields": {
+    "idIngredient": 5,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:33:55.646Z",
+    "updated": "2024-04-30T18:33:55.646Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 6,
+  "fields": {
+    "idIngredient": 6,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:34:01.681Z",
+    "updated": "2024-04-30T18:34:01.681Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 7,
+  "fields": {
+    "idIngredient": 7,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:34:09.370Z",
+    "updated": "2024-04-30T18:34:09.370Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 8,
+  "fields": {
+    "idIngredient": 8,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:37:12.759Z",
+    "updated": "2024-04-30T18:37:12.759Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 9,
+  "fields": {
+    "idIngredient": 9,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:37:25.567Z",
+    "updated": "2024-04-30T18:37:25.567Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 10,
+  "fields": {
+    "idIngredient": 10,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:38:54.790Z",
+    "updated": "2024-04-30T18:38:54.790Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 11,
+  "fields": {
+    "idIngredient": 11,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:39:43.230Z",
+    "updated": "2024-04-30T18:39:43.230Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 12,
+  "fields": {
+    "idIngredient": 12,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:39:53.170Z",
+    "updated": "2024-04-30T18:39:53.171Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 13,
+  "fields": {
+    "idIngredient": 13,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:40:04.240Z",
+    "updated": "2024-04-30T18:40:04.240Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 14,
+  "fields": {
+    "idIngredient": 14,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:40:11.802Z",
+    "updated": "2024-04-30T18:40:11.802Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 15,
+  "fields": {
+    "idIngredient": 15,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:40:19.117Z",
+    "updated": "2024-04-30T18:40:19.117Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 16,
+  "fields": {
+    "idIngredient": 16,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:40:30.451Z",
+    "updated": "2024-04-30T18:40:30.451Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 17,
+  "fields": {
+    "idIngredient": 17,
+    "codeAnimal": 1,
+    "nomCategorie": "Vitamine/Min├⌐raux",
+    "created": "2024-04-30T18:42:36.586Z",
+    "updated": "2024-04-30T18:42:36.586Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 18,
+  "fields": {
+    "idIngredient": 18,
+    "codeAnimal": 1,
+    "nomCategorie": "Vitamine/Min├⌐raux",
+    "created": "2024-04-30T18:43:14.411Z",
+    "updated": "2024-04-30T18:43:14.411Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 21,
+  "fields": {
+    "idIngredient": 21,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:46:17.421Z",
+    "updated": "2024-04-30T18:46:17.421Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 22,
+  "fields": {
+    "idIngredient": 22,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:46:28.864Z",
+    "updated": "2024-04-30T18:46:28.864Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 23,
+  "fields": {
+    "idIngredient": 23,
+    "codeAnimal": 1,
+    "nomCategorie": "Vitamine/Min├⌐raux",
+    "created": "2024-04-30T18:46:45.181Z",
+    "updated": "2024-04-30T18:46:45.181Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 28,
+  "fields": {
+    "idIngredient": 28,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:48:23.716Z",
+    "updated": "2024-04-30T18:48:23.716Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 29,
+  "fields": {
+    "idIngredient": 29,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:48:32.211Z",
+    "updated": "2024-04-30T18:48:32.211Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 30,
+  "fields": {
+    "idIngredient": 30,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:48:44.275Z",
+    "updated": "2024-04-30T18:48:44.275Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 31,
+  "fields": {
+    "idIngredient": 31,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:48:59.201Z",
+    "updated": "2024-04-30T18:48:59.201Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 32,
+  "fields": {
+    "idIngredient": 32,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:49:12.417Z",
+    "updated": "2024-04-30T18:49:12.417Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 33,
+  "fields": {
+    "idIngredient": 33,
+    "codeAnimal": 1,
+    "nomCategorie": "Vitamine/Min├⌐raux",
+    "created": "2024-04-30T18:49:26.352Z",
+    "updated": "2024-04-30T18:49:26.352Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 34,
+  "fields": {
+    "idIngredient": 34,
+    "codeAnimal": 1,
+    "nomCategorie": "Vitamine/Min├⌐raux",
+    "created": "2024-04-30T18:49:38.152Z",
+    "updated": "2024-04-30T18:49:38.152Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 35,
+  "fields": {
+    "idIngredient": 35,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:49:49.833Z",
+    "updated": "2024-04-30T18:49:49.833Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 36,
+  "fields": {
+    "idIngredient": 36,
+    "codeAnimal": 1,
+    "nomCategorie": "Source prot├⌐ique",
+    "created": "2024-04-30T18:50:00.784Z",
+    "updated": "2024-04-30T18:50:00.784Z"
+  }
+},
+{
+  "model": "easyFeed.categorieingredient",
+  "pk": 37,
+  "fields": {
+    "idIngredient": 37,
+    "codeAnimal": 1,
+    "nomCategorie": "Source energetique",
+    "created": "2024-04-30T18:50:10.517Z",
+    "updated": "2024-04-30T18:50:10.517Z"
+  }
+},
+{
+  "model": "easyFeed.phasedeveloppement",
+  "pk": 1,
+  "fields": {
+    "codePhase": "PHDE",
+    "trancheAge": "0-3 semaines",
+    "nomPhase": "Demarrage",
+    "proteineBruteMin": 21.0,
+    "proteineBruteMax": 23.0,
+    "energieMetabolisableMin": 36.93543,
+    "energieMetabolisableMax": 38.8794,
+    "matiereGrasseMin": 4.0,
+    "matiereGrasseMax": 6.0,
+    "calciumMin": 1.0,
+    "calciumMax": 1.05,
+    "phosphoreMin": 0.45,
+    "phosphoreMax": 0.55,
+    "lysineMin": 1.1,
+    "lysineMax": 1.3,
+    "methionineMin": 0.46,
+    "methionineMax": 0.54,
+    "cysteineMethionineMin": 0.95,
+    "cysteineMethionineMax": 1.08,
+    "sodiumMin": 0.16,
+    "sodiumMax": 0.23,
+    "ratioEnergieProteineMin": 126.0,
+    "ratioEnergieProteineMax": 136.0,
+    "ratioCalciumPhosphoreMin": 1.8,
+    "ratioCalciumPhosphoreMax": 2.1,
+    "ratioLysineMethionineMin": 2.39,
+    "ratioLysineMethionineMax": 2.41,
+    "created": "2024-04-30T19:02:14.391Z",
+    "updated": "2024-05-14T16:31:44.714Z"
+  }
+},
+{
+  "model": "easyFeed.phasedeveloppement",
+  "pk": 2,
+  "fields": {
+    "codePhase": "PHCR",
+    "trancheAge": "3-6 semaines",
+    "nomPhase": "Croissance",
+    "proteineBruteMin": 19.0,
+    "proteineBruteMax": 21.0,
+    "energieMetabolisableMin": 38.23141,
+    "energieMetabolisableMax": 38.8794,
+    "matiereGrasseMin": 4.5,
+    "matiereGrasseMax": 7.0,
+    "calciumMin": 0.9,
+    "calciumMax": 1.0,
+    "phosphoreMin": 0.4,
+    "phosphoreMax": 0.42,
+    "lysineMin": 1.1,
+    "lysineMax": 1.2,
+    "methionineMin": 0.45,
+    "methionineMax": 0.5,
+    "cysteineMethionineMin": 0.87,
+    "cysteineMethionineMax": 0.99,
+    "sodiumMin": 0.16,
+    "sodiumMax": 0.23,
+    "ratioEnergieProteineMin": 143.0,
+    "ratioEnergieProteineMax": 155.0,
+    "ratioCalciumPhosphoreMin": 1.8,
+    "ratioCalciumPhosphoreMax": 2.0,
+    "ratioLysineMethionineMin": 2.4,
+    "ratioLysineMethionineMax": 2.44,
+    "created": "2024-04-30T19:04:00.889Z",
+    "updated": "2024-05-14T16:34:30.538Z"
+  }
+},
+{
+  "model": "easyFeed.phasedeveloppement",
+  "pk": 3,
+  "fields": {
+    "codePhase": "PHFI",
+    "trancheAge": "6-8 semaines",
+    "nomPhase": "Finition",
+    "proteineBruteMin": 17.0,
+    "proteineBruteMax": 18.0,
+    "energieMetabolisableMin": 38.8794,
+    "energieMetabolisableMax": 39.52739,
+    "matiereGrasseMin": 5.0,
+    "matiereGrasseMax": 8.0,
+    "calciumMin": 0.8,
+    "calciumMax": 1.0,
+    "phosphoreMin": 0.36,
+    "phosphoreMax": 0.38,
+    "lysineMin": 0.9,
+    "lysineMax": 1.1,
+    "methionineMin": 0.42,
+    "methionineMax": 0.45,
+    "cysteineMethionineMin": 0.8,
+    "cysteineMethionineMax": 0.91,
+    "sodiumMin": 0.16,
+    "sodiumMax": 0.2,
+    "ratioEnergieProteineMin": 179.45,
+    "ratioEnergieProteineMax": 185.0,
+    "ratioCalciumPhosphoreMin": 1.8,
+    "ratioCalciumPhosphoreMax": 2.0,
+    "ratioLysineMethionineMin": 2.14,
+    "ratioLysineMethionineMax": 2.44,
+    "created": "2024-04-30T19:06:51.753Z",
+    "updated": "2024-05-14T16:34:55.445Z"
+  }
+},
+{
+  "model": "easyFeed.phaseactuelle",
+  "pk": 1,
+  "fields": {
+    "codeAnimal": 1,
+    "codePhase": 1,
+    "created": "2024-04-30T19:08:07.733Z",
+    "updated": "2024-04-30T19:08:07.733Z"
+  }
+},
+{
+  "model": "easyFeed.phaseactuelle",
+  "pk": 2,
+  "fields": {
+    "codeAnimal": 1,
+    "codePhase": 2,
+    "created": "2024-04-30T19:08:17.170Z",
+    "updated": "2024-04-30T19:08:17.170Z"
+  }
+},
+{
+  "model": "easyFeed.phaseactuelle",
+  "pk": 3,
+  "fields": {
+    "codeAnimal": 1,
+    "codePhase": 3,
+    "created": "2024-04-30T19:08:26.496Z",
+    "updated": "2024-04-30T19:08:26.496Z"
+  }
+}
+]

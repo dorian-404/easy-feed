@@ -1,0 +1,113 @@
+def obtenir_contraintes(request):
+    id_phase = request.GET.get('id_phase')
+    print(f"ID de phase reçu : {id_phase}")  # Instruction d'impression
+    logger.info(f"ID de phase reçu : {id_phase}")  # Instruction de journalisation
+    try:
+        contraintes = PhaseDeveloppement.objects.get(id=id_phase)
+        # print(contraintes.lysineMin)
+
+        #
+        #   convertion des contraintes en dataFrame
+        #
+
+        phase = contraintes
+
+        # Initialiser les dictionnaires pour min et max
+        min_dict = {}
+        max_dict = {}
+
+        # Remplir les dictionnaires avec les valeurs des contraintes
+        min_dict = {
+            'proteineBrute': phase.proteineBruteMin,
+            'energieMetabolisable': phase.energieMetabolisableMin,
+            'matiereGrasse': phase.matiereGrasseMin,
+            'calcium': phase.calciumMin,
+            'phosphore': phase.phosphoreMin,
+            'lysine': phase.lysineMin,
+            'methionine': phase.methionineMin,
+            'cysteineMethionine': phase.cysteineMethionineMin,
+            'sodium': phase.sodiumMin,
+        }
+
+        max_dict = {
+            'proteineBrute': phase.proteineBruteMax,
+            'energieMetabolisable': phase.energieMetabolisableMax,
+            'matiereGrasse': phase.matiereGrasseMax,
+            'calcium': phase.calciumMax,
+            'phosphore': phase.phosphoreMax,
+            'lysine': phase.lysineMax,
+            'methionine': phase.methionineMax,
+            'cysteineMethionine': phase.cysteineMethionineMax,
+            'sodium': phase.sodiumMax,
+        }
+
+        # Convertir les dictionnaires en DataFrames
+        min_df = pd.DataFrame(min_dict, index=['min'])
+        max_df = pd.DataFrame(max_dict, index=['max'])
+
+        # Concaténer les deux DataFrames
+        contraintes_df = pd.concat([min_df, max_df])
+
+        # Initialiser les dictionnaires pour min et max pour les ratios
+        min_ratio_dict = {}
+        max_ratio_dict = {}
+
+        # Remplir les dictionnaires avec les valeurs des contraintes
+        min_ratio_dict = {
+            'ratioEnergieProteine': phase.ratioEnergieProteineMin,
+            'ratioCalciumPhosphore': phase.ratioCalciumPhosphoreMin,
+            'ratioLysineMethionine': phase.ratioLysineMethionineMin
+        }
+
+        max_ratio_dict = {
+            'ratioEnergieProteine': phase.ratioEnergieProteineMax,
+            'ratioCalciumPhosphore': phase.ratioCalciumPhosphoreMax,
+            'ratioLysineMethionine': phase.ratioLysineMethionineMax
+        }
+
+        # Convertir les dictionnaires en DataFrames
+        min_ratio_df = pd.DataFrame(min_ratio_dict, index=['min'])
+        max_ratio_df = pd.DataFrame(max_ratio_dict, index=['max'])
+
+        # Concaténer les deux DataFrames
+        contraintes_ratio_df = pd.concat([min_ratio_df, max_ratio_df])
+
+        # Ajouter des instructions d'impression et de journalisation après avoir obtenu les contraintes
+        # print(f"Contraintes obtenues : {contraintes}")
+        logger.info(f"Contraintes obtenues : {contraintes}")
+
+        contraintes = {'nomPhase': contraintes.nomPhase,
+                       'proteineBruteMin': contraintes.proteineBruteMin,
+                       'proteineBruteMax': contraintes.proteineBruteMax,
+                       'energieMetabolisableMin': contraintes.energieMetabolisableMin,
+                       'energieMetabolisableMax': contraintes.energieMetabolisableMax,
+                       'matiereGrasseMin': contraintes.matiereGrasseMin,
+                       'matiereGrasseMax': contraintes.matiereGrasseMax,
+                       'calciumMin': contraintes.calciumMin,
+                       'calciumMax': contraintes.calciumMax,
+                       'phosphoreMin': contraintes.phosphoreMin,
+                       'phosphoreMax': contraintes.phosphoreMax,
+                       'lysineMin': contraintes.lysineMin,
+                       'lysineMax': contraintes.lysineMax,
+                       'methionineMin': contraintes.methionineMin,
+                       'methionineMax': contraintes.methionineMax,
+                       'cysteineMethionineMin': contraintes.cysteineMethionineMin,
+                       'cysteineMethionineMax': contraintes.cysteineMethionineMax,
+                       'sodiumMin': contraintes.sodiumMin,
+                       'sodiumMax': contraintes.sodiumMax,
+                       'ratioEnergieProteineMin': contraintes.ratioEnergieProteineMin,
+                       'ratioEnergieProteineMax': contraintes.ratioEnergieProteineMax,
+                       'ratioCalciumPhosphoreMin': contraintes.ratioCalciumPhosphoreMin,
+                       'ratioCalciumPhosphoreMax': contraintes.ratioCalciumPhosphoreMax,
+                       'ratioLysineMethionineMin': contraintes.ratioLysineMethionineMin,
+                       'ratioLysineMethionineMax': contraintes.ratioLysineMethionineMax}
+        # print(f"Contraintes obtenues 2 : {contraintes}")
+        logger.info(f"Contraintes obtenues 2 : {contraintes}")
+    except PhaseDeveloppement.DoesNotExist:
+        raise Http404("La tranche d'age spécifiée n'existe pas.")
+    except Exception as e:
+        print(f"Erreur lors de la récupération des contraintes : {e}")
+        logger.error(f"Erreur lors de la récupération des contraintes : {e}")
+        raise Http404("Une erreur s'est produite lors de la récupération de la phase de developpement et ses "
+                      "contraintes.")
+    return JsonResponse(contraintes, safe=False)
